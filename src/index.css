@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Empathy Storytelling Design System - Dim, reflective, emotionally resonant */
+
+@layer base {
+  :root {
+    /* Atmospheric backgrounds - muted, contemplative */
+    --background: 25 8% 12%;
+    --background-secondary: 20 10% 8%;
+    --background-overlay: 25 8% 12% / 0.85;
+    
+    /* Text colors - soft and readable */
+    --foreground: 30 15% 88%;
+    --foreground-muted: 25 8% 65%;
+    --foreground-soft: 20 5% 75%;
+
+    /* Card and surfaces - subtle depth */
+    --card: 25 12% 15%;
+    --card-foreground: 30 15% 88%;
+    --card-border: 25 8% 22%;
+
+    /* Interactive elements */
+    --primary: 15 25% 45%;
+    --primary-foreground: 30 15% 88%;
+    --primary-hover: 15 30% 55%;
+    
+    --secondary: 25 15% 25%;
+    --secondary-foreground: 30 15% 88%;
+    --secondary-hover: 25 20% 35%;
+
+    /* Emotional accent colors */
+    --accent-warm: 25 35% 55%;
+    --accent-warm-foreground: 30 15% 88%;
+    --accent-cool: 210 20% 45%;
+    --accent-cool-foreground: 30 15% 88%;
+
+    /* States and feedback */
+    --muted: 25 8% 20%;
+    --muted-foreground: 25 8% 65%;
+    
+    --border: 25 8% 22%;
+    --input: 25 12% 18%;
+    --ring: 15 25% 45%;
+
+    /* Interactive highlight */
+    --highlight: 0 65% 55%;
+    --highlight-foreground: 30 15% 88%;
+
+    /* Shadows and depth */
+    --shadow-soft: 0 0 40px hsl(0 0% 0% / 0.3);
+    --shadow-emotional: 0 0 60px hsl(15 25% 25% / 0.4);
+    
+    /* Gradients */
+    --gradient-atmospheric: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background-secondary)));
+    --gradient-overlay: linear-gradient(180deg, transparent, hsl(var(--background-overlay)));
+    
+    /* Typography scale */
+    --text-narrative: 1.125rem;
+    --text-dialogue: 1rem;
+    --text-caption: 0.875rem;
+
+    /* Spacing and rhythm */
+    --spacing-scene: 2rem;
+    --spacing-content: 1.5rem;
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
+  /* Storytelling typography */
+  .narrative-text {
+    font-size: var(--text-narrative);
+    line-height: 1.7;
+    color: hsl(var(--foreground-soft));
+  }
+
+  .dialogue-text {
+    font-size: var(--text-dialogue);
+    line-height: 1.6;
+    color: hsl(var(--foreground));
+  }
+
+  .caption-text {
+    font-size: var(--text-caption);
+    line-height: 1.5;
+    color: hsl(var(--foreground-muted));
+  }
+
+  /* Interactive elements */
+  .story-button {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .story-button:hover {
+    background: hsl(var(--primary-hover));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-emotional);
+  }
+
+  /* Clickable objects with red outline */
+  .clickable-object {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .clickable-object:hover {
+    outline: 2px solid hsl(var(--highlight));
+    outline-offset: 4px;
+    transform: scale(1.02);
+  }
+
+  /* Scene transitions */
+  .scene-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .scene-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .scene-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scene-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+}
+
+@layer components {
+  /* Character popup styling */
+  .character-popup {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--card-border));
+    border-radius: var(--radius);
+    padding: var(--spacing-content);
+    box-shadow: var(--shadow-emotional);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Audio controls */
+  .audio-controls {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    padding: 0.5rem;
+    box-shadow: var(--shadow-soft);
+  }
+}
