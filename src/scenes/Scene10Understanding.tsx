@@ -26,7 +26,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-accent-warm">Meng:</span>
                 <p className="mt-2 italic">
-                  "Hello Aunty, is everything okay? I saw so much stuff outside your house, is there anything I can do to help?"
+                  "Hello Aunty, everything okay or not? I saw so much stuff outside your house, maybe I can help you abit?"
                 </p>
               </div>
             </div>
@@ -35,8 +35,8 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-foreground">Madam Leong:</span>
                 <p className="mt-2 italic">
-                  "Sorry ah boy, Aunty knows it is messy, but I cannot throw them away
-                  ...they are all I have left of my husband.
+                  "Sorry ah boy, Aunty knows it's messy, but I just can't throw them away
+                  ...they're all I have left of my husband.
                 </p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-accent-warm">Meng:</span>
                 <p className="mt-2 italic">
-                  "OMG, i'm sorry aunty. But leaving so many things here can be dangerous. Do you want go through the items together? You can keep what's important."
+                  "Ah I see I see. I'm sorry aunty but leaving so many things here can be dangerous you know?. How about we go through the items together? You can keep what's important."
                 </p>
               </div>
             </div>
