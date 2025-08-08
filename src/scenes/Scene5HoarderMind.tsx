@@ -29,39 +29,41 @@ export const Scene5HoarderMind: React.FC = () => {
             <div className="narrative-text space-y-8">
 
               <div className="mt-12 mb-8">
-                <div className="aspect-video bg-black rounded-lg overflow-hidden mb-8">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://player.vimeo.com/video/1107114495?h=6686109fe7"
-                    title="Understanding Hoarding Disorder"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                <div className="memory-frame">
+                  <div className="aspect-video bg-slate-800 rounded-md overflow-hidden">
+                    <iframe
+                      className="w-full h-full"
+                      src="https://player.vimeo.com/video/1107114495?h=6686109fe7"
+                      title="Understanding Hoarding Disorder"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
                 </div>
               </div>
 
 
-              <div className="bg-accent-warm/20 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/30">
+              <div className="scrapbook-text transform rotate-[-0.8deg] max-w-3xl mx-auto">
                 <h2 className="text-2xl font-semibold mb-6 text-highlight">
                   Common Misconceptions
                 </h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Myth</h3>
-                    <p className="text-sm">"They're just lazy or dirty"</p>
+                    <h3 className="text-lg font-semibold mb-2 text-red-600">❌ Myth</h3>
+                    <p className="text-base">"They're just lazy or dirty"</p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 text-accent-cool">✓ Reality</h3>
-                    <p className="text-sm">It's a complex mental health condition</p>
+                    <h3 className="text-lg font-semibold mb-2 text-emerald-600">✓ Reality</h3>
+                    <p className="text-base">It's a complex mental health condition</p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Myth</h3>
-                    <p className="text-sm">"They can stop anytime they want"</p>
+                    <h3 className="text-lg font-semibold mb-2 text-red-600">❌ Myth</h3>
+                    <p className="text-base">"They can stop anytime they want"</p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 text-accent-cool">✓ Reality</h3>
-                    <p className="text-sm">Discarding causes genuine distress and anxiety</p>
+                    <h3 className="text-lg font-semibold mb-2 text-emerald-600">✓ Reality</h3>
+                    <p className="text-base">Discarding causes genuine distress and anxiety</p>
                   </div>
                 </div>
               </div>

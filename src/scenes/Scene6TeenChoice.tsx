@@ -42,34 +42,26 @@ export const Scene6TeenChoice: React.FC = () => {
           </div>
 
           {/* Choice buttons */}
-          <div className="space-y-6">
-            {/* <h2 className="text-xl font-semibold mb-8 text-foreground">
-              How should Meng respond?
-            </h2> */}
-            
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <div className="space-y-8">
+            <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
               <StoryButton
                 variant="choice"
                 onClick={() => navigate('/scene/7')}
-                className="bg-muted hover:bg-muted/80 text-foreground-muted min-h-[120px] flex flex-col justify-center p-6"
+                className="bg-red-200 hover:bg-red-300 text-red-800 border-2 border-red-300/60 min-h-[120px] flex flex-col justify-center p-6 transform rotate-[1deg] hover:rotate-0"
               >
-                <span className="font-semibold">"WAH what is that smell?? Can this aunty clean up her own mess or not sia?"</span>
+                <span className="font-normal text-lg">"WAH what is that smell?? Can this aunty clean up her own mess or not sia?"</span>
               </StoryButton>
 
-              <div className="text-amber-900 bg-amber-900/20 px-4 py-2 rounded-full">or</div>
+              <div className="nav-label text-2xl">or</div>
 
               <StoryButton
                 variant="choice" 
                 onClick={() => navigate('/scene/6a')}
-                className="min-h-[120px] flex flex-col justify-center p-6"
+                className="min-h-[120px] flex flex-col justify-center p-6 bg-green-200 hover:bg-green-300 text-green-800 border-2 border-green-300/60"
               >
-                <span className="font-semibold">"Hmm, maybe aunty needs help with cleaning up?"</span>
+                <span className="font-normal text-lg">"Hmm, maybe aunty needs help with cleaning up?"</span>
               </StoryButton>
             </div>
-
-            {/* <p className="caption-text text-foreground-muted mt-8">
-              Your choice will determine the outcome of this story
-            </p> */}
           </div>
         </div>
       </div>

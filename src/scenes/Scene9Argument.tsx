@@ -20,44 +20,47 @@ export const Scene9Argument: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Scene visualization */}
           
-          <div className="narrative-text max-w-3xl mx-auto space-y-6 mb-12">
-            <div className="bg-card p-6 rounded-lg border border-destructive/20">
-              <div className="mb-4">
-                <span className="font-semibold text-destructive">Meng:</span>
-                <p className="mt-2 text-destructive-foreground italic">
-                  "This is damn disgusting! The whole corridor smells because of your flat. 
-                    Can you clean this mess up. It's affecting everyone!"
-                </p>
+          <div className="max-w-3xl mx-auto space-y-8 mb-12">
+            <div className="memory-frame">
+              <div className="speech-bubble transform rotate-1">
+                <div className="mb-3">
+                  <span className="font-semibold text-red-600">Meng:</span>
+                  <p className="mt-2 italic">
+                    "This is damn disgusting! The whole corridor smells because of your flat. 
+                      Can you clean this mess up. It's affecting everyone!"
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-card p-6 rounded-lg border border-card-border">
-              <div className="mb-4">
-                <span className="font-semibold text-accent-warm">Madam Leong:</span>
-                <p className="mt-2 italic">
-                  "knn! This is also not your home. Don't be so busybody!"
-                </p>
+            <div className="memory-frame">
+              <div className="speech-bubble transform rotate-[-0.8deg]">
+                <div className="mb-3">
+                  <span className="font-semibold text-amber-700">Madam Leong:</span>
+                  <p className="mt-2 italic">
+                    "knn! This is also not your home. Don't be so busybody!"
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="bg-accent-warm/20 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/30">
-              
-                  <p className="text-lg mb-6 leading-relaxed">
-                    Meng lacks empathy:
-                  </p>
-                  <ul className="text-left space-y-4 text-base">
-                    <li className="flex items-start gap-3">
-                      <span className="text-destructive font-bold text-lg">•</span>
-                      <span>Focus only on his <strong>own discomfort</strong>, not the hoarder's emotional state</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-destructive font-bold text-lg">•</span>
-                      <span><strong>Judge the surface problem</strong> without understanding deeper reasons like grief, trauma, or mental illness</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-destructive font-bold text-lg">•</span>
-                      <span>Use <strong>accusatory language</strong> that shames rather than supports</span>
-                    </li>
-                  </ul>
+            <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto">
+              <p className="text-xl mb-6 leading-relaxed">
+                Meng lacks empathy:
+              </p>
+              <ul className="text-left space-y-4 text-base">
+                <li className="flex items-start gap-3">
+                  <span className="text-red-600 font-bold text-lg">•</span>
+                  <span>Focus only on his <strong>own discomfort</strong>, not the hoarder's emotional state</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-600 font-bold text-lg">•</span>
+                  <span><strong>Judge the surface problem</strong> without understanding deeper reasons like grief, trauma, or mental illness</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-600 font-bold text-lg">•</span>
+                  <span>Use <strong>accusatory language</strong> that shames rather than supports</span>
+                </li>
+              </ul>
             </div>
 
           </div>

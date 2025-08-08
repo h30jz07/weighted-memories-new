@@ -23,28 +23,25 @@ export const Scene6aEmpathy: React.FC = () => {
                 />
               </div>
               
-              {/* Speech bubble */}
+              {/* Scrapbook-style speech bubble */}
               <div className="relative flex-1">
                 <div 
-                  className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                  className="speech-bubble left cursor-pointer hover:bg-gradient-to-br hover:from-amber-50 hover:to-yellow-50 transition-colors"
                   onClick={() => setShowThought(!showThought)}
                 >
-                  {/* Speech bubble tail */}
-                  <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
-                  
                   {showThought ? (
-                    <p className="text-gray-800 text-left leading-relaxed font-medium">
+                    <p className="text-left leading-relaxed">
                       "If no one helps Madam Leong then how ah? I think I should try to help her, if not i'll feel guilty sia."
                     </p>
                   ) : (
-                    <p className="text-gray-600 text-left text-xl font-bold">
+                    <p className="text-left text-2xl">
                       ...
                     </p>
                   )}
                 </div>
                 
                 {!showThought && (
-                  <p className="text-sm text-foreground-muted mt-2">Click to hear Meng's thoughts</p>
+                  <p className="nav-label mt-3">Click to hear Meng's thoughts</p>
                 )}
               </div>
             </div>

@@ -2,69 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Empathy Storytelling Design System - Dim, reflective, emotionally resonant */
+/* Scrapbook Memory Design System - Warm, nostalgic, handcrafted */
 
 @layer base {
   :root {
-    /* Atmospheric backgrounds - muted, contemplative */
-    --background: 25 8% 12%;
-    --background-secondary: 20 10% 8%;
-    --background-overlay: 25 8% 12% / 0.85;
+    /* Warm, aged paper backgrounds */
+    --background: 40 25% 92%;
+    --background-secondary: 35 20% 88%;
+    --background-overlay: 40 25% 92% / 0.95;
     
-    /* Text colors - soft and readable */
-    --foreground: 30 15% 88%;
-    --foreground-muted: 25 8% 65%;
-    --foreground-soft: 20 5% 75%;
+    /* Handwritten text colors - warm and inviting */
+    --foreground: 25 30% 25%;
+    --foreground-muted: 30 20% 45%;
+    --foreground-soft: 35 15% 55%;
 
-    /* Card and surfaces - subtle depth */
-    --card: 25 12% 15%;
-    --card-foreground: 30 15% 88%;
-    --card-border: 25 8% 22%;
+    /* Scrapbook card surfaces - slightly textured */
+    --card: 42 30% 95%;
+    --card-foreground: 25 30% 25%;
+    --card-border: 35 25% 75%;
 
-    /* Interactive elements */
-    --primary: 15 25% 45%;
-    --primary-foreground: 30 15% 88%;
-    --primary-hover: 15 30% 55%;
+    /* Interactive sticky-note elements */
+    --primary: 45 85% 70%;
+    --primary-foreground: 25 30% 25%;
+    --primary-hover: 45 90% 75%;
     
-    --secondary: 25 15% 25%;
-    --secondary-foreground: 30 15% 88%;
-    --secondary-hover: 25 20% 35%;
+    --secondary: 200 30% 85%;
+    --secondary-foreground: 25 30% 25%;
+    --secondary-hover: 200 35% 90%;
 
-    /* Emotional accent colors */
-    --accent-warm: 25 35% 55%;
-    --accent-warm-foreground: 30 15% 88%;
-    --accent-cool: 210 20% 45%;
-    --accent-cool-foreground: 30 15% 88%;
+    /* Memory accent colors - faded but warm */
+    --accent-warm: 15 65% 75%;
+    --accent-warm-foreground: 25 30% 25%;
+    --accent-cool: 210 45% 80%;
+    --accent-cool-foreground: 25 30% 25%;
 
-    /* States and feedback */
-    --muted: 25 8% 20%;
-    --muted-foreground: 25 8% 65%;
+    /* Gentle states and feedback */
+    --muted: 35 15% 85%;
+    --muted-foreground: 30 20% 45%;
     
-    --border: 25 8% 22%;
-    --input: 25 12% 18%;
-    --ring: 15 25% 45%;
+    --border: 35 25% 75%;
+    --input: 40 25% 90%;
+    --ring: 45 85% 70%;
 
-    /* Interactive highlight */
-    --highlight: 0 65% 55%;
-    --highlight-foreground: 30 15% 88%;
+    /* Warm highlight for memories */
+    --highlight: 15 75% 65%;
+    --highlight-foreground: 25 30% 25%;
 
-    /* Shadows and depth */
-    --shadow-soft: 0 0 40px hsl(0 0% 0% / 0.3);
-    --shadow-emotional: 0 0 60px hsl(15 25% 25% / 0.4);
+    /* Soft, vintage shadows */
+    --shadow-soft: 0 4px 12px hsl(25 30% 25% / 0.15);
+    --shadow-frame: 0 6px 20px hsl(25 30% 25% / 0.25);
+    --shadow-sticky: 0 3px 10px hsl(25 30% 25% / 0.2);
     
-    /* Gradients */
-    --gradient-atmospheric: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background-secondary)));
-    --gradient-overlay: linear-gradient(180deg, transparent, hsl(var(--background-overlay)));
+    /* Warm scrapbook gradients */
+    --gradient-paper: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background-secondary)));
+    --gradient-frame: linear-gradient(145deg, hsl(35 30% 80%), hsl(30 25% 70%));
     
-    /* Typography scale */
-    --text-narrative: 1.125rem;
-    --text-dialogue: 1rem;
-    --text-caption: 0.875rem;
+    /* Handwritten typography scale */
+    --text-narrative: 1.25rem;
+    --text-dialogue: 1.125rem;
+    --text-caption: 1rem;
 
-    /* Spacing and rhythm */
-    --spacing-scene: 2rem;
-    --spacing-content: 1.5rem;
-    --radius: 0.75rem;
+    /* Cozy spacing and organic curves */
+    --spacing-scene: 2.5rem;
+    --spacing-content: 2rem;
+    --radius: 12px;
+    --radius-frame: 8px;
 
     --sidebar-background: 0 0% 98%;
 
@@ -128,57 +130,148 @@
   }
 
   body {
-    @apply bg-background text-foreground font-serif;
-    font-family: 'Georgia', 'Times New Roman', serif;
+    @apply bg-background text-foreground;
+    font-family: 'Shadows Into Light', cursive;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(40 30% 95% / 0.3) 0%, transparent 20%),
+      radial-gradient(circle at 80% 20%, hsl(35 25% 90% / 0.2) 0%, transparent 15%),
+      radial-gradient(circle at 40% 80%, hsl(45 20% 88% / 0.2) 0%, transparent 18%);
   }
 
-  /* Storytelling typography */
+  /* Handwritten scrapbook typography */
   .narrative-text {
+    font-family: 'Shadows Into Light', cursive;
     font-size: var(--text-narrative);
-    line-height: 1.7;
+    line-height: 1.8;
     color: hsl(var(--foreground-soft));
+    text-shadow: 1px 1px 2px hsl(25 30% 25% / 0.1);
   }
 
   .dialogue-text {
+    font-family: 'Shadows Into Light', cursive;
     font-size: var(--text-dialogue);
-    line-height: 1.6;
+    line-height: 1.7;
     color: hsl(var(--foreground));
+    text-shadow: 0.5px 0.5px 1px hsl(25 30% 25% / 0.1);
   }
 
   .caption-text {
+    font-family: 'Shadows Into Light', cursive;
     font-size: var(--text-caption);
-    line-height: 1.5;
+    line-height: 1.6;
     color: hsl(var(--foreground-muted));
   }
 
-  /* Interactive elements */
-  .story-button {
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    border: 1px solid hsl(var(--border));
+  /* Scrapbook cut-out text overlays */
+  .scrapbook-text {
+    font-family: 'Shadows Into Light', cursive;
+    background: linear-gradient(145deg, hsl(40 50% 95%), hsl(35 45% 90%));
+    padding: 0.75rem 1.25rem;
     border-radius: var(--radius);
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
     box-shadow: var(--shadow-soft);
+    border: 2px solid hsl(35 30% 80%);
+    transform: rotate(-1deg);
+    position: relative;
+  }
+
+  .scrapbook-text::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    width: 20px;
+    height: 15px;
+    background: linear-gradient(135deg, hsl(50 60% 85%), hsl(45 55% 80%));
+    border-radius: 2px;
+    box-shadow: inset 0 1px 2px hsl(25 30% 25% / 0.2);
+  }
+
+  /* Sticky-note style interactive elements */
+  .story-button {
+    font-family: 'Shadows Into Light', cursive;
+    background: linear-gradient(145deg, hsl(var(--primary)), hsl(45 80% 75%));
+    color: hsl(var(--primary-foreground));
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.875rem 1.75rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sticky);
+    transform: rotate(-0.5deg);
+    position: relative;
+  }
+
+  .story-button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(135deg, hsl(50 70% 80%), hsl(45 65% 75%));
+    border-radius: 50%;
+    box-shadow: inset 0 1px 2px hsl(25 30% 25% / 0.3);
   }
 
   .story-button:hover {
-    background: hsl(var(--primary-hover));
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-emotional);
+    background: linear-gradient(145deg, hsl(var(--primary-hover)), hsl(45 85% 80%));
+    transform: translateY(-3px) rotate(0deg);
+    box-shadow: var(--shadow-frame);
   }
 
-  /* Clickable objects with red outline */
+  /* Framed media sections */
+  .memory-frame {
+    background: var(--gradient-frame);
+    padding: 1rem;
+    border-radius: var(--radius-frame);
+    box-shadow: var(--shadow-frame);
+    border: 3px solid hsl(30 35% 75%);
+    position: relative;
+  }
+
+  .memory-frame::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid hsl(25 25% 85%);
+    border-radius: calc(var(--radius-frame) - 4px);
+    pointer-events: none;
+  }
+
+  .memory-frame::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle, hsl(30 30% 60%) 30%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+
+  /* Clickable memory objects */
   .clickable-object {
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: var(--radius);
   }
 
   .clickable-object:hover {
-    outline: 2px solid hsl(var(--highlight));
-    outline-offset: 4px;
-    transform: scale(1.02);
+    box-shadow: var(--shadow-frame);
+    transform: scale(1.03) rotate(0.5deg);
+    border: 2px dashed hsl(var(--highlight));
+    background: hsl(var(--highlight) / 0.1);
+  }
+
+  /* Handwritten navigation labels */
+  .nav-label {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1rem;
+    color: hsl(var(--foreground-muted));
+    transform: rotate(-2deg);
+    margin: 0.5rem;
   }
 
   /* Scene transitions */
@@ -206,14 +299,70 @@
 }
 
 @layer components {
-  /* Character popup styling */
+  /* Scrapbook character popup styling */
   .character-popup {
-    background: hsl(var(--card));
-    border: 1px solid hsl(var(--card-border));
+    background: linear-gradient(135deg, hsl(var(--card)), hsl(42 35% 92%));
+    border: 2px solid hsl(var(--card-border));
     border-radius: var(--radius);
     padding: var(--spacing-content);
-    box-shadow: var(--shadow-emotional);
-    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-frame);
+    backdrop-filter: blur(5px);
+    transform: rotate(-0.5deg);
+    position: relative;
+  }
+
+  .character-popup::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 20px;
+    width: 16px;
+    height: 12px;
+    background: linear-gradient(135deg, hsl(50 65% 85%), hsl(45 60% 80%));
+    border-radius: 2px;
+    box-shadow: inset 0 1px 2px hsl(25 30% 25% / 0.2);
+  }
+
+  /* Scrapbook-style speech bubbles */
+  .speech-bubble {
+    background: linear-gradient(135deg, hsl(40 40% 95%), hsl(35 35% 90%));
+    border: 2px solid hsl(30 30% 80%);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    transform: rotate(-0.3deg);
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .speech-bubble::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: rotate(0.3deg);
+  }
+
+  /* Left-pointing speech bubble tail */
+  .speech-bubble.left::before {
+    left: -12px;
+    top: 20px;
+    border-width: 8px 12px 8px 0;
+    border-color: transparent hsl(30 30% 80%) transparent transparent;
+  }
+
+  .speech-bubble.left::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 22px;
+    width: 0;
+    height: 0;
+    border-width: 6px 10px 6px 0;
+    border-style: solid;
+    border-color: transparent hsl(35 35% 90%) transparent transparent;
+    transform: rotate(0.3deg);
   }
 
   /* Audio controls */
