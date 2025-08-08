@@ -43,7 +43,7 @@ export const Scene8Empathy: React.FC = () => {
                   onClick={() => navigate('/scene/9')}
                   className="bg-muted hover:bg-muted/80 text-foreground-muted min-h-[120px] flex flex-col justify-center p-6"
                 >
-                  <span className="font-semibold">"This smells terrible. Can you clean this up?!"</span>
+                  <span className="font-semibold">"Walao, this is damn smelly. Can you clean this up?!"</span>
                 </StoryButton>
 
                 <div className="text-foreground-muted">or</div>
