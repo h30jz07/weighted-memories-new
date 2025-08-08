@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
+import consequencesTextImage from '@/assets/scene7-consequences-text.png';
 
 export const Scene7Consequences: React.FC = () => {
   const navigate = useNavigate();
@@ -35,19 +36,12 @@ export const Scene7Consequences: React.FC = () => {
           <div className="absolute inset-0 bg-background-overlay flex items-center justify-center z-10">
             <div className="max-w-3xl mx-auto text-center p-8">
               
-              <div className="narrative-text space-y-6 mb-8">
-                <p>
-                  Madam Leong's hoarding condition worsened in isolation. A spark from the kitchen
-                  stove ignited a pile of newspapers.
-                </p>
-                <p className="text-highlight font-semibold">
-                  The tragic fire could have been prevented 
-                  with compassion and early intervention.
-                </p>
-                <p>
-                  Hoarding disorder is not a choice. It's a mental health condition 
-                  that requires understanding, not judgment.
-                </p>
+              <div className="max-w-2xl mx-auto mb-8">
+                <img 
+                  src={consequencesTextImage} 
+                  alt="Madam Leong's hoarding condition worsened in isolation. A spark from the kitchen stove ignited a pile of newspapers. The tragic fire could have been prevented with compassion and early intervention. Hoarding disorder is not a choice. It's a mental health condition that requires understanding, not judgment."
+                  className="w-full h-auto"
+                />
               </div>
 
               <div className="space-y-4">

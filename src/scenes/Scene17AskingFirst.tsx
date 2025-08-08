@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
+import initialTextImage from '@/assets/scene17-initial-text.png';
+import dialogueTextImage from '@/assets/scene17-dialogue-text.png';
 
 export const Scene17AskingFirst: React.FC = () => {
   const navigate = useNavigate();
@@ -39,11 +41,12 @@ export const Scene17AskingFirst: React.FC = () => {
               {/* <h1 className="text-3xl font-bold mb-6 text-accent-warm">
                 Asking for Permission
               </h1> */}
-              <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
-                <p className="text-lg">
-                  This time, Meng holds up a ragged old singlet.
-                  He asks for my permission before making any decisions...
-                </p>
+              <div className="max-w-2xl mx-auto">
+                <img 
+                  src={initialTextImage} 
+                  alt="This time, Meng holds up a ragged old singlet. He asks for my permission before making any decisions..."
+                  className="w-full h-auto"
+                />
               </div>
               </div>
             </div>
@@ -68,18 +71,12 @@ export const Scene17AskingFirst: React.FC = () => {
           </div>
           
           <div className="narrative-text space-y-6 mb-12">
-            <div className="bg-card p-6 rounded-lg border border-accent-warm/20">
-              {/* <h2 className="text-xl font-semibold mb-4 text-accent-warm">
-                A Simple but Profound Moment
-              </h2> */}
-              <p className="mb-4 italic">
-                "Madam Leong, would it be okay 
-                if we moved this to the recycling pile?"
-              </p>
-              <p>
-                I look at it, and pause. The singlet reminds me of my husband. With a soft nod, I give in, "Ok lah, 
-                I think that one can go." 
-              </p>
+            <div className="max-w-2xl mx-auto">
+              <img 
+                src={dialogueTextImage} 
+                alt="Dialogue: Madam Leong, would it be okay if we moved this to the recycling pile? I look at it, and pause. The singlet reminds me of my husband. With a soft nod, I give in, Ok lah, I think that one can go."
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Character conversation with speech bubble */}
