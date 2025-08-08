@@ -30,8 +30,11 @@ export const Scene13Reflection: React.FC = () => {
                 </p>
                 <p className="mb-4">
                   Fion stares at her computer screen, feeling the weight of all the cases 
-                  she's handled. The emotional strain of constant empathy and support 
-                  takes a slow toll on her.
+                  she's handled.
+                </p>
+                <p className="mb-4">
+                  The emotional strain of constant empathy and support 
+                  takes a toll on her.
                 </p>
                 {/* <p className="text-accent-warm font-medium">
                   Even those who help others need support. Compassion fatigue is real.
