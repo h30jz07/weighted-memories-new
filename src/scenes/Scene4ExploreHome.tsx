@@ -127,7 +127,7 @@ export const Scene4ExploreHome: React.FC = () => {
         <div className="relative z-10 p-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl font-bold mb-4 text-highlight">
-              The Cleanup Process
+              The Cleanup
             </h1>
             
             <div className="narrative-text max-w-2xl mx-auto mb-6">
