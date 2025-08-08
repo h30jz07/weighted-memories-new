@@ -29,7 +29,7 @@ export const Scene9Argument: React.FC = () => {
               />
             </div>
 
-            <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto mt-12">
+            <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto mt-20">
               <p className="text-xl mb-6 leading-relaxed">
                 Meng lacks empathy:
               </p>
