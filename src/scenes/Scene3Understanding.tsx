@@ -10,9 +10,6 @@ export const Scene3Understanding: React.FC = () => {
     <SceneTransition>
       <div className="min-h-screen bg-gradient-to-b from-background to-background-secondary">
         <div className="max-w-4xl mx-auto px-8 py-12">
-          <h1 className="text-4xl font-bold mb-8 text-center text-foreground">
-            Understanding Hoarding Disorder
-          </h1>
           
           <div className="narrative-text space-y-8">
             <div className="bg-card p-6 rounded-lg border border-card-border">
