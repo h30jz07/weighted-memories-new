@@ -58,10 +58,10 @@ export const Scene11SocialWorker: React.FC = () => {
                   Key Principles Fion Follows:
                 </h3>
                 <ul className="text-left space-y-2">
-                  <li>• <strong className="text-accent-cool">Listen first</strong> - Understanding the individual's history and emotional attachments to each of their possessions is important.</li>
+                  <li>• <strong className="text-accent-cool">Listen first</strong> - Understand the individual's history and emotional attachments to their possessions</li>
                   <li>• <strong className="text-accent-cool">Respect autonomy</strong> - Always seek consent before moving or discarding items, ensuring the person remains in control of their environment and decisions.</li>
-                  <li>• <strong className="text-accent-cool">Focus on safety</strong> - Address health and safety concerns gently, balancing basic safety with respect for the individual's self-worth.</li>
-                  <li>• <strong className="text-accent-cool">Build trust</strong> - Create a supportive, nonjudgmental space where empathy drives every interaction - because lasting change begins with human connection.</li>
+                  <li>• <strong className="text-accent-cool">Focus on safety</strong> - Address health and safety concerns gently, balancing basic safety with respect for the individual.</li>
+                  <li>• <strong className="text-accent-cool">Build trust</strong> - Create a supportive, nonjudgmental space where empathy drives every interaction.</li>
                 </ul>
               </div>
               
