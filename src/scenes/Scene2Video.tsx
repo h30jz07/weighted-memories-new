@@ -52,9 +52,6 @@ export const Scene2Video: React.FC = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="max-w-4xl w-full mx-auto p-8">
           <header className="text-center mb-8">
-            <h1 className="text-3xl font-bold mb-4 text-foreground">
-              Understanding Hoarding Disorder
-            </h1>
             <p className="narrative-text max-w-2xl mx-auto">
               Before we continue with our story, the video below offers a glimpse into what hoarding disorder is like.
             </p>
