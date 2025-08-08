@@ -52,9 +52,6 @@ export const Scene1Characters: React.FC = () => {
         <div className="absolute inset-0 bg-background-overlay"></div>
         <div className="relative z-10 max-w-6xl mx-auto">
           <header className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4 text-foreground">
-              Meet the Characters
-            </h1>
             <p className="narrative-text max-w-2xl mx-auto">
               Everyone carries their own perspective, struggles, and hopes. 
             </p>
