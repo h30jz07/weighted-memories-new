@@ -34,7 +34,7 @@ export const Scene9Argument: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-accent-warm">Madam Leong:</span>
                 <p className="mt-2 italic">
-                  "knn! This is also not your home. Mind your own business!"
+                  "knn! This is also not your home. Don't be so busybody!"
                 </p>
               </div>
             </div>
