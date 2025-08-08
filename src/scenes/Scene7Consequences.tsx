@@ -57,12 +57,9 @@ export const Scene7Consequences: React.FC = () => {
                   onClick={() => navigate('/scene/6')}
                   className="text-lg px-8 py-4"
                 >
-                  ← Try Again: Choose Empathy
+                  ← Try Again
                 </StoryButton>
                 
-                <p className="caption-text text-foreground-muted">
-                  Every choice we make impacts the lives around us
-                </p>
               </div>
             </div>
           </div>
