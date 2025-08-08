@@ -42,8 +42,7 @@ export const Scene17AskingFirst: React.FC = () => {
               <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
                 <p className="text-lg">
                   This time, Meng holds up a ragged old singlet.
-                  He gently asks Madam Leong 
-                  for her permission before making any decisions...
+                  He asks for my permission before making any decisions...
                 </p>
               </div>
               </div>
