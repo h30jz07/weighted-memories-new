@@ -109,7 +109,7 @@ export const Scene18Breakdown: React.FC = () => {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 mt-16">
                 {showThought && (
                   <StoryButton
                     variant="secondary"
