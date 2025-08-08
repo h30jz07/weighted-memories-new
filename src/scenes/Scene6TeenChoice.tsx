@@ -23,7 +23,7 @@ export const Scene6TeenChoice: React.FC = () => {
           <div className="mb-12">
             <div className="narrative-text max-w-4xl mx-auto">
               <img 
-                src="/lovable-uploads/5373ae43-e2a9-4bef-8be1-2f018c38e136.png" 
+                src="/lovable-uploads/38ae194a-5fe2-4f97-a0d7-30e78bf190cd.png" 
                 alt="Meng walks past Madam Leong's unit and notices the conditions"
                 className="w-full h-auto"
               />
