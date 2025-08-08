@@ -17,11 +17,6 @@ export const Scene0Homepage: React.FC = () => {
           {/* Dark overlay for readability */}
           <div className="absolute inset-0 bg-background-overlay"></div>
           
-          {/* Audio controls positioned in top right with higher z-index */}
-          <div className="absolute top-4 right-4 z-50">
-            <AudioManager />
-          </div>
-          
           {/* Content */}
           <div className="relative z-10 text-center max-w-4xl px-6">
             <div className="mb-8">
@@ -48,10 +43,6 @@ export const Scene0Homepage: React.FC = () => {
             </StoryButton>
           </div>
 
-          {/* Ambient sound indicators */}
-          <div className="absolute bottom-4 left-4 caption-text">
-            <p>🎵 Muffled traffic, wind, and birds chirping</p>
-          </div>
         </div>
       </SceneTransition>
   );
