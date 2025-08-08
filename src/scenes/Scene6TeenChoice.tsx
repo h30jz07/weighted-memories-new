@@ -33,7 +33,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 He notices items spilling out into the corridor.
               </p>
               <p>
-                Other neighbors gossip and complain, some even leave passive-aggressive notes.
+                Other neighbors whisper and complain, some even leave passive-aggressive notes.
               </p>
               {/* <p className="text-accent-warm font-medium">
                 In this moment, Meng has a choice that will shape what happens next...
@@ -53,7 +53,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 onClick={() => navigate('/scene/7')}
                 className="bg-muted hover:bg-muted/80 text-foreground-muted min-h-[120px] flex flex-col justify-center p-6"
               >
-                <span className="font-semibold">"Ew this is disgusting. Why can't she clean up her mess?"</span>
+                <span className="font-semibold">"WAH what is that smell??. Can this aunty clean up her own mess or not sia?"</span>
               </StoryButton>
 
               <div className="text-amber-900 bg-amber-900/20 px-4 py-2 rounded-full">or</div>
@@ -63,7 +63,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 onClick={() => navigate('/scene/6a')}
                 className="min-h-[120px] flex flex-col justify-center p-6"
               >
-                <span className="font-semibold">"I wonder if she needs any help."</span>
+                <span className="font-semibold">"Hmm, maybe aunty needs help with cleaning up?"</span>
               </StoryButton>
             </div>
 
