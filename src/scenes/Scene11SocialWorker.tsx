@@ -69,7 +69,7 @@ export const Scene11SocialWorker: React.FC = () => {
 
             <StoryButton
               variant="primary"
-              onClick={() => navigate('/scene/12')}
+              onClick={() => navigate('/scene/13')}
               className="text-lg px-8 py-4"
             >
               Next {'>'}

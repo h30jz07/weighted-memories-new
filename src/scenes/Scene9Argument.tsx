@@ -26,7 +26,7 @@ export const Scene9Argument: React.FC = () => {
           <div className="space-y-4 mt-32">
             <StoryButton
               variant="primary"
-              onClick={() => navigate('/scene/9a')}
+              onClick={() => navigate('/scene/8')}
               className="text-lg px-8 py-4"
             >
               Next &gt;
