@@ -70,18 +70,12 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                   />
                 </div>
 
-                <div className="bg-card p-6 rounded-lg border border-destructive/20">
-                  {/* <h2 className="text-xl font-semibold mb-4 text-destructive">
-                    Madam Leong's Anguished Response:
-                  </h2> */}
-                  <blockquote className="text-lg italic mb-4">
-                    "Ah boy, stop! You don't understand lah! Why you just throw that away! That was from 
-                    when my boy was born. I want to show him once he is older you know!?"
-                  </blockquote>
-                  <p>
-                    Hearing her response, Meng realises the magnitude of the mistake. What seemed worthless to him
-                    was precious in Madam Leong's eyes.
-                  </p>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lovable-uploads/9acc4e61-b1bb-4ae8-ab18-d3d308fd9b92.png" 
+                    alt="Madam Leong's emotional response to Meng throwing away her precious newspaper" 
+                    className="max-w-4xl w-full h-auto rounded-lg"
+                  />
                 </div>
 
                 {/* Character conversation with speech bubble */}
