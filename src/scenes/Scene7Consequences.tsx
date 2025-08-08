@@ -35,19 +35,12 @@ export const Scene7Consequences: React.FC = () => {
           <div className="absolute inset-0 bg-background-overlay flex items-center justify-center z-10">
             <div className="max-w-3xl mx-auto text-center p-8">
               
-              <div className="narrative-text space-y-6 mb-8">
-                <p>
-                  Madam Leong's hoarding condition worsened in isolation. A spark from the kitchen
-                  stove ignited a pile of newspapers.
-                </p>
-                <p className="text-highlight font-semibold">
-                  The tragic fire could have been prevented 
-                  with compassion and early intervention.
-                </p>
-                <p>
-                  Hoarding disorder is not a choice. It's a mental health condition 
-                  that requires understanding, not judgment.
-                </p>
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/lovable-uploads/ec0a7238-ab6d-4229-91ac-bd4ad2e41378.png" 
+                  alt="Text about Madam Leong's hoarding condition and fire prevention" 
+                  className="max-w-full h-auto"
+                />
               </div>
 
               <div className="space-y-4">
