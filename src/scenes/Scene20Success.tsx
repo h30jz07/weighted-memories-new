@@ -74,13 +74,13 @@ export const Scene20Success: React.FC = () => {
                   A Transformation Built on Respect
                 </h2> */}
                 <p className="mb-4">
-                  After several hours of patient, collaborative work, Madam Leong's flat seems transformed. 
-                  It's not magazine-perfect, but it's safe, navigable, and most importantly, still feels like home.
+                  Finally after so long, my flat looks brand new. The living room is clear, the kitchen is functional,
+                  the bedroom is clean.
                 </p>
-                <p>
+                {/* <p>
                   The pathways are clear, the kitchen is functional, and Madam Leong has kept the 
                   items that truly matter to her while letting go of things that no longer serve her.
-                </p>
+                </p> */}
               </div>
 
               {/* Character Conversations */}
