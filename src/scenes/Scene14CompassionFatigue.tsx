@@ -14,16 +14,16 @@ export const Scene14CompassionFatigue: React.FC = () => {
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-muted/30 flex items-center justify-center">
               <span className="text-4xl">💔</span>
             </div>
-            <h1 className="text-3xl font-bold mb-6 text-foreground">
+            {/* <h1 className="text-3xl font-bold mb-6 text-foreground">
               The Weight of Caring
-            </h1>
+            </h1> */}
           </div>
           
           <div className="narrative-text max-w-3xl mx-auto space-y-6 mb-12">
             <div className="bg-card p-6 rounded-lg border border-card-border">
-              <h2 className="text-xl font-semibold mb-4 text-accent-cool">
+              {/* <h2 className="text-xl font-semibold mb-4 text-accent-cool">
                 Fion's Internal Struggle
-              </h2>
+              </h2> */}
               <p className="mb-4 italic">
                 "I have so many other cases to handle. Sometimes I feel like I'm carrying 
                 everyone's pain, and I'm not sure I have enough left to give."
@@ -42,13 +42,13 @@ export const Scene14CompassionFatigue: React.FC = () => {
                 with burnout, feeling overwhelmed by others' pain, and questioning whether 
                 they're making a difference.
               </p>
-              <p className="font-medium">
+              {/* <p className="font-medium">
                 "But every time I show up, I remind someone they're not forgotten. 
                 And sometimes, that's everything."
-              </p>
+              </p> */}
             </div> 
 
-            <div className="bg-accent-warm/10 p-6 rounded-lg border border-accent-warm/30">
+            {/* <div className="bg-accent-warm/10 p-6 rounded-lg border border-accent-warm/30">
               <h2 className="text-xl font-semibold mb-4 text-accent-warm">
                 Small Acts, Big Impact
               </h2>
@@ -65,7 +65,7 @@ export const Scene14CompassionFatigue: React.FC = () => {
                   "I never thought anyone would understand, but you listened to my story."
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
 
