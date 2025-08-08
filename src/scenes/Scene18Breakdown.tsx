@@ -64,11 +64,13 @@ export const Scene18Breakdown: React.FC = () => {
               {/* <h2 className="text-xl font-semibold mb-4 text-foreground">
                 The Moment Everything Becomes Too Much
               </h2> */}
-              <p className="mb-4">
-                I saw my late husband's precious books thrown away. Suddenly, I don't know why, but I could not take it anymore.
-                I sat down on the floor. I looked around me, my things being laid on the floor.
-                Before I could stop myself, tears fell from my face.
-              </p>
+              <div className="mb-4">
+                <img 
+                  src="/lovable-uploads/8a935b04-f58d-4455-869c-ce9cb2e25002.png" 
+                  alt="Handwritten text describing the emotional breakdown" 
+                  className="w-full max-w-4xl mx-auto"
+                />
+              </div>
               <blockquote className="text-lg italic text-accent-warm">
                 "Aiya please, just stop. This isn't just stuff. These books belonged to him. Throwing them away is like throwing him away."
               </blockquote>
