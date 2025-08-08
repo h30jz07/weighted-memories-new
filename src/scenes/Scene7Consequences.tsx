@@ -25,7 +25,7 @@ export const Scene7Consequences: React.FC = () => {
             {/* Placeholder for fire video */}
             <div className="text-center text-red-400">
               <div className="text-8xl mb-4 animate-pulse">🔥</div>
-              <p className="text-xl">Fire spreads through the flat...</p>
+              <p className="text-xl">Madam Leong's hoarding was left unattended...</p>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ export const Scene7Consequences: React.FC = () => {
                   stove ignited a pile of newspapers.
                 </p>
                 <p className="text-highlight font-semibold">
-                  A small kitchen fire became a tragedy that could have been prevented 
+                  The tragic fire could have been prevented 
                   with compassion and early intervention.
                 </p>
                 <p>
