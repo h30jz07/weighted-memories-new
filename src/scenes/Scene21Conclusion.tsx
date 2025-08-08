@@ -17,8 +17,8 @@ export const Scene21Conclusion: React.FC = () => {
           <div className="narrative-text space-y-8 mb-12">
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/b49779bf-3b2e-4d73-8137-9f12baf9f5f6.png" 
-                alt="Scrap paper with conclusion text" 
+                src="/lovable-uploads/178e3ffe-1cf9-420e-a903-f0b5956b91eb.png" 
+                alt="Empathy conclusion text with three colored sections" 
                 className="max-w-full h-auto"
               />
             </div>
