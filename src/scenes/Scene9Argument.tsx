@@ -29,11 +29,11 @@ export const Scene9Argument: React.FC = () => {
               />
             </div>
 
-            <div className="flex justify-center mt-20">
+            <div className="flex justify-center mt-40">
               <img 
                 src="/lovable-uploads/cda816e5-fb42-409b-9985-cff13f3849d8.png" 
                 alt="Meng lacks empathy explanation" 
-                className="max-w-full h-auto"
+                className="max-w-full h-auto transform scale-150"
               />
             </div>
 
