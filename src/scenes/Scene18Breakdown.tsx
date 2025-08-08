@@ -35,7 +35,7 @@ export const Scene18Breakdown: React.FC = () => {
               <div className="absolute inset-0 bg-black/40"></div>
               <div className="relative z-10 text-center">
                 <div className="mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-4xl animate-bounce">😭</span>
+                  {/* <span className="text-4xl animate-bounce">😭</span> */}
                 </div>
                 {/* <h1 className="text-3xl font-bold mb-6 text-white">
                   Emotional Overwhelm
@@ -100,9 +100,7 @@ export const Scene18Breakdown: React.FC = () => {
 
                       
                       She's clearly in pain and overwhelmed. If I step in now and try to fix things, 
-                      I might lose her respect. Maybe the best thing is to just be present, let her know her 
-                      emotions are safe here. I should slow down and give her space, and show her that I care. 
-                      This way, I can support her to make decisions at her own pace."
+                      I might lose her respect. I should slow down and give her space, and show her that I care."
                     </p>
                   ) : (
                     <p className="text-gray-600 text-left text-xl font-bold">
