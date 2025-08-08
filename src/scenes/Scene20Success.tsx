@@ -26,7 +26,7 @@ export const Scene20Success: React.FC = () => {
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${cleanedImage})` }}
+          style={{ backgroundImage: `url('/lovable-uploads/5356f4ba-19be-4415-bf5d-5e38001bb29f.png')` }}
         >
           <div className="absolute inset-0 bg-background-overlay/70" />
         </div>
