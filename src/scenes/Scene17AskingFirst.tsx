@@ -40,10 +40,11 @@ export const Scene17AskingFirst: React.FC = () => {
                 Asking for Permission
               </h1> */}
               <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
-                <p className="text-lg">
-                  This time, Meng holds up a ragged old singlet.
-                  He asks for my permission before making any decisions...
-                </p>
+                <img 
+                  src="/lovable-uploads/d3da4358-742f-405d-b578-9d073c707932.png" 
+                  alt="This time, Meng holds up a ragged old singlet. He asks for my permission before making any decisions..."
+                  className="w-full h-auto"
+                />
               </div>
               </div>
             </div>
