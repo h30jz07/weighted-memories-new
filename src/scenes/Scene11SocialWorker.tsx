@@ -47,9 +47,6 @@ export const Scene11SocialWorker: React.FC = () => {
             <div className="narrative-text space-y-6 mb-12">
               
               <div className="bg-card p-6 rounded-lg border border-card-border">
-                <h2 className="text-xl font-semibold mb-4 text-accent-cool">
-                  Fion's Perspective
-                </h2>
                 <p className="italic">
                   "As a social worker, I know that I need to have more patience and empathy to help thosethat struggle with hoarding. 
                   Change will only happen when they feel supported, not judged."
