@@ -24,13 +24,11 @@ export const Scene8Empathy: React.FC = () => {
             
             <div className="narrative-text max-w-2xl mx-auto mb-12">
               <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border mb-8">
-                <p className="mb-4">
-                  Meng stands outside Madam Leong's door and hears movement inside. 
-                </p>
-                <p className="mb-4">
-                  The smell is overwhelming, and part of him wants to walk away. But something 
-                  tells him to just stay ... and maybe say something...
-                </p>
+                <img 
+                  src="/lovable-uploads/c3a3be0d-10b8-40a9-af8b-611201231665.png" 
+                  alt="Meng stands outside Madam Leong's door" 
+                  className="max-w-full h-auto mx-auto"
+                />
               </div>
             </div>
 
