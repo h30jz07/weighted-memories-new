@@ -18,14 +18,14 @@ const characters: Character[] = [
   {
     name: "Madam Leong",
     role: "The Hoarder",
-    backstory: "Madam Leong lives in a one-room HDB flat and accumulated various items over the years. She buys new things while older items get lost in the mess. She insists that all items are important to her in their own ways.",
+    backstory: "Madam Leong lives in a one-room HDB flat and accumulated various items over the years. She insists that all items are important to her in their own ways.",
     objective: "Feeling abandoned by her husband and her kids. She only finds joy in her possessions that remind her of them.",
     image: "/lovable-uploads/63b361ca-910e-4e13-9ebb-c7c63ba94393.png"
   },
   {
     name: "Meng",
     role: "The neighbour",
-    backstory: "Meng is Madam Leong's neighbor. He walks past her house every day, noticing her items stacked from floor to ceiling.",
+    backstory: "Meng is Madam Leong's neighbor. He walks past her unit every day, noticing her items stacked from floor to ceiling.",
     objective: "Has a growing concern about hygiene and safety issues for Madam Leong and thus wants to see if he can help her out.",
     image: "/lovable-uploads/59c1b913-5b5e-4470-9231-4781cfb474a2.png"
   },
