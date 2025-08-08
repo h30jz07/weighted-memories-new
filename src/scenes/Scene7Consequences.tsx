@@ -18,7 +18,7 @@ export const Scene7Consequences: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-black relative flex items-center justify-center">
+      <div className="min-h-screen relative flex items-center justify-center" style={{ backgroundColor: '#1a1410' }}>
         {/* Fire video background (placeholder) */}
         <div className="absolute inset-0 bg-gradient-to-t from-red-900/30 to-orange-900/20">
           <div className="w-full h-full flex items-center justify-center">
@@ -37,8 +37,8 @@ export const Scene7Consequences: React.FC = () => {
               
               <div className="flex justify-center mb-8">
                 <img 
-                  src="/lovable-uploads/ec0a7238-ab6d-4229-91ac-bd4ad2e41378.png" 
-                  alt="Text about Madam Leong's hoarding condition and fire prevention" 
+                  src="/lovable-uploads/ae515f3b-2c79-479a-a067-af515515b4cc.png" 
+                  alt="Madam Leong's hoarding condition worsened and fire prevention information" 
                   className="max-w-full h-auto transform scale-150"
                 />
               </div>

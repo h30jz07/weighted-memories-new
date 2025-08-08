@@ -23,8 +23,8 @@ export const Scene6TeenChoice: React.FC = () => {
           <div className="mb-12">
             <div className="narrative-text max-w-4xl mx-auto">
               <img 
-                src="/lovable-uploads/338320a3-a0d0-412c-8522-3a61df55af46.png" 
-                alt="Scrap paper with scene text"
+                src="/lovable-uploads/5373ae43-e2a9-4bef-8be1-2f018c38e136.png" 
+                alt="Meng walks past Madam Leong's unit and notices the conditions"
                 className="w-full h-auto"
               />
             </div>
