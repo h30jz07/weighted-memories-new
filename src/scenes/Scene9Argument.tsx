@@ -29,7 +29,7 @@ export const Scene9Argument: React.FC = () => {
               onClick={() => navigate('/scene/8')}
               className="text-lg px-8 py-4"
             >
-              Retry &gt;
+              ← Retry
             </StoryButton>
           </div>
         </div>
