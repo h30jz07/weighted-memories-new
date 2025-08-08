@@ -25,7 +25,7 @@ export const Scene7Consequences: React.FC = () => {
             {/* Placeholder for fire video */}
             <div className="text-center text-red-400">
               <div className="text-8xl mb-4 animate-pulse">🔥</div>
-              <p className="text-xl">Fire spreads through the building...</p>
+              <p className="text-xl">Fire spreads through the flat...</p>
             </div>
           </div>
         </div>
