@@ -38,7 +38,7 @@ export const Scene9aEmpathy: React.FC = () => {
               onClick={() => navigate('/scene/8')}
               className="text-lg px-8 py-4"
             >
-              ← Retry
+              ← Try again
             </StoryButton>
           </div>
         </div>
