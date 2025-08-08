@@ -66,7 +66,7 @@ export const Scene3Understanding: React.FC = () => {
               onClick={() => navigate('/scene/5')}
               className="text-lg px-8 py-4"
             >
-              Continue →
+              Next >
             </StoryButton>
           </div>
         </div>
