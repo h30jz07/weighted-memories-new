@@ -108,8 +108,8 @@ export const Scene20Success: React.FC = () => {
                         
                         {showMadamLeongThought ? (
                           <p className="text-gray-800 text-left leading-relaxed italic">
-                            "I never thought anyone would understand. But they listened to my stories 
-                            and helped me see which memories I could carry in my heart instead of in boxes."
+                            "I thought no one understand me. Who cares about an old auntie like me?
+                            But everyone here listened to me. They did not shame me, but respected my wishes."
                           </p>
                         ) : (
                           <p className="text-gray-600 text-left text-xl font-bold">
