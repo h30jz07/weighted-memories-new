@@ -19,34 +19,35 @@ export const Scene6TeenChoice: React.FC = () => {
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          {/* Animation scene description on scrap paper */}
-          <div className="mb-12 flex justify-center">
-            <div className="relative w-96 h-96 flex items-center justify-center">
-              {/* Scrap paper background */}
-              <img 
-                src="/lovable-uploads/c13330b2-939f-474a-9fce-4fb3d9815998.png" 
-                alt="Scrap paper background"
-                className="absolute inset-0 w-full h-full object-contain"
-              />
-              
-              {/* Text content arranged vertically on the paper */}
-              <div className="relative z-10 w-72 space-y-3 text-center px-6">
-                <p className="text-gray-800 text-sm leading-relaxed font-medium">
+          {/* Animation scene description */}
+          <div className="mb-12">
+            <div className="narrative-text max-w-2xl mx-auto space-y-6">
+              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
+                <p className="text-foreground text-lg leading-relaxed">
                   Meng walks past Madam Leong's unit on his way home from school.
                 </p>
-                
-                <p className="text-gray-800 text-sm leading-relaxed font-medium">
+              </div>
+              
+              <div className="scrapbook-cutout bg-accent-warm/20 p-4 shadow-lg transform rotate-1 border border-accent-warm/40">
+                <p className="text-foreground text-lg leading-relaxed">
                   The smell hits him first.
                 </p>
-                
-                <p className="text-gray-800 text-sm leading-relaxed font-medium">
+              </div>
+              
+              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
+                <p className="text-foreground text-lg leading-relaxed">
                   He notices items spilling out into the corridor.
                 </p>
-                
-                <p className="text-gray-800 text-sm leading-relaxed font-medium">
+              </div>
+              
+              <div className="scrapbook-cutout bg-muted/60 p-4 shadow-lg transform rotate-1 border border-muted/50">
+                <p className="text-foreground text-lg leading-relaxed">
                   Other neighbors gossip and complain, some even leave passive-aggressive notes.
                 </p>
               </div>
+              {/* <p className="text-accent-warm font-medium">
+                In this moment, Meng has a choice that will shape what happens next...
+              </p> */}
             </div>
           </div>
 
