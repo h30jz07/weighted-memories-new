@@ -44,7 +44,7 @@ export const Scene0Homepage: React.FC = () => {
               }}
               className="text-lg px-8 py-4"
             >
-              Play
+              Play >
             </StoryButton>
           </div>
 
