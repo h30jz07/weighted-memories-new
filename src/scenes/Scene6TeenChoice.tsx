@@ -21,27 +21,27 @@ export const Scene6TeenChoice: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Animation scene description */}
           <div className="mb-12">
-            <div className="narrative-text max-w-2xl mx-auto space-y-6">
-              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
-                <p className="text-foreground text-lg leading-relaxed">
+            <div className="narrative-text max-w-2xl mx-auto space-y-3">
+              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform -rotate-1 border border-card-border/20 rounded-sm">
+                <p className="text-foreground text-base leading-relaxed">
                   Meng walks past Madam Leong's unit on his way home from school.
                 </p>
               </div>
               
-              <div className="scrapbook-cutout bg-accent-warm/20 p-4 shadow-lg transform rotate-1 border border-accent-warm/40">
-                <p className="text-foreground text-lg leading-relaxed">
+              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform rotate-1 border border-card-border/20 rounded-sm ml-8">
+                <p className="text-foreground text-base leading-relaxed">
                   The smell hits him first.
                 </p>
               </div>
               
-              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
-                <p className="text-foreground text-lg leading-relaxed">
+              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform -rotate-1 border border-card-border/20 rounded-sm">
+                <p className="text-foreground text-base leading-relaxed">
                   He notices items spilling out into the corridor.
                 </p>
               </div>
               
-              <div className="scrapbook-cutout bg-muted/60 p-4 shadow-lg transform rotate-1 border border-muted/50">
-                <p className="text-foreground text-lg leading-relaxed">
+              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform rotate-1 border border-card-border/20 rounded-sm ml-12">
+                <p className="text-foreground text-base leading-relaxed">
                   Other neighbors gossip and complain, some even leave passive-aggressive notes.
                 </p>
               </div>
