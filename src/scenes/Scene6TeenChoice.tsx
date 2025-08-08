@@ -8,33 +8,43 @@ export const Scene6TeenChoice: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div 
-        className="min-h-screen flex items-center justify-center p-8 relative"
-        style={{
-          backgroundImage: `url('/lovable-uploads/db52e826-2866-4c75-b681-49f90e85a730.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Background overlay with blur effect */}
-        <div className="absolute inset-0 bg-background/10 backdrop-blur-sm"></div>
+      <div className="min-h-screen flex items-center justify-center p-8 relative bg-background">
+        {/* Scrapbook paper texture overlay */}
+        <div className="absolute inset-0 opacity-10" 
+             style={{
+               backgroundImage: `radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.1) 1px, transparent 1px),
+                                radial-gradient(circle at 75% 75%, rgba(160, 82, 45, 0.08) 1px, transparent 1px)`,
+               backgroundSize: '20px 20px'
+             }}>
+        </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Animation scene description */}
           <div className="mb-12">
-            <div className="narrative-text max-w-2xl mx-auto space-y-4 bg-amber-900/30 backdrop-blur-sm p-6 rounded-lg">
-              <p>
-                Meng walks past Madam Leong's unit on his way home from school. 
-              </p>
-              <p>
-                The smell hits him first.</p>
-              <p>
-                He notices items spilling out into the corridor.
-              </p>
-              <p>
-                Other neighbors gossip and complain, some even leave passive-aggressive notes.
-              </p>
+            <div className="narrative-text max-w-2xl mx-auto space-y-6">
+              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
+                <p className="text-foreground text-lg leading-relaxed">
+                  Meng walks past Madam Leong's unit on his way home from school.
+                </p>
+              </div>
+              
+              <div className="scrapbook-cutout bg-accent-warm/20 p-4 shadow-lg transform rotate-1 border border-accent-warm/40">
+                <p className="text-foreground text-lg leading-relaxed">
+                  The smell hits him first.
+                </p>
+              </div>
+              
+              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
+                <p className="text-foreground text-lg leading-relaxed">
+                  He notices items spilling out into the corridor.
+                </p>
+              </div>
+              
+              <div className="scrapbook-cutout bg-muted/60 p-4 shadow-lg transform rotate-1 border border-muted/50">
+                <p className="text-foreground text-lg leading-relaxed">
+                  Other neighbors gossip and complain, some even leave passive-aggressive notes.
+                </p>
+              </div>
               {/* <p className="text-accent-warm font-medium">
                 In this moment, Meng has a choice that will shape what happens next...
               </p> */}
