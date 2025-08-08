@@ -19,9 +19,6 @@ export const Scene9aEmpathy: React.FC = () => {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-semibold mb-4 text-highlight">
-                💡 Why Empathy Is Important Here
-              </h2>
               <p className="text-lg leading-relaxed mb-4">
                 Empathy is crucial in this situation because:
               </p>
