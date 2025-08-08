@@ -21,63 +21,43 @@ export const Scene6TeenChoice: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Animation scene description */}
           <div className="mb-12">
-            <div className="narrative-text max-w-4xl mx-auto space-y-4">
-              {/* First text snippet on scrap paper */}
-              <div className="relative inline-block transform -rotate-1" style={{ width: '280px', height: '120px' }}>
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('/lovable-uploads/2a440965-7c50-4633-a8a8-14bb0a8b2a81.png')`,
-                    backgroundPosition: '10% 15%',
-                    backgroundSize: '600px 400px'
-                  }}
-                ></div>
-                <p className="absolute inset-0 flex items-center justify-center text-amber-900 text-sm font-medium leading-relaxed px-6 text-center">
+            <div className="narrative-text max-w-2xl mx-auto space-y-3">
+              <div className="inline-block px-4 py-2 shadow-md transform -rotate-1 rounded-sm"
+                   style={{
+                     background: 'linear-gradient(135deg, #f5f1e8 0%, #ede4d3 50%, #e8dcc6 100%)',
+                     border: '1px solid #d4c4a8'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   Meng walks past Madam Leong's unit on his way home from school.
                 </p>
               </div>
               
-              {/* Second text snippet */}
-              <div className="relative inline-block transform rotate-1 ml-8" style={{ width: '200px', height: '100px' }}>
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('/lovable-uploads/2a440965-7c50-4633-a8a8-14bb0a8b2a81.png')`,
-                    backgroundPosition: '65% 15%',
-                    backgroundSize: '600px 400px'
-                  }}
-                ></div>
-                <p className="absolute inset-0 flex items-center justify-center text-amber-900 text-sm font-medium leading-relaxed px-4 text-center">
+              <div className="inline-block px-4 py-2 shadow-md transform rotate-1 rounded-sm ml-8"
+                   style={{
+                     background: 'linear-gradient(135deg, #f8f4e6 0%, #f0e6d2 50%, #e9ddc4 100%)',
+                     border: '1px solid #d9c7a3'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   The smell hits him first.
                 </p>
               </div>
               
-              {/* Third text snippet */}
-              <div className="relative inline-block transform -rotate-1" style={{ width: '250px', height: '110px' }}>
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('/lovable-uploads/2a440965-7c50-4633-a8a8-14bb0a8b2a81.png')`,
-                    backgroundPosition: '10% 60%',
-                    backgroundSize: '600px 400px'
-                  }}
-                ></div>
-                <p className="absolute inset-0 flex items-center justify-center text-amber-900 text-sm font-medium leading-relaxed px-6 text-center">
+              <div className="inline-block px-4 py-2 shadow-md transform -rotate-1 rounded-sm"
+                   style={{
+                     background: 'linear-gradient(135deg, #f6f2ea 0%, #ede3d4 50%, #e6d9c8 100%)',
+                     border: '1px solid #d6c5a6'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   He notices items spilling out into the corridor.
                 </p>
               </div>
               
-              {/* Fourth text snippet */}
-              <div className="relative inline-block transform rotate-1 ml-12" style={{ width: '300px', height: '130px' }}>
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('/lovable-uploads/2a440965-7c50-4633-a8a8-14bb0a8b2a81.png')`,
-                    backgroundPosition: '65% 60%',
-                    backgroundSize: '600px 400px'
-                  }}
-                ></div>
-                <p className="absolute inset-0 flex items-center justify-center text-amber-900 text-sm font-medium leading-relaxed px-6 text-center">
+              <div className="inline-block px-4 py-2 shadow-md transform rotate-1 rounded-sm ml-12"
+                   style={{
+                     background: 'linear-gradient(135deg, #f7f3eb 0%, #eee4d5 50%, #e7dac9 100%)',
+                     border: '1px solid #d7c6a7'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   Other neighbors gossip and complain, some even leave passive-aggressive notes.
                 </p>
               </div>
