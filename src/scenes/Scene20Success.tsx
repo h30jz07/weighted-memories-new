@@ -40,22 +40,22 @@ export const Scene20Success: React.FC = () => {
                 <div className="mx-auto mb-6 flex items-center justify-center">
                   <span className="text-4xl animate-bounce">✨</span>
                 </div>
-                <h1 className="text-3xl font-bold mb-6 text-accent-warm">
+                {/* <h1 className="text-3xl font-bold mb-6 text-accent-warm">
                   Successful Collaboration
-                </h1>
+                </h1> */}
                 <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
                   <p className="text-lg">
-                    Through patience, respect, and empathy, the team successfully 
-                    transforms Madam Leong's living space while preserving her dignity...
+                    At last, we have successfully 
+                    transformed Madam Leong's living space.
                   </p>
                 </div>
               </div>
             ) : (
               /* Main content */
               <div>
-                <h1 className="text-4xl font-bold mb-8 text-highlight">
+                {/* <h1 className="text-4xl font-bold mb-8 text-highlight">
                   Progress Through Empathy
-                </h1>
+                </h1> */}
 
             <div className="aspect-video bg-black rounded-lg overflow-hidden mb-8">
               <iframe
@@ -70,9 +70,9 @@ export const Scene20Success: React.FC = () => {
             
             <div className="narrative-text space-y-8">
               <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border">
-                <h2 className="text-2xl font-semibold mb-6 text-accent-warm">
+                {/* <h2 className="text-2xl font-semibold mb-6 text-accent-warm">
                   A Transformation Built on Respect
-                </h2>
+                </h2> */}
                 <p className="mb-4">
                   After several hours of patient, collaborative work, Madam Leong's flat seems transformed. 
                   It's not magazine-perfect, but it's safe, navigable, and most importantly, still feels like home.
@@ -206,8 +206,8 @@ export const Scene20Success: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/50 shadow-lg">
-                <h2 className="text-2xl font-semibold mb-6 text-accent-warm">
+              {/* <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/50 shadow-lg"> */}
+                {/* <h2 className="text-2xl font-semibold mb-6 text-accent-warm">
                   What Made the Difference
                 </h2>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -225,19 +225,19 @@ export const Scene20Success: React.FC = () => {
                     <h3 className="font-semibold mb-2">Collaboration</h3>
                     <p className="text-sm">Working with, not doing to</p>
                   </div>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
 
-              <div className="bg-card/90 backdrop-blur-sm p-6 rounded-lg border border-highlight/50 shadow-lg">
-                <h2 className="text-xl font-semibold mb-4 text-highlight">
+              {/* <div className="bg-card/90 backdrop-blur-sm p-6 rounded-lg border border-highlight/50 shadow-lg"> */}
+                {/* <h2 className="text-xl font-semibold mb-4 text-highlight">
                   The Ripple Effect
                 </h2>
                 <p>
                   Despite the challenges faced along the way, progress was made because everyone 
                   learned something about empathy, patience, and the complexity of human experience. 
                   The connections formed will last far beyond this single day.
-                </p>
-              </div>
+                </p> */}
+              {/* </div> */}
             </div>
 
             <div className="mt-12">

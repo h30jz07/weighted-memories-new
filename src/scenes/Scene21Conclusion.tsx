@@ -16,9 +16,9 @@ export const Scene21Conclusion: React.FC = () => {
           
           <div className="narrative-text space-y-8 mb-12">
             <div className="bg-card p-8 rounded-lg border border-card-border">
-              <h2 className="text-2xl font-semibold mb-6 text-foreground">
+              {/* <h2 className="text-2xl font-semibold mb-6 text-foreground">
                 What We've Learned
-              </h2>
+              </h2> */}
               <p className="mb-4">
                 Through the perspectives of Madam Leong, Meng, and Fion, we've explored how empathy 
                 transforms not just individual interactions, but entire communities.
@@ -29,7 +29,7 @@ export const Scene21Conclusion: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            {/* <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-accent-warm/20 p-6 rounded-lg border border-accent-warm/30">
                 <h3 className="text-xl font-semibold mb-4 text-accent-warm">From Madam Leong's Perspective</h3>
                 <p className="text-sm">
@@ -56,9 +56,9 @@ export const Scene21Conclusion: React.FC = () => {
                   is a practice that requires ongoing attention.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <div className="bg-highlight/10 p-8 rounded-lg border border-highlight/30">
+            {/* <div className="bg-highlight/10 p-8 rounded-lg border border-highlight/30">
               <h2 className="text-2xl font-semibold mb-6 text-highlight">
                 Empathy in Action
               </h2>
@@ -92,7 +92,7 @@ export const Scene21Conclusion: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="bg-card p-6 rounded-lg border border-card-border">
               <blockquote className="text-xl italic mb-4 text-accent-warm">

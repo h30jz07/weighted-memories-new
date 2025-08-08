@@ -36,12 +36,13 @@ export const Scene17AskingFirst: React.FC = () => {
               <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
               
               <div className="relative z-10 text-center">
-              <h1 className="text-3xl font-bold mb-6 text-accent-warm">
+              {/* <h1 className="text-3xl font-bold mb-6 text-accent-warm">
                 Asking for Permission
-              </h1>
+              </h1> */}
               <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
                 <p className="text-lg">
-                  This time, Meng holds up a ragged old singlet and gently asks Madam Leong 
+                  This time, Meng holds up a ragged old singlet.
+                  He gently asks Madam Leong 
                   for her permission before making any decisions...
                 </p>
               </div>
@@ -51,9 +52,9 @@ export const Scene17AskingFirst: React.FC = () => {
             /* Main content */
             <div>
               <div className="mb-12">
-                <h1 className="text-3xl font-bold mb-6 text-accent-warm">
+                {/* <h1 className="text-3xl font-bold mb-6 text-accent-warm">
                   The Power of Asking
-                </h1>
+                </h1> */}
               </div>
 
           <div className="aspect-video bg-black rounded-lg overflow-hidden mb-8">
@@ -69,9 +70,9 @@ export const Scene17AskingFirst: React.FC = () => {
           
           <div className="narrative-text space-y-6 mb-12">
             <div className="bg-card p-6 rounded-lg border border-accent-warm/20">
-              <h2 className="text-xl font-semibold mb-4 text-accent-warm">
+              {/* <h2 className="text-xl font-semibold mb-4 text-accent-warm">
                 A Simple but Profound Moment
-              </h2>
+              </h2> */}
               <p className="mb-4 italic">
                 "Madam Leong, would it be okay 
                 if we moved this to the recycling pile?"

@@ -37,12 +37,14 @@ export const Scene18Breakdown: React.FC = () => {
                 <div className="mx-auto mb-6 flex items-center justify-center">
                   <span className="text-4xl animate-bounce">😭</span>
                 </div>
-                <h1 className="text-3xl font-bold mb-6 text-white">
+                {/* <h1 className="text-3xl font-bold mb-6 text-white">
                   Emotional Overwhelm
-                </h1>
+                </h1> */}
                 <div className="bg-black/60 backdrop-blur-sm p-8 rounded-lg border border-white/20 max-w-2xl mx-auto">
                   <p className="text-lg text-white">
-                    Even with permission and care, sorting through a lifetime of memories 
+                    Even with the care of everyone, 
+                    
+                    sorting through a lifetime of memories 
                     becomes overwhelming for Madam Leong...
                   </p>
                 </div>
@@ -52,16 +54,16 @@ export const Scene18Breakdown: React.FC = () => {
             /* Main content */
             <div>
               <div className="mb-12">
-                <h1 className="text-3xl font-bold mb-6 text-foreground">
+                {/* <h1 className="text-3xl font-bold mb-6 text-foreground">
                   When Emotions Overwhelm
-                </h1>
+                </h1> */}
               </div>
           
           <div className="narrative-text space-y-6 mb-12">
             <div className="bg-card p-6 rounded-lg border border-card-border">
-              <h2 className="text-xl font-semibold mb-4 text-foreground">
+              {/* <h2 className="text-xl font-semibold mb-4 text-foreground">
                 The Moment Everything Becomes Too Much
-              </h2>
+              </h2> */}
               <p className="mb-4">
                 Halfway through the sorting process, Madam Leong witnesses her late husband's beloved books being thrown away.
                 She suddenly sits down on the floor 
