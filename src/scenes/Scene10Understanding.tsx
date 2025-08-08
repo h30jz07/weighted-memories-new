@@ -35,7 +35,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-foreground">Madam Leong:</span>
                 <p className="mt-2 italic">
-                  "Sorry ah boy, Aunty knows it is messy, but I cannot throw them away.
+                  "Sorry ah boy, Aunty knows it is messy, but I cannot throw them away
                   ...they are all I have left of my husband.
                 </p>
               </div>
@@ -45,7 +45,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-accent-warm">Meng:</span>
                 <p className="mt-2 italic">
-                  "omg, i'm sorry aunty. But leaving so many things here can be dangerous. Do you want go through the items together? You can keep what's important."
+                  "OMG, i'm sorry aunty. But leaving so many things here can be dangerous. Do you want go through the items together? You can keep what's important."
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export const Scene10Understanding: React.FC = () => {
                   
                   {showThought ? (
                     <p className="text-gray-800 text-left leading-relaxed font-medium">
-                      "This ah boy seems. Maybe he can understand me."
+                      "This ah boy seems nice. Maybe he can understand me."
                     </p>
                   ) : (
                     <p className="text-gray-600 text-left text-xl font-bold">
