@@ -105,7 +105,7 @@ export const Scene17AskingFirst: React.FC = () => {
                   
                   {showThought ? (
                     <p className="text-gray-800 text-left leading-relaxed font-medium">
-                      "I'm glad they understand it now. They can see why I keep these things, and let me know before throwing them away"
+                      "I'm happy they understand now. They can see why I keep these things, and let auntie know before throwing them away"
                     </p>
                   ) : (
                     <p className="text-gray-600 text-left text-xl font-bold">
