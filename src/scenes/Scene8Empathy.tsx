@@ -53,7 +53,7 @@ export const Scene8Empathy: React.FC = () => {
                   onClick={() => navigate('/scene/10')}
                   className="min-h-[120px] flex flex-col justify-center p-6"
                 >
-                  <span className="font-semibold">"Hello Aunty, I'm your neighbour from that unit over there. Your house looks messy, do you need any help tidying?"</span>
+                  <span className="font-semibold">"Hello Aunty, I see your things piling up in the corridor, do you need any help tidying?"</span>
                 </StoryButton>
               </div>
 
