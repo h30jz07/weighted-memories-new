@@ -59,7 +59,7 @@ export const Scene11SocialWorker: React.FC = () => {
                 </h3>
                 <ul className="text-left space-y-2">
                   <li>• <strong className="text-accent-cool">Listen first</strong> - Understand the individual's history and emotional attachments to their possessions</li>
-                  <li>• <strong className="text-accent-cool">Respect autonomy</strong> - Always seek consent before moving or discarding items, giving the hoarder control over decision-making</li>
+                  <li>• <strong className="text-accent-cool">Respect autonomy</strong> - Seek consent before moving or discarding items, the individual maintains control over decisions</li>
                   <li>• <strong className="text-accent-cool">Focus on safety</strong> - Address health and safety concerns gently, balancing basic safety with respect</li>
                   <li>• <strong className="text-accent-cool">Build trust</strong> - Create a supportive, nonjudgmental space where empathy drives every interaction</li>
                 </ul>
