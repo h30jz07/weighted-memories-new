@@ -68,22 +68,13 @@ export const Scene20Success: React.FC = () => {
             </div>
             
             <div className="narrative-text space-y-8">
-              <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border">
-                {/* <h2 className="text-2xl font-semibold mb-6 text-accent-warm">
-                  A Transformation Built on Respect
-                </h2> */}
-                <div className="flex justify-center">
+                <div className="flex justify-center mb-8">
                   <img 
                     src="/lovable-uploads/79f5e69f-5645-4725-ab35-de6407b874e9.png" 
                     alt="Scrap paper with text about flat transformation" 
                     className="max-w-full h-auto"
                   />
                 </div>
-                {/* <p>
-                  The pathways are clear, the kitchen is functional, and Madam Leong has kept the 
-                  items that truly matter to her while letting go of things that no longer serve her.
-                </p> */}
-              </div>
 
               {/* Character Conversations */}
               <div className="space-y-8 max-w-2xl mx-auto">
