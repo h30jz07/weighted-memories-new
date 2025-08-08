@@ -25,7 +25,7 @@ export const Scene9Argument: React.FC = () => {
               <img 
                 src="/lovable-uploads/75a3f3b0-0d68-4626-8ea1-5216a7a654be.png" 
                 alt="Dialogue between Meng and Madam Leong" 
-                className="max-w-full h-auto"
+                className="max-w-full h-auto transform scale-150"
               />
             </div>
 
