@@ -77,7 +77,7 @@ export const Scene20Success: React.FC = () => {
                   <img 
                     src="/lovable-uploads/79f5e69f-5645-4725-ab35-de6407b874e9.png" 
                     alt="Scrap paper with text about flat transformation" 
-                    className="max-w-lg h-auto"
+                    className="max-w-full h-auto"
                   />
                   <img 
                     src="/lovable-uploads/9fe2ef5a-402f-4b0c-97ed-7b839c7bb3de.png" 
