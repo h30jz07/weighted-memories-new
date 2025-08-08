@@ -34,7 +34,7 @@ export const Scene6aEmpathy: React.FC = () => {
                   
                   {showThought ? (
                     <p className="text-gray-800 text-left leading-relaxed font-medium">
-                      "What if no one helps Madam Leong ah? Maybe I should help her, i feel guilty ignoring."
+                      "If no one helps Madam Leong then how ah? I think I should try to help her, if not i'll feel guilty sia."
                     </p>
                   ) : (
                     <p className="text-gray-600 text-left text-xl font-bold">
