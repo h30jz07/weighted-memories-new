@@ -22,26 +22,42 @@ export const Scene6TeenChoice: React.FC = () => {
           {/* Animation scene description */}
           <div className="mb-12">
             <div className="narrative-text max-w-2xl mx-auto space-y-3">
-              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform -rotate-1 border border-card-border/20 rounded-sm">
-                <p className="text-foreground text-base leading-relaxed">
+              <div className="inline-block px-4 py-2 shadow-md transform -rotate-1 rounded-sm"
+                   style={{
+                     background: 'linear-gradient(135deg, #f5f1e8 0%, #ede4d3 50%, #e8dcc6 100%)',
+                     border: '1px solid #d4c4a8'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   Meng walks past Madam Leong's unit on his way home from school.
                 </p>
               </div>
               
-              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform rotate-1 border border-card-border/20 rounded-sm ml-8">
-                <p className="text-foreground text-base leading-relaxed">
+              <div className="inline-block px-4 py-2 shadow-md transform rotate-1 rounded-sm ml-8"
+                   style={{
+                     background: 'linear-gradient(135deg, #f8f4e6 0%, #f0e6d2 50%, #e9ddc4 100%)',
+                     border: '1px solid #d9c7a3'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   The smell hits him first.
                 </p>
               </div>
               
-              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform -rotate-1 border border-card-border/20 rounded-sm">
-                <p className="text-foreground text-base leading-relaxed">
+              <div className="inline-block px-4 py-2 shadow-md transform -rotate-1 rounded-sm"
+                   style={{
+                     background: 'linear-gradient(135deg, #f6f2ea 0%, #ede3d4 50%, #e6d9c8 100%)',
+                     border: '1px solid #d6c5a6'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   He notices items spilling out into the corridor.
                 </p>
               </div>
               
-              <div className="inline-block bg-card/95 px-4 py-2 shadow-md transform rotate-1 border border-card-border/20 rounded-sm ml-12">
-                <p className="text-foreground text-base leading-relaxed">
+              <div className="inline-block px-4 py-2 shadow-md transform rotate-1 rounded-sm ml-12"
+                   style={{
+                     background: 'linear-gradient(135deg, #f7f3eb 0%, #eee4d5 50%, #e7dac9 100%)',
+                     border: '1px solid #d7c6a7'
+                   }}>
+                <p className="text-amber-900 text-base leading-relaxed">
                   Other neighbors gossip and complain, some even leave passive-aggressive notes.
                 </p>
               </div>
