@@ -29,7 +29,7 @@ export const Scene8Empathy: React.FC = () => {
                 </p>
                 <p className="mb-4">
                   The smell is overwhelming, and part of him wants to walk away. But something 
-                  tells him to speak up.
+                  tells him to just stay ... and maybe say something...
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ export const Scene8Empathy: React.FC = () => {
                   onClick={() => navigate('/scene/10')}
                   className="min-h-[120px] flex flex-col justify-center p-6"
                 >
-                  <span className="font-semibold">"Hello Aunty, I see your things piling up in the corridor, do you need any help tidying?"</span>
+                  <span className="font-semibold">"Hello Aunty, I see your things piling up outside your house ah, do you need any help to clear your things?"</span>
                 </StoryButton>
               </div>
 
