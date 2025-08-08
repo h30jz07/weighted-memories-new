@@ -43,12 +43,12 @@ export const Scene9Argument: React.FC = () => {
             <div className="bg-accent-warm/20 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/30">
               
                   <p className="text-lg mb-6 leading-relaxed">
-                    When Meng complains about the smell, they lack empathy because they:
+                    Meng lacks empathy:
                   </p>
                   <ul className="text-left space-y-4 text-base">
                     <li className="flex items-start gap-3">
                       <span className="text-destructive font-bold text-lg">•</span>
-                      <span>Focus only on their <strong>own discomfort</strong>, not the hoarder's emotional state</span>
+                      <span>Focus only on his <strong>own discomfort</strong>, not the hoarder's emotional state</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive font-bold text-lg">•</span>
