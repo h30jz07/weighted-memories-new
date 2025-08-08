@@ -32,8 +32,8 @@ export const Scene6TeenChoice: React.FC = () => {
                 a mixture of old food, mustiness, and neglect that makes his nose wrinkle.
               </p>
               <p>
-                Items spill out into the corridor. The walkway is narrow and crowded. 
-                Other neighbors whisper and complain. Some even leave passive-aggressive notes.
+                He notices items spilling out into the corridor, making the narrow walkway even tighter. 
+                Other neighbors whisper and complain, some even leave passive-aggressive notes.
               </p>
               {/* <p className="text-accent-warm font-medium">
                 In this moment, Meng has a choice that will shape what happens next...
@@ -53,7 +53,6 @@ export const Scene6TeenChoice: React.FC = () => {
                 onClick={() => navigate('/scene/7')}
                 className="bg-muted hover:bg-muted/80 text-foreground-muted min-h-[120px] flex flex-col justify-center p-6"
               >
-                <span className="text-2xl mb-2">😤</span>
                 <span className="font-semibold">"Ew this is disgusting. Why can't she clean up her mess?"</span>
               </StoryButton>
 
@@ -64,11 +63,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 onClick={() => navigate('/scene/6a')}
                 className="min-h-[120px] flex flex-col justify-center p-6"
               >
-                <span className="text-2xl mb-2">💝</span>
-                <span className="font-semibold">Show Concern</span>
-                <span className="text-sm mt-2 opacity-90 italic">
-                  "I wonder if she needs any help."
-                </span>
+                <span className="font-semibold">"I wonder if she needs any help."</span>
               </StoryButton>
             </div>
 
