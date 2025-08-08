@@ -3,13 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Scene0Homepage } from "./scenes/Scene0Homepage";
-import { Scene1Characters } from "./scenes/Scene1Characters";
-import { Scene2Video } from "./scenes/Scene2Video";
+import { ScrollStory } from "./components/ScrollStory";
 import { Scene4ExploreHome } from "./scenes/Scene4ExploreHome";
-import { Scene3Understanding } from "./scenes/Scene3Understanding";
-import { Scene5HoarderMind } from "./scenes/Scene5HoarderMind";
 
+// Keep essential interactive scenes for specific functionality
 import { Scene6aEmpathy } from "./scenes/Scene6aEmpathy";
 import { Scene6TeenChoice } from "./scenes/Scene6TeenChoice";
 import { Scene7Consequences } from "./scenes/Scene7Consequences";
@@ -43,12 +40,11 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Scene0Homepage />} />
-          <Route path="/scene/1" element={<Scene1Characters />} />
-          <Route path="/scene/2" element={<Scene2Video />} />
-          <Route path="/scene/3" element={<Scene3Understanding />} />
+          {/* Main scroll-based story experience */}
+          <Route path="/" element={<ScrollStory />} />
+          
+          {/* Keep interactive gameplay scenes for specific functionality */}
           <Route path="/scene/4" element={<Scene4ExploreHome />} />
-          <Route path="/scene/5" element={<Scene5HoarderMind />} />
           
           <Route path="/scene/6a" element={<Scene6aEmpathy />} />
           <Route path="/scene/6" element={<Scene6TeenChoice />} />
