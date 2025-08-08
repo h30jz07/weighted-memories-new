@@ -19,51 +19,34 @@ export const Scene6TeenChoice: React.FC = () => {
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          {/* Animation scene description */}
-          <div className="mb-12">
-            <div className="narrative-text max-w-2xl mx-auto space-y-3">
-              <div className="inline-block px-4 py-2 shadow-md transform -rotate-1 rounded-sm"
-                   style={{
-                     background: 'linear-gradient(135deg, #f5f1e8 0%, #ede4d3 50%, #e8dcc6 100%)',
-                     border: '1px solid #d4c4a8'
-                   }}>
-                <p className="text-amber-900 text-base leading-relaxed">
+          {/* Animation scene description on scrap paper */}
+          <div className="mb-12 flex justify-center">
+            <div className="relative w-96 h-96 flex items-center justify-center">
+              {/* Scrap paper background */}
+              <img 
+                src="/lovable-uploads/c13330b2-939f-474a-9fce-4fb3d9815998.png" 
+                alt="Scrap paper background"
+                className="absolute inset-0 w-full h-full object-contain"
+              />
+              
+              {/* Text content arranged vertically on the paper */}
+              <div className="relative z-10 w-72 space-y-3 text-center px-6">
+                <p className="text-gray-800 text-sm leading-relaxed font-medium">
                   Meng walks past Madam Leong's unit on his way home from school.
                 </p>
-              </div>
-              
-              <div className="inline-block px-4 py-2 shadow-md transform rotate-1 rounded-sm ml-8"
-                   style={{
-                     background: 'linear-gradient(135deg, #f8f4e6 0%, #f0e6d2 50%, #e9ddc4 100%)',
-                     border: '1px solid #d9c7a3'
-                   }}>
-                <p className="text-amber-900 text-base leading-relaxed">
+                
+                <p className="text-gray-800 text-sm leading-relaxed font-medium">
                   The smell hits him first.
                 </p>
-              </div>
-              
-              <div className="inline-block px-4 py-2 shadow-md transform -rotate-1 rounded-sm"
-                   style={{
-                     background: 'linear-gradient(135deg, #f6f2ea 0%, #ede3d4 50%, #e6d9c8 100%)',
-                     border: '1px solid #d6c5a6'
-                   }}>
-                <p className="text-amber-900 text-base leading-relaxed">
+                
+                <p className="text-gray-800 text-sm leading-relaxed font-medium">
                   He notices items spilling out into the corridor.
                 </p>
-              </div>
-              
-              <div className="inline-block px-4 py-2 shadow-md transform rotate-1 rounded-sm ml-12"
-                   style={{
-                     background: 'linear-gradient(135deg, #f7f3eb 0%, #eee4d5 50%, #e7dac9 100%)',
-                     border: '1px solid #d7c6a7'
-                   }}>
-                <p className="text-amber-900 text-base leading-relaxed">
+                
+                <p className="text-gray-800 text-sm leading-relaxed font-medium">
                   Other neighbors gossip and complain, some even leave passive-aggressive notes.
                 </p>
               </div>
-              {/* <p className="text-accent-warm font-medium">
-                In this moment, Meng has a choice that will shape what happens next...
-              </p> */}
             </div>
           </div>
 
