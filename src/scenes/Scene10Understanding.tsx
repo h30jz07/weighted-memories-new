@@ -53,7 +53,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-foreground">Madam Leong (nodding reluctantly):</span>
                 <p className="mt-2 italic">
-                  "err... I think can."
+                  "Aiyo, ke yi la, ke yi."
                 </p>
               </div>
             </div>
