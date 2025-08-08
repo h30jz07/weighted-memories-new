@@ -27,7 +27,7 @@ export const Scene9Argument: React.FC = () => {
                   <span className="font-semibold text-red-600">Meng:</span>
                   <p className="mt-2 italic">
                     "This is damn disgusting! The whole corridor smells because of your flat. 
-                      Can you clean this mess up. It's affecting everyone!"
+                      Can clean this mess up or not? It's affecting everyone!"
                   </p>
                 </div>
               </div>
