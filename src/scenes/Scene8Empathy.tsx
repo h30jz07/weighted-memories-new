@@ -33,7 +33,7 @@ export const Scene8Empathy: React.FC = () => {
             </div>
 
             {/* Choice buttons */}
-            <div className="space-y-6 mt-12">
+            <div className="space-y-6 mt-20">
               
               <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                 <StoryButton
