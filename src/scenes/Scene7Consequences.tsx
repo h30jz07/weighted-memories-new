@@ -39,7 +39,6 @@ export const Scene7Consequences: React.FC = () => {
                 <p>
                   Madam Leong's hoarding condition worsened in isolation. A spark from the kitchen
                   stove ignited a pile of newspapers, which provided fuel for a kitchen fire.
-                  The inability to navigate and escape due to the clutter in the flat...
                 </p>
                 <p className="text-highlight font-semibold">
                   A small kitchen fire became a tragedy that could have been prevented 
