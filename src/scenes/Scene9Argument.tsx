@@ -21,7 +21,7 @@ export const Scene9Argument: React.FC = () => {
           {/* Scene visualization */}
           
           <div className="max-w-3xl mx-auto space-y-8 mb-12">
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-8">
               <img 
                 src="/lovable-uploads/75a3f3b0-0d68-4626-8ea1-5216a7a654be.png" 
                 alt="Dialogue between Meng and Madam Leong" 
@@ -29,7 +29,7 @@ export const Scene9Argument: React.FC = () => {
               />
             </div>
 
-            <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto">
+            <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto mt-12">
               <p className="text-xl mb-6 leading-relaxed">
                 Meng lacks empathy:
               </p>
