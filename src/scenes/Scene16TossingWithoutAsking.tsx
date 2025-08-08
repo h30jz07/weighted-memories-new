@@ -75,8 +75,8 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                     Madam Leong's Anguished Response:
                   </h2> */}
                   <blockquote className="text-lg italic mb-4">
-                    "You don't understand! How can you just throw that away! That newspaper was from 
-                    the day my grandson was born. I was saving it to show him when he got older!"
+                    "Ah boy, stop! You don't understand! How can you just throw that away! That newspaper was from 
+                    when my boy was born. I want to show him once he is older!"
                   </blockquote>
                   <p>
                     Hearing her response, Meng realises the magnitude of the mistake. What seemed worthless to him
@@ -106,7 +106,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                       
                       {showThought ? (
                         <p className="text-gray-800 text-left leading-relaxed font-medium">
-                          "I wish that they would slow down, understand me, and ask me before throwing my things away. All these are my treasures."
+                          "Why don't they slow down and ask me first? They're not simply trash. I keep them for a reason..."
                         </p>
                       ) : (
                         <p className="text-gray-600 text-left text-xl font-bold">

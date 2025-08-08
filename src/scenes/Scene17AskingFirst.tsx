@@ -78,7 +78,7 @@ export const Scene17AskingFirst: React.FC = () => {
                 if we moved this to the recycling pile?"
               </p>
               <p>
-                Madam Leong looks at it, then pauses. The singlet reminds her of her husband. With a soft nod, she relents, "Yes, 
+                I look at it, and pause. The singlet reminds me of my husband. With a soft nod, I give in, "Ok lah, 
                 I think that one can go." 
               </p>
             </div>
@@ -105,7 +105,7 @@ export const Scene17AskingFirst: React.FC = () => {
                   
                   {showThought ? (
                     <p className="text-gray-800 text-left leading-relaxed font-medium">
-                      "They are treating me with dignity, and truly understands the weight of my things. I feel like I can trust them, that I have a say."
+                      "I'm glad they understand it now. They can see why I keep these things, and let me know before throwing them away"
                     </p>
                   ) : (
                     <p className="text-gray-600 text-left text-xl font-bold">
