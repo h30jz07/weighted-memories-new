@@ -74,7 +74,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                   <img 
                     src="/lovable-uploads/9acc4e61-b1bb-4ae8-ab18-d3d308fd9b92.png" 
                     alt="Madam Leong's emotional response to Meng throwing away her precious newspaper" 
-                    className="max-w-4xl w-full h-auto rounded-lg"
+                    className="max-w-6xl w-full h-auto rounded-lg transform scale-110"
                   />
                 </div>
 
