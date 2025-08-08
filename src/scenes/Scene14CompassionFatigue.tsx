@@ -25,11 +25,10 @@ export const Scene14CompassionFatigue: React.FC = () => {
                 Fion's Internal Struggle
               </h2> */}
               <p className="mb-4 italic">
-                "I have so many other cases to handle. Sometimes I feel like I'm carrying 
-                everyone's pain, and I'm not sure I have enough left to give."
+                "Wah I already got so many other cases to handle. This is too much for me haiz.."
               </p>
               <p className="mb-4 italic">
-                "Maybe someone else should take this case. Maybe I need to think about myself for once."
+                "Maybe someone else should take this case. I want to catch a break cannot meh?"
               </p>
             </div>
 
