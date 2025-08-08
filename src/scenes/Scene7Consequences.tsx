@@ -34,9 +34,6 @@ export const Scene7Consequences: React.FC = () => {
         {showNarration && (
           <div className="absolute inset-0 bg-background-overlay flex items-center justify-center z-10">
             <div className="max-w-3xl mx-auto text-center p-8">
-              <h1 className="text-4xl font-bold mb-8 text-highlight">
-                The Cost of Indifference
-              </h1>
               
               <div className="narrative-text space-y-6 mb-8">
                 <p>
