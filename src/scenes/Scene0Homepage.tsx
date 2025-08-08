@@ -26,13 +26,12 @@ export const Scene0Homepage: React.FC = () => {
           <div className="relative z-10 text-center max-w-4xl px-6">
             <div className="mb-8">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-                Three Lives, One Story
+                Imagine three lives and one story ... each carrying weight the others never saw
               </h1>
               
               <div className="narrative-text max-w-3xl mx-auto mb-8 leading-relaxed">
                 <p className="mb-4">
-                  A story of three people, one house, and the weight we carry 
-                  that others do not see.
+                  Welcome to a house full of heavy weights 
                 </p>
               </div>
             </div>
