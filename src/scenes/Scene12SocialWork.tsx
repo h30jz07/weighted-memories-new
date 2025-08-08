@@ -29,7 +29,6 @@ export const Scene12SocialWork: React.FC = () => {
                 <div className="mb-6">
                   <p className="text-base leading-relaxed">
                     Empathy allows social workers to see the situation from the perspectives of the people they are helping.
-                    Many individuals who hoard are coping with grief, trauma, or mental health challenges.
                     By practicing empathy, social workers are less likely to come off as judgemental and harsh.
                   </p>
                 </div>
