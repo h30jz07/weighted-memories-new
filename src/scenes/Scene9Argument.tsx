@@ -23,16 +23,8 @@ export const Scene9Argument: React.FC = () => {
           <div className="max-w-3xl mx-auto space-y-8 mb-12">
             <div className="flex justify-center mb-8">
               <img 
-                src="/lovable-uploads/75a3f3b0-0d68-4626-8ea1-5216a7a654be.png" 
-                alt="Dialogue between Meng and Madam Leong" 
-                className="max-w-full h-auto transform scale-150"
-              />
-            </div>
-
-            <div className="flex justify-center mt-80">
-              <img 
-                src="/lovable-uploads/cda816e5-fb42-409b-9985-cff13f3849d8.png" 
-                alt="Meng lacks empathy explanation" 
+                src="/lovable-uploads/e72e9802-3874-41d2-b73b-544ffce41e66.png" 
+                alt="Dialogue between Meng and Madam Leong with empathy explanation" 
                 className="max-w-full h-auto transform scale-150"
               />
             </div>
