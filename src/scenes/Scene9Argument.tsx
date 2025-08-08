@@ -19,11 +19,6 @@ export const Scene9Argument: React.FC = () => {
       >
         <div className="max-w-4xl mx-auto text-center">
           {/* Scene visualization */}
-          <div className="mb-12">
-            <h1 className="text-3xl font-bold mb-6 text-destructive">
-              When Frustration Takes Over
-            </h1>
-          </div>
           
           <div className="narrative-text max-w-3xl mx-auto space-y-6 mb-12">
             <div className="bg-card p-6 rounded-lg border border-destructive/20">
