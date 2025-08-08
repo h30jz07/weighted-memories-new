@@ -64,7 +64,7 @@ export const Scene18Breakdown: React.FC = () => {
                   <img 
                     src="/lovable-uploads/8a935b04-f58d-4455-869c-ce9cb2e25002.png" 
                     alt="Handwritten text describing the emotional breakdown" 
-                    className="w-full max-w-6xl mx-auto"
+                    className="w-full mx-auto"
                   />
                 </div>
               </div>
