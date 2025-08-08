@@ -28,9 +28,11 @@ export const Scene6TeenChoice: React.FC = () => {
                 Meng walks past Madam Leong's unit on his way home from school. 
               </p>
               <p>
-                The smell hits him first - a mixture of old food, mustiness, and neglect that makes his nose wrinkle.</p>
+                The smell hits him first.</p>
               <p>
-                He notices items spilling out into the corridor
+                He notices items spilling out into the corridor.
+              </p>
+              <p>
                 Other neighbors whisper and complain, some even leave passive-aggressive notes.
               </p>
               {/* <p className="text-accent-warm font-medium">
