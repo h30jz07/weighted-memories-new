@@ -41,10 +41,7 @@ export const Scene9Argument: React.FC = () => {
             </div>
 
             <div className="bg-accent-warm/20 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/30">
-                <h2 className="text-2xl font-semibold mb-6 text-highlight">
-                  ❌ Why This Option Shows No Empathy
-                </h2>
-                <div className="bg-card/50 p-6 rounded-lg">
+              
                   <p className="text-lg mb-6 leading-relaxed">
                     When Meng complains about the smell, they lack empathy because they:
                   </p>
@@ -62,7 +59,6 @@ export const Scene9Argument: React.FC = () => {
                       <span>Use <strong>accusatory language</strong> that shames rather than supports</span>
                     </li>
                   </ul>
-                </div>
             </div>
 
           </div>
