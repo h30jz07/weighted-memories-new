@@ -76,7 +76,7 @@ export const Scene2Video: React.FC = () => {
               <div className="absolute bottom-4 right-4">
                 <StoryButton
                   variant="primary"
-                  onClick={() => navigate('/scene/3')}
+                  onClick={() => navigate('/scene/6')}
                 >
                   Proceed →
                 </StoryButton>
