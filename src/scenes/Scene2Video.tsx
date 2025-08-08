@@ -53,7 +53,7 @@ export const Scene2Video: React.FC = () => {
         <div className="max-w-4xl w-full mx-auto p-8">
           <header className="text-center mb-8">
             <p className="narrative-text max-w-2xl mx-auto">
-              Before we continue with our story, the video below offers a glimpse into what hoarding disorder is like.
+              A glimpse into hoarding.
             </p>
           </header>
 
