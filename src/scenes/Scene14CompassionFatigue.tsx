@@ -19,53 +19,12 @@ export const Scene14CompassionFatigue: React.FC = () => {
             </h1> */}
           </div>
           
-          <div className="narrative-text max-w-3xl mx-auto space-y-6 mb-12">
-            <div className="bg-card p-6 rounded-lg border border-card-border">
-              {/* <h2 className="text-xl font-semibold mb-4 text-accent-cool">
-                Fion's Internal Struggle
-              </h2> */}
-              <p className="mb-4 italic">
-                "Wah I already got so many other cases to handle. This is too much for me haiz.."
-              </p>
-              <p className="mb-4 italic">
-                "Maybe someone else should take this case. I want to catch a break cannot meh?"
-              </p>
-            </div>
-
-            <div className="bg-highlight/10 p-6 rounded-lg border border-highlight/30">
-              <h2 className="text-xl font-semibold mb-4 text-highlight">
-                The Truth About Empathy Work
-              </h2>
-              <p className="mb-4">
-                Compassion fatigue is real. Those who give empathy professionally often struggle 
-                with burnout, feeling overwhelmed by others' pain, and questioning whether 
-                they're making a difference.
-              </p>
-              {/* <p className="font-medium">
-                "But every time I show up, I remind someone they're not forgotten. 
-                And sometimes, that's everything."
-              </p> */}
-            </div> 
-
-            {/* <div className="bg-accent-warm/10 p-6 rounded-lg border border-accent-warm/30">
-              <h2 className="text-xl font-semibold mb-4 text-accent-warm">
-                Small Acts, Big Impact
-              </h2>
-              <p>
-                Even when Fion feels depleted, she remembers that her help and empathy 
-                communicates worth and hope to the invisible and judged.
-              </p>
-              <br/>
-              <div className="space-y-4 text-left">
-                <div className="bg-card/50 p-4 rounded italic">
-                  "Thank you, Fion. You're the first person who didn't look at me like I was broken."
-                </div>
-                <div className="bg-card/50 p-4 rounded italic">
-                  "I never thought anyone would understand, but you listened to my story."
-                </div>
-              </div>
-            </div> */}
-
+          <div className="max-w-4xl mx-auto mb-12">
+            <img 
+              src="/lovable-uploads/bc5e1823-0c95-4633-9d4c-4408a406ec40.png" 
+              alt="Fion's internal struggle with compassion fatigue - showing her thoughts about having too many cases and needing a break, along with explanation of compassion fatigue"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="space-y-4">
