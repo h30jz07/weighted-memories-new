@@ -29,24 +29,12 @@ export const Scene9Argument: React.FC = () => {
               />
             </div>
 
-            <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto mt-20">
-              <p className="text-xl mb-6 leading-relaxed">
-                Meng lacks empathy:
-              </p>
-              <ul className="text-left space-y-4 text-base">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 font-bold text-lg">•</span>
-                  <span>Focus only on his <strong>own discomfort</strong>, not the hoarder's emotional state</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 font-bold text-lg">•</span>
-                  <span><strong>Judge the surface problem</strong> without understanding deeper reasons like grief, trauma, or mental illness</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 font-bold text-lg">•</span>
-                  <span>Use <strong>accusatory language</strong> that shames rather than supports</span>
-                </li>
-              </ul>
+            <div className="flex justify-center mt-20">
+              <img 
+                src="/lovable-uploads/cda816e5-fb42-409b-9985-cff13f3849d8.png" 
+                alt="Meng lacks empathy explanation" 
+                className="max-w-full h-auto"
+              />
             </div>
 
           </div>
