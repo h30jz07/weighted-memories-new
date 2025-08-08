@@ -26,7 +26,7 @@ export const Scene13Reflection: React.FC = () => {
                 <img 
                   src="/lovable-uploads/c058ccba-24b7-4039-9bcc-a8b62ca6340b.png" 
                   alt="Fion's reflection on her workload" 
-                  className="max-w-full h-auto mx-auto"
+                  className="max-w-full h-auto mx-auto transform scale-150"
                 />
               </div>
 
