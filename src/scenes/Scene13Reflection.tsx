@@ -9,15 +9,24 @@ export const Scene13Reflection: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen flex items-center justify-center p-8">
+      <div className="min-h-screen relative">
+        {/* Background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${mariamImage})` }}
+        >
+          <div className="absolute inset-0 bg-background-overlay" />
+        </div>
 
-        <div className="max-w-4xl mx-auto text-center">
+        {/* Content */}
+        <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
+          <div className="max-w-4xl mx-auto text-center">
             
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/ec6f8ee2-9da2-4023-8b24-2d1b8c35bdea.png" 
+                  src="/lovable-uploads/c058ccba-24b7-4039-9bcc-a8b62ca6340b.png" 
                   alt="Fion's reflection on her workload" 
-                  className="max-w-full h-auto mx-auto transform scale-150"
+                  className="max-w-full h-auto mx-auto transform scale-150 mb-20"
                 />
               </div>
 
@@ -53,6 +62,7 @@ export const Scene13Reflection: React.FC = () => {
             </div>
           </div>
         </div>
-      </SceneTransition>
+      </div>
+    </SceneTransition>
   );
 };
