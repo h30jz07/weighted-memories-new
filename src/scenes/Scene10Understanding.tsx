@@ -66,7 +66,7 @@ export const Scene10Understanding: React.FC = () => {
           </div>
 
           {showThought && (
-            <div className="space-y-4">
+            <div className="space-y-4 mt-16">
               <StoryButton
                 variant="primary"
                 onClick={() => navigate('/scene/11')}
