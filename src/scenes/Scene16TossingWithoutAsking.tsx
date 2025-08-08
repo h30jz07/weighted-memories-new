@@ -36,9 +36,9 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
               <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
               
               <div className="relative z-10 text-center">
-              <h1 className="text-3xl font-bold mb-6 text-destructive">
+              {/* <h1 className="text-3xl font-bold mb-6 text-destructive">
                 Acting Without Permission
-              </h1>
+              </h1> */}
               <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-destructive/20 max-w-2xl mx-auto">
                 <p className="text-lg">
                   Meng picks up what looks like an old, worthless newspaper and tosses it 
@@ -53,9 +53,9 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
               {/* <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-destructive/30 flex items-center justify-center">
                 <span className="text-4xl">😰</span>
               </div> */}
-              <h1 className="text-3xl font-bold mb-6 text-destructive">
+              {/* <h1 className="text-3xl font-bold mb-6 text-destructive">
                 "You Don't Understand!"
-              </h1>
+              </h1> */}
               
               <div className="narrative-text space-y-6 mb-12">
                 {/* YouTube video embed */}
@@ -71,9 +71,9 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                 </div>
 
                 <div className="bg-card p-6 rounded-lg border border-destructive/20">
-                  <h2 className="text-xl font-semibold mb-4 text-destructive">
+                  {/* <h2 className="text-xl font-semibold mb-4 text-destructive">
                     Madam Leong's Anguished Response:
-                  </h2>
+                  </h2> */}
                   <blockquote className="text-lg italic mb-4">
                     "You don't understand! How can you just throw that away! That newspaper was from 
                     the day my grandson was born. I was saving it to show him when he got older!"
