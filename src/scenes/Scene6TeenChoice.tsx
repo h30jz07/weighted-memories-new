@@ -33,7 +33,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 He notices items spilling out into the corridor.
               </p>
               <p>
-                Other neighbors whisper and complain, some even leave passive-aggressive notes.
+                Other neighbors gossip and complain, some even leave passive-aggressive notes.
               </p>
               {/* <p className="text-accent-warm font-medium">
                 In this moment, Meng has a choice that will shape what happens next...
