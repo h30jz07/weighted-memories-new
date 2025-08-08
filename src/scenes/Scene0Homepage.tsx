@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
-import { AudioManager } from '@/components/AudioManager';
+
 import clutteredFlat from '@/assets/cluttered-hdb-flat.jpg';
 
 export const Scene0Homepage: React.FC = () => {
