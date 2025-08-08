@@ -68,21 +68,21 @@ export const Scene20Success: React.FC = () => {
             </div>
             
             <div className="narrative-text space-y-8">
-                <div className="flex justify-center items-center gap-8 mb-8">
+                <div className="flex justify-center items-center gap-2 mb-8">
                   <img 
                     src="/lovable-uploads/3e225000-50d9-4040-9e49-f88fad6ebc4b.png" 
                     alt="Scrap paper with text about flat transformation" 
-                    className="max-w-sm h-auto"
+                    className="max-w-lg h-auto"
                   />
                   <img 
                     src="/lovable-uploads/79f5e69f-5645-4725-ab35-de6407b874e9.png" 
                     alt="Scrap paper with text about flat transformation" 
-                    className="max-w-full h-auto"
+                    className="max-w-lg h-auto"
                   />
                   <img 
                     src="/lovable-uploads/9fe2ef5a-402f-4b0c-97ed-7b839c7bb3de.png" 
                     alt="Scrap paper with text about flat transformation" 
-                    className="max-w-sm h-auto"
+                    className="max-w-lg h-auto"
                   />
                 </div>
 
