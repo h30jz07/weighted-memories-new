@@ -29,7 +29,7 @@ export const Scene8Empathy: React.FC = () => {
                 </p>
                 <p className="mb-4">
                   The smell is overwhelming, and part of him wants to walk away. But something 
-                  deeper tells him this is a moment that matters.
+                  tells him to speak up.
                 </p>
               </div>
             </div>
