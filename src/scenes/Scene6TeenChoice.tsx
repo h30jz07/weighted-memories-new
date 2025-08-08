@@ -32,8 +32,8 @@ export const Scene6TeenChoice: React.FC = () => {
                 a mixture of old food, mustiness, and neglect that makes his nose wrinkle.
               </p>
               <p>
-                He notices items spilling out into the corridor, making the narrow walkway even tighter. 
-                Other neighbors whisper and complain, some even leave passive-aggressive notes.
+                Items spill out into the corridor. The walkway is narrow and crowded. 
+                Other neighbors whisper and complain. Some even leave passive-aggressive notes.
               </p>
               {/* <p className="text-accent-warm font-medium">
                 In this moment, Meng has a choice that will shape what happens next...
