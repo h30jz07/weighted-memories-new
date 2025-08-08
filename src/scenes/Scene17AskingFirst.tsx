@@ -68,18 +68,12 @@ export const Scene17AskingFirst: React.FC = () => {
           </div>
           
           <div className="narrative-text space-y-6 mb-12">
-            <div className="bg-card p-6 rounded-lg border border-accent-warm/20">
-              {/* <h2 className="text-xl font-semibold mb-4 text-accent-warm">
-                A Simple but Profound Moment
-              </h2> */}
-              <p className="mb-4 italic">
-                "Madam Leong, would it be okay 
-                if we moved this to the recycling pile?"
-              </p>
-              <p>
-                I look at it, and pause. The singlet reminds me of my husband. With a soft nod, I give in, "Ok lah, 
-                I think that one can go." 
-              </p>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/44aea842-6651-4287-a690-28d40d445654.png" 
+                alt="Dialogue between Meng and Madam Leong about the singlet" 
+                className="max-w-4xl w-full h-auto transform scale-125"
+              />
             </div>
 
             {/* Character conversation with speech bubble */}
