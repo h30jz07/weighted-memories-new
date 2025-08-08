@@ -22,25 +22,13 @@ export const Scene13Reflection: React.FC = () => {
         <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
           <div className="max-w-4xl mx-auto text-center">
             
-            <div className="narrative-text max-w-2xl mx-auto mb-12">
-              <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border mb-8">
-                <p className="mb-4 italic">
-                  "Haizz...Another person who needs help. 
-                  But I'm so tired eh..."
-                </p>
-                <p className="mb-4">
-                  Fion stares at her computer screen, feeling the weight of all the cases 
-                  she's handled.
-                </p>
-                <p className="mb-4">
-                  The emotional strain of constant empathy and support 
-                  takes a toll on her.
-                </p>
-                {/* <p className="text-accent-warm font-medium">
-                  Even those who help others need support. Compassion fatigue is real.
-                </p> */}
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/c058ccba-24b7-4039-9bcc-a8b62ca6340b.png" 
+                  alt="Fion's reflection on her workload" 
+                  className="max-w-full h-auto mx-auto"
+                />
               </div>
-            </div>
 
             {/* Choice buttons */}
             <div className="space-y-6">
