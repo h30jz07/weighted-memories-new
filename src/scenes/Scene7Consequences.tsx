@@ -38,7 +38,7 @@ export const Scene7Consequences: React.FC = () => {
               <div className="narrative-text space-y-6 mb-8">
                 <p>
                   Madam Leong's hoarding condition worsened in isolation. A spark from the kitchen
-                  stove ignited a pile of newspapers, which provided fuel for a kitchen fire.
+                  stove ignited a pile of newspapers.
                 </p>
                 <p className="text-highlight font-semibold">
                   A small kitchen fire became a tragedy that could have been prevented 
