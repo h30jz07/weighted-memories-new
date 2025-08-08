@@ -48,7 +48,7 @@ export const Scene11SocialWorker: React.FC = () => {
               
               <div className="bg-card p-6 rounded-lg border border-card-border">
                 <p className="italic">
-                  "As a social worker, I know that I need to have more patience and empathy to help thosethat struggle with hoarding. 
+                  "As a social worker, I know that I need to have more patience and empathy to help those that struggle with hoarding. 
                   Change will only happen when they feel supported, not judged."
                 </p>
               </div>

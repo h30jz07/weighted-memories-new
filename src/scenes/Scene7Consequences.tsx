@@ -11,7 +11,7 @@ export const Scene7Consequences: React.FC = () => {
     // Show narration after a brief delay to let the fire video play
     const timer = setTimeout(() => {
       setShowNarration(true);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
