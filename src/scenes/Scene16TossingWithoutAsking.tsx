@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
-import initialTextImage from '@/assets/scene16-initial-text.png';
-import realizationTextImage from '@/assets/scene16-realization-text.png';
 
 export const Scene16TossingWithoutAsking: React.FC = () => {
   const navigate = useNavigate();
@@ -41,12 +39,11 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
               {/* <h1 className="text-3xl font-bold mb-6 text-destructive">
                 Acting Without Permission
               </h1> */}
-              <div className="max-w-2xl mx-auto">
-                <img 
-                  src={initialTextImage} 
-                  alt="Meng picks up what looks like an old, worthless newspaper and tosses it into the garbage bag without asking..."
-                  className="w-full h-auto"
-                />
+              <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-destructive/20 max-w-2xl mx-auto">
+                <p className="text-lg">
+                  Meng picks up what looks like an old, worthless newspaper and tosses it 
+                  into the garbage bag without asking...
+                </p>
               </div>
               </div>
             </div>
@@ -81,11 +78,10 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                     "Ah boy, stop! You don't understand lah! Why you just throw that away! That was from 
                     when my boy was born. I want to show him once he is older you know!?"
                   </blockquote>
-                  <img 
-                    src={realizationTextImage} 
-                    alt="Hearing her response, Meng realises the magnitude of the mistake. What seemed worthless to him was precious in Madam Leong's eyes."
-                    className="w-full h-auto"
-                  />
+                  <p>
+                    Hearing her response, Meng realises the magnitude of the mistake. What seemed worthless to him
+                    was precious in Madam Leong's eyes.
+                  </p>
                 </div>
 
                 {/* Character conversation with speech bubble */}

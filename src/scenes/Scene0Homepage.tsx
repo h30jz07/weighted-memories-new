@@ -4,7 +4,6 @@ import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
 import { AudioManager } from '@/components/AudioManager';
 import clutteredFlat from '@/assets/cluttered-hdb-flat.jpg';
-import soundNoteImage from '@/assets/scene0-sound-note.png';
 
 export const Scene0Homepage: React.FC = () => {
   const navigate = useNavigate();
@@ -50,12 +49,8 @@ export const Scene0Homepage: React.FC = () => {
           </div>
 
           {/* Ambient sound indicators */}
-          <div className="absolute bottom-4 left-4">
-            <img 
-              src={soundNoteImage} 
-              alt="Sound note: Muffled traffic, wind, and birds chirping"
-              className="max-w-xs h-auto"
-            />
+          <div className="absolute bottom-4 left-4 caption-text">
+            <p>🎵 Muffled traffic, wind, and birds chirping</p>
           </div>
         </div>
       </SceneTransition>

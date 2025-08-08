@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
-import hoardingDefinitionImage from '@/assets/scene3-hoarding-definition.png';
 
 export const Scene3Understanding: React.FC = () => {
   const navigate = useNavigate();
@@ -13,15 +12,15 @@ export const Scene3Understanding: React.FC = () => {
         <div className="max-w-4xl mx-auto px-8 py-12">
           
           <div className="narrative-text space-y-8">
-            <div className="max-w-2xl mx-auto mb-8">
-              <h2 className="text-2xl font-semibold mb-4 text-accent-warm text-center">
+            <div className="bg-card p-6 rounded-lg border border-card-border">
+              <h2 className="text-2xl font-semibold mb-4 text-accent-warm">
                 What is Hoarding Disorder?
               </h2>
-              <img 
-                src={hoardingDefinitionImage} 
-                alt="Hoarding disorder is a persistent difficulty when it comes to discarding or parting with possessions because of a perceived need to save them. A person with hoarding disorder experiences distress at the thought of getting rid of the items."
-                className="w-full h-auto"
-              />
+              <p>
+                Hoarding disorder is a persistent difficulty when it comes to discarding or parting with possessions 
+                because of a perceived need to save them. A person with hoarding disorder experiences 
+                distress at the thought of getting rid of the items.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
