@@ -61,9 +61,9 @@ export const Scene18Breakdown: React.FC = () => {
               <div className="narrative-text space-y-6 mb-12">
                 <div className="flex justify-center">
                   <img 
-                    src="/lovable-uploads/8a935b04-f58d-4455-869c-ce9cb2e25002.png" 
-                    alt="Handwritten text describing the emotional breakdown" 
-                    className="w-3/4 mx-auto transform scale-[2.25]"
+                    src="/lovable-uploads/scene18.png" 
+                    alt="Story showing emotional breakdown about precious books" 
+                    className="max-w-4xl w-full h-auto"
                   />
                 </div>
               </div>
