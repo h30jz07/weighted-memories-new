@@ -23,6 +23,9 @@ export const Scene6TeenChoice: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Animation scene description */}
           <div className="mb-12">
+            <h1 className="text-3xl font-bold mb-6 text-foreground">
+              Meng's Choice
+            </h1>
             <div className="narrative-text max-w-2xl mx-auto space-y-4 bg-amber-900/30 backdrop-blur-sm p-6 rounded-lg">
               <p>
                 Meng walks past Madam Leong's unit on his way home from school. The smell hits him first - 
@@ -51,10 +54,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 className="bg-muted hover:bg-muted/80 text-foreground-muted min-h-[120px] flex flex-col justify-center p-6"
               >
                 <span className="text-2xl mb-2">😤</span>
-                <span className="font-semibold">Feel Annoyed and Ignore</span>
-                <span className="text-sm mt-2 opacity-75 italic">
-                  "Ew this is disgusting. Why can't she clean up her mess?"
-                </span>
+                <span className="font-semibold">"Ew this is disgusting. Why can't she clean up her mess?"</span>
               </StoryButton>
 
               <div className="text-amber-900 bg-amber-900/20 px-4 py-2 rounded-full">or</div>
