@@ -35,8 +35,8 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-foreground">Madam Leong:</span>
                 <p className="mt-2 italic">
-                  "I know everyone thinks im crazy. But I just cannot let go of these things. 
-                  Some of them... they're all I have left of my husband."
+                  "Sorry ah boy, Aunty knows it is messy, but I cannot throw them away.
+                  ...they are all I have left of my husband.
                 </p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-accent-warm">Meng:</span>
                 <p className="mt-2 italic">
-                  "I'm sorry to hear that. But leaving so many things here can be dangerous. Let's go through the items together? You can keep what's important."
+                  "omg, i'm sorry aunty. But leaving so many things here can be dangerous. Do you want go through the items together? You can keep what's important."
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ export const Scene10Understanding: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-foreground">Madam Leong (nodding slowly):</span>
                 <p className="mt-2 italic">
-                  "Yes... I think that would help me."
+                  "err... I think can."
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export const Scene10Understanding: React.FC = () => {
                   
                   {showThought ? (
                     <p className="text-gray-800 text-left leading-relaxed font-medium">
-                      "This boy Meng didn't judge me. He approached me gently and made me feel heard. That's why I accepted his help."
+                      "This ah boy seems. Maybe he can understand me."
                     </p>
                   ) : (
                     <p className="text-gray-600 text-left text-xl font-bold">
@@ -90,7 +90,7 @@ export const Scene10Understanding: React.FC = () => {
                 </div>
                 
                 {!showThought && (
-                  <p className="text-sm text-foreground-muted mt-2">Click to hear Madam Leong's thoughts</p>
+                  <p className="text-sm text-foreground-muted mt-2">Hear Madam Leong's thoughts</p>
                 )}
               </div>
             </div>
