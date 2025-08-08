@@ -136,9 +136,6 @@
       radial-gradient(circle at 20% 50%, hsl(40 30% 95% / 0.3) 0%, transparent 20%),
       radial-gradient(circle at 80% 20%, hsl(35 25% 90% / 0.2) 0%, transparent 15%),
       radial-gradient(circle at 40% 80%, hsl(45 20% 88% / 0.2) 0%, transparent 18%);
-    
-    /* Smooth scrolling for the scroll-based story experience */
-    scroll-behavior: smooth;
   }
 
   /* Handwritten scrapbook typography */
