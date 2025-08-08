@@ -39,7 +39,7 @@ export const Scene7Consequences: React.FC = () => {
                 <img 
                   src="/lovable-uploads/ae515f3b-2c79-479a-a067-af515515b4cc.png" 
                   alt="Madam Leong's hoarding condition worsened and fire prevention information" 
-                  className="max-w-full h-auto transform scale-150"
+                  className="max-w-full h-auto transform scale-150 mb-20"
                 />
               </div>
 
