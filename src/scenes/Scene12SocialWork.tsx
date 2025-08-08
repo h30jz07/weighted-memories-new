@@ -53,7 +53,7 @@ export const Scene12SocialWork: React.FC = () => {
                 onClick={() => navigate('/scene/13')}
                 className="text-lg px-8 py-4"
               >
-                Continue to Fion's Challenge →
+                Next →
               </StoryButton>
             </div>
           </div>
