@@ -45,7 +45,7 @@ export const Scene18Breakdown: React.FC = () => {
                     Even with the care of everyone, 
                     
                     sorting through a lifetime of memories 
-                    becomes overwhelming for Madam Leong...
+                    becomes overwhelming for me...
                   </p>
                 </div>
               </div>
@@ -65,10 +65,9 @@ export const Scene18Breakdown: React.FC = () => {
                 The Moment Everything Becomes Too Much
               </h2> */}
               <p className="mb-4">
-                Halfway through the sorting process, Madam Leong witnesses her late husband's beloved books being thrown away.
-                She suddenly sits down on the floor 
-                and begins to cry. Her hands shake as she looks around at the items 
-                being organized.
+                I saw my late husband's precious books thrown away. Suddenly, I don't know why, but I could not take it anymore.
+                I sat down on the floor. I looked around me, my things being laid on the floor.
+                Before I could stop myself, tears fell from my face.
               </p>
               <blockquote className="text-lg italic text-accent-warm">
                 "Please, just stop. This isn't just stuff. These books belonged to him. Throwing them away is like throwing him away."
@@ -97,7 +96,10 @@ export const Scene18Breakdown: React.FC = () => {
                   
                   {showThought ? (
                     <p className="text-gray-800 text-left leading-relaxed font-medium italic">
-                      "She's clearly in pain and overwhelmed. If I step in now and try to fix things, 
+                      "This could be a problem. She's halting the process. It's annoying, but I have to be understanding.
+
+                      
+                      She's clearly in pain and overwhelmed. If I step in now and try to fix things, 
                       I might lose her respect. Maybe the best thing is to just be present, let her know her 
                       emotions are safe here. I should slow down and give her space, and show her that I care. 
                       This way, I can support her to make decisions at her own pace."
