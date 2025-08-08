@@ -52,7 +52,7 @@ export const Scene10Understanding: React.FC = () => {
 
             <div className="bg-card p-6 rounded-lg border border-card-border">
               <div className="mb-4">
-                <span className="font-semibold text-foreground">Madam Leong (nodding slowly):</span>
+                <span className="font-semibold text-foreground">Madam Leong (nodding reluctantly):</span>
                 <p className="mt-2 italic">
                   "err... I think can."
                 </p>
