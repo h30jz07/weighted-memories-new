@@ -25,8 +25,8 @@ export const Scene9Argument: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-destructive">Meng:</span>
                 <p className="mt-2 text-destructive-foreground italic">
-                  "This is disgusting! The whole corridor smells because of your flat. 
-                  You need to clean this mess up right now. It's not fair to the rest of us!"
+                  "This is damn disgusting! The whole corridor smells because of your flat. 
+                    Can you clean this mess up. It's affecting everyone!"
                 </p>
               </div>
             </div>
@@ -34,8 +34,7 @@ export const Scene9Argument: React.FC = () => {
               <div className="mb-4">
                 <span className="font-semibold text-accent-warm">Madam Leong:</span>
                 <p className="mt-2 italic">
-                  "You don't understand! This is my home, 
-                  my life. You have no right to tell me what to do with my belongings!"
+                  "knn! This is my home la. Mind your own business!"
                 </p>
               </div>
             </div>
