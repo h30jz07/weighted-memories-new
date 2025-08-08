@@ -14,11 +14,8 @@ export const Scene11SocialWorker: React.FC = () => {
           /* Video section */
           <div className="w-full max-w-4xl mx-auto p-8">
             <div className="text-center mb-8">
-              <h1 className="text-3xl font-bold mb-4 text-foreground">
-                Meet Fion - Social Worker
-              </h1>
               <p className="narrative-text">
-                Learn about Fion's approach to helping people with hoarding challenges.
+                Meet Fion the Social Worker
               </p>
             </div>
             
