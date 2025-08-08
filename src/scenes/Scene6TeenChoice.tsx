@@ -21,33 +21,12 @@ export const Scene6TeenChoice: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Animation scene description */}
           <div className="mb-12">
-            <div className="narrative-text max-w-2xl mx-auto space-y-6">
-              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
-                <p className="text-foreground text-lg leading-relaxed">
-                  Meng walks past Madam Leong's unit on his way home from school.
-                </p>
-              </div>
-              
-              <div className="scrapbook-cutout bg-accent-warm/20 p-4 shadow-lg transform rotate-1 border border-accent-warm/40">
-                <p className="text-foreground text-lg leading-relaxed">
-                  The smell hits him first.
-                </p>
-              </div>
-              
-              <div className="scrapbook-cutout bg-card p-4 shadow-lg transform -rotate-1 border border-card-border/30">
-                <p className="text-foreground text-lg leading-relaxed">
-                  He notices items spilling out into the corridor.
-                </p>
-              </div>
-              
-              <div className="scrapbook-cutout bg-muted/60 p-4 shadow-lg transform rotate-1 border border-muted/50">
-                <p className="text-foreground text-lg leading-relaxed">
-                  Other neighbors gossip and complain, some even leave passive-aggressive notes.
-                </p>
-              </div>
-              {/* <p className="text-accent-warm font-medium">
-                In this moment, Meng has a choice that will shape what happens next...
-              </p> */}
+            <div className="narrative-text max-w-4xl mx-auto">
+              <img 
+                src="/lovable-uploads/338320a3-a0d0-412c-8522-3a61df55af46.png" 
+                alt="Scrap paper with scene text"
+                className="w-full h-auto"
+              />
             </div>
           </div>
 
