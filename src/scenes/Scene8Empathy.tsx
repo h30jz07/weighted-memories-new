@@ -26,14 +26,10 @@ export const Scene8Empathy: React.FC = () => {
               <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border mb-8">
                 <p className="mb-4">
                   Meng stands outside Madam Leong's door and hears movement inside. 
-                  Maybe he could talk to her to see what's going on.
                 </p>
                 <p className="mb-4">
                   The smell is overwhelming, and part of him wants to walk away. But something 
                   deeper tells him this is a moment that matters.
-                </p>
-                <p className="text-accent-warm font-medium">
-                  How he approaches this conversation will shape everything that follows.
                 </p>
               </div>
             </div>
