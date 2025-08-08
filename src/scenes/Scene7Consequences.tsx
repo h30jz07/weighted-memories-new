@@ -43,7 +43,7 @@ export const Scene7Consequences: React.FC = () => {
                 />
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 mt-12">
                 <StoryButton
                   variant="secondary"
                   onClick={() => navigate('/scene/6')}
