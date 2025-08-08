@@ -21,9 +21,6 @@ export const Scene12SocialWork: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8 text-center text-highlight">
-              Why Social Workers Need to Practice Empathy
-            </h1>
             
             <div className="narrative-text space-y-8">
 
