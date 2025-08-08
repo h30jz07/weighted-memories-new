@@ -25,8 +25,8 @@ export const Scene13Reflection: React.FC = () => {
             <div className="narrative-text max-w-2xl mx-auto mb-12">
               <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border mb-8">
                 <p className="mb-4 italic">
-                  "Sigh...Another person who needs help. 
-                  But I'm so tired..."
+                  "Haizz...Another person who needs help. 
+                  But I'm so tired eh..."
                 </p>
                 <p className="mb-4">
                   Fion stares at her computer screen, feeling the weight of all the cases 
@@ -51,7 +51,7 @@ export const Scene13Reflection: React.FC = () => {
                   onClick={() => navigate('/scene/14')}
                   className="bg-muted hover:bg-muted/80 text-foreground-muted min-h-[120px] flex flex-col justify-center p-6"
                 >
-                  <span className="font-semibold">"Give me a break. Why are there so many cases..."</span>
+                  <span className="font-semibold">"Aiyo, give me a break. Why so many cases..."</span>
                 </StoryButton>
 
                 <div className="text-foreground-muted">or</div>
