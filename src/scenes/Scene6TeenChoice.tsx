@@ -38,7 +38,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 onClick={() => navigate('/scene/7')}
                 className="bg-red-200 hover:bg-red-300 text-red-800 border-2 border-red-300/60 min-h-[120px] flex flex-col justify-center p-6 transform rotate-[1deg] hover:rotate-0"
               >
-                <span className="font-normal text-lg">"WAH what is that smell?? Can this aunty clean up her own mess or not sia?"</span>
+                <span className="font-normal text-lg">"WALAO EHH what the hell is that smell?? Can this aunty clean up her own mess or not sia?"</span>
               </StoryButton>
 
               <div className="nav-label text-2xl">or</div>
@@ -48,7 +48,7 @@ export const Scene6TeenChoice: React.FC = () => {
                 onClick={() => navigate('/scene/6a')}
                 className="min-h-[120px] flex flex-col justify-center p-6 bg-green-200 hover:bg-green-300 text-green-800 border-2 border-green-300/60"
               >
-                <span className="font-normal text-lg">"Hmm, maybe aunty needs help with cleaning up?"</span>
+                <span className="font-normal text-lg">"Hmm, maybe the aunty needs help with cleaning up or something?"</span>
               </StoryButton>
             </div>
           </div>
