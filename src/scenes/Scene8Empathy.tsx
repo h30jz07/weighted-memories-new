@@ -23,11 +23,11 @@ export const Scene8Empathy: React.FC = () => {
           <div className="max-w-4xl mx-auto text-center">
             
             <div className="narrative-text max-w-2xl mx-auto mb-12">
-              <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-card-border mb-8">
+              <div className="mb-8">
                 <img 
                   src="/lovable-uploads/c3a3be0d-10b8-40a9-af8b-611201231665.png" 
                   alt="Meng stands outside Madam Leong's door" 
-                  className="max-w-full h-auto mx-auto"
+                  className="max-w-full h-auto mx-auto transform scale-150"
                 />
               </div>
             </div>
