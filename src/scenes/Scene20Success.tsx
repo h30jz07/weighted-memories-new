@@ -73,122 +73,116 @@ export const Scene20Success: React.FC = () => {
               {/* Character Conversations */}
               <div className="space-y-8 max-w-2xl mx-auto">
                 {/* Madam Leong's Reflection */}
-                <div className="bg-card/90 backdrop-blur-sm p-6 rounded-lg border border-accent-warm/20">
-                  <div className="flex items-start gap-6">
-                    {/* Character image */}
-                    <div className="flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/63b361ca-910e-4e13-9ebb-c7c63ba94393.png" 
-                        alt="Madam Leong"
-                        className="w-20 h-20 rounded-full object-cover border-4 border-accent-warm/30"
-                      />
-                    </div>
-                    
-                    {/* Speech bubble */}
-                    <div className="relative flex-1">
-                      <div 
-                        className="bg-white rounded-2xl p-6 shadow-lg border border-accent-warm/20 cursor-pointer hover:bg-gray-50 transition-colors"
-                        onClick={() => setShowMadamLeongThought(!showMadamLeongThought)}
-                      >
-                        {/* Speech bubble tail */}
-                        <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
-                        
-                        {showMadamLeongThought ? (
-                          <p className="text-gray-800 text-left leading-relaxed italic">
-                            "I thought no one understand me. Who cares about an old aunty like me?
-                            But everyone here listened to me. They never shame me, but respected me."
-                          </p>
-                        ) : (
-                          <p className="text-gray-600 text-left text-xl font-bold">
-                            ...
-                          </p>
-                        )}
-                      </div>
+                <div className="flex items-start gap-6">
+                  {/* Character image */}
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/63b361ca-910e-4e13-9ebb-c7c63ba94393.png" 
+                      alt="Madam Leong"
+                      className="w-20 h-20 rounded-full object-cover border-4 border-accent-warm/30"
+                    />
+                  </div>
+                  
+                  {/* Speech bubble */}
+                  <div className="relative flex-1">
+                    <div 
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-warm/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      onClick={() => setShowMadamLeongThought(!showMadamLeongThought)}
+                    >
+                      {/* Speech bubble tail */}
+                      <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
                       
-                      {!showMadamLeongThought && (
-                        <p className="text-sm text-foreground-muted mt-2">Click to hear Madam Leong's thoughts</p>
+                      {showMadamLeongThought ? (
+                        <p className="text-gray-800 text-left leading-relaxed italic">
+                          "I thought no one understand me. Who cares about an old aunty like me?
+                          But everyone here listened to me. They never shame me, but respected me."
+                        </p>
+                      ) : (
+                        <p className="text-gray-600 text-left text-xl font-bold">
+                          ...
+                        </p>
                       )}
                     </div>
+                    
+                    {!showMadamLeongThought && (
+                      <p className="text-sm text-foreground-muted mt-2">Click to hear Madam Leong's thoughts</p>
+                    )}
                   </div>
                 </div>
 
                 {/* Meng's Learning */}
-                <div className="bg-card/90 backdrop-blur-sm p-6 rounded-lg border border-accent-cool/20">
-                  <div className="flex items-start gap-6">
-                    {/* Character image */}
-                    <div className="flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/59c1b913-5b5e-4470-9231-4781cfb474a2.png" 
-                        alt="Meng"
-                        className="w-20 h-20 rounded-full object-cover border-4 border-accent-cool/30"
-                      />
-                    </div>
-                    
-                    {/* Speech bubble */}
-                    <div className="relative flex-1">
-                      <div 
-                        className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
-                        onClick={() => setShowMengThought(!showMengThought)}
-                      >
-                        {/* Speech bubble tail */}
-                        <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
-                        
-                        {showMengThought ? (
-                          <p className="text-gray-800 text-left leading-relaxed italic">
-                            "I learnt that helping someone isn't about "fixing" them. It's about listening, 
-                            understanding, and supporting them to make their own choices."
-                          </p>
-                        ) : (
-                          <p className="text-gray-600 text-left text-xl font-bold">
-                            ...
-                          </p>
-                        )}
-                      </div>
+                <div className="flex items-start gap-6">
+                  {/* Character image */}
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/59c1b913-5b5e-4470-9231-4781cfb474a2.png" 
+                      alt="Meng"
+                      className="w-20 h-20 rounded-full object-cover border-4 border-accent-cool/30"
+                    />
+                  </div>
+                  
+                  {/* Speech bubble */}
+                  <div className="relative flex-1">
+                    <div 
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      onClick={() => setShowMengThought(!showMengThought)}
+                    >
+                      {/* Speech bubble tail */}
+                      <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
                       
-                      {!showMengThought && (
-                        <p className="text-sm text-foreground-muted mt-2">Click to hear Meng's thoughts</p>
+                      {showMengThought ? (
+                        <p className="text-gray-800 text-left leading-relaxed italic">
+                          "I learnt that helping someone isn't about "fixing" them. It's about listening, 
+                          understanding, and supporting them to make their own choices."
+                        </p>
+                      ) : (
+                        <p className="text-gray-600 text-left text-xl font-bold">
+                          ...
+                        </p>
                       )}
                     </div>
+                    
+                    {!showMengThought && (
+                      <p className="text-sm text-foreground-muted mt-2">Click to hear Meng's thoughts</p>
+                    )}
                   </div>
                 </div>
 
                 {/* Fion's Insight */}
-                <div className="bg-card/90 backdrop-blur-sm p-6 rounded-lg border border-highlight/20">
-                  <div className="flex items-start gap-6">
-                    {/* Character image */}
-                    <div className="flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/0d72c890-ae4d-43b8-9294-d60813ba1f26.png" 
-                        alt="Fion"
-                        className="w-20 h-20 rounded-full object-cover border-4 border-highlight/30"
-                      />
-                    </div>
-                    
-                    {/* Speech bubble */}
-                    <div className="relative flex-1">
-                      <div 
-                        className="bg-white rounded-2xl p-6 shadow-lg border border-highlight/20 cursor-pointer hover:bg-gray-50 transition-colors"
-                        onClick={() => setShowFionThought(!showFionThought)}
-                      >
-                        {/* Speech bubble tail */}
-                        <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
-                        
-                        {showFionThought ? (
-                          <p className="text-gray-800 text-left leading-relaxed italic">
-                            "This is why I do this work. 
-                            Every person deserves to be seen, heard, and supported."
-                          </p>
-                        ) : (
-                          <p className="text-gray-600 text-left text-xl font-bold">
-                            ...
-                          </p>
-                        )}
-                      </div>
+                <div className="flex items-start gap-6">
+                  {/* Character image */}
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/0d72c890-ae4d-43b8-9294-d60813ba1f26.png" 
+                      alt="Fion"
+                      className="w-20 h-20 rounded-full object-cover border-4 border-highlight/30"
+                    />
+                  </div>
+                  
+                  {/* Speech bubble */}
+                  <div className="relative flex-1">
+                    <div 
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-highlight/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      onClick={() => setShowFionThought(!showFionThought)}
+                    >
+                      {/* Speech bubble tail */}
+                      <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
                       
-                      {!showFionThought && (
-                        <p className="text-sm text-foreground-muted mt-2">Click to hear Fion's thoughts</p>
+                      {showFionThought ? (
+                        <p className="text-gray-800 text-left leading-relaxed italic">
+                          "This is why I do this work. 
+                          Every person deserves to be seen, heard, and supported."
+                        </p>
+                      ) : (
+                        <p className="text-gray-600 text-left text-xl font-bold">
+                          ...
+                        </p>
                       )}
                     </div>
+                    
+                    {!showFionThought && (
+                      <p className="text-sm text-foreground-muted mt-2">Click to hear Fion's thoughts</p>
+                    )}
                   </div>
                 </div>
               </div>
