@@ -70,7 +70,7 @@ export const Scene18Breakdown: React.FC = () => {
                 Before I could stop myself, tears fell from my face.
               </p>
               <blockquote className="text-lg italic text-accent-warm">
-                "Please, just stop. This isn't just stuff. These books belonged to him. Throwing them away is like throwing him away."
+                "Aiya please, just stop. This isn't just stuff. These books belonged to him. Throwing them away is like throwing him away."
               </blockquote>
             </div>
             
