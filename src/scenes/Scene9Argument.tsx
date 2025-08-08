@@ -21,25 +21,12 @@ export const Scene9Argument: React.FC = () => {
           {/* Scene visualization */}
           
           <div className="max-w-3xl mx-auto space-y-8 mb-12">
-            <div className="memory-frame">
-              <div className="speech-bubble transform rotate-1">
-                <div className="mb-3">
-                  <span className="font-semibold text-red-600">Meng:</span>
-                  <p className="mt-2 italic">
-                    "Aunty, paiseh ah, but your house got strong smell leh. Can help clean up a bit please? Xie xie ah aunty"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="memory-frame">
-              <div className="speech-bubble transform rotate-[-0.8deg]">
-                <div className="mb-3">
-                  <span className="font-semibold text-amber-700">Madam Leong:</span>
-                  <p className="mt-2 italic">
-                    "You not happy, go complain lah. Don’t come talk to me like that!"
-                  </p>
-                </div>
-              </div>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/75a3f3b0-0d68-4626-8ea1-5216a7a654be.png" 
+                alt="Dialogue between Meng and Madam Leong" 
+                className="max-w-full h-auto"
+              />
             </div>
 
             <div className="scrapbook-text transform rotate-0.5 max-w-2xl mx-auto">
