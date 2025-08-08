@@ -45,8 +45,7 @@ export const Scene20Success: React.FC = () => {
                 </h1> */}
                 <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
                   <p className="text-lg">
-                    At last, we have successfully 
-                    transformed Madam Leong's living space.
+                    At last, my flat is transformed!
                   </p>
                 </div>
               </div>
@@ -109,7 +108,7 @@ export const Scene20Success: React.FC = () => {
                         {showMadamLeongThought ? (
                           <p className="text-gray-800 text-left leading-relaxed italic">
                             "I thought no one understand me. Who cares about an old auntie like me?
-                            But everyone here listened to me. They did not shame me, but respected my wishes."
+                            But everyone here listened to me. They never shame me, but respected me."
                           </p>
                         ) : (
                           <p className="text-gray-600 text-left text-xl font-bold">
