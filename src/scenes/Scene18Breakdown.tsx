@@ -40,13 +40,12 @@ export const Scene18Breakdown: React.FC = () => {
                 {/* <h1 className="text-3xl font-bold mb-6 text-white">
                   Emotional Overwhelm
                 </h1> */}
-                <div className="bg-black/60 backdrop-blur-sm p-8 rounded-lg border border-white/20 max-w-2xl mx-auto">
-                  <p className="text-lg text-white">
-                    Even with the care of everyone, 
-                    
-                    sorting through a lifetime of memories 
-                    becomes overwhelming for me...
-                  </p>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lovable-uploads/91cd8532-aa0c-49a9-980a-0d2f3123c120.png" 
+                    alt="Even with the care of everyone, sorting through a lifetime of memories becomes overwhelming for me..." 
+                    className="max-w-4xl w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
