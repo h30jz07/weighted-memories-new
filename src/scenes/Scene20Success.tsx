@@ -107,7 +107,7 @@ export const Scene20Success: React.FC = () => {
                         
                         {showMadamLeongThought ? (
                           <p className="text-gray-800 text-left leading-relaxed italic">
-                            "I thought no one understand me. Who cares about an old auntie like me?
+                            "I thought no one understand me. Who cares about an old aunty like me?
                             But everyone here listened to me. They never shame me, but respected me."
                           </p>
                         ) : (
@@ -147,7 +147,7 @@ export const Scene20Success: React.FC = () => {
                         
                         {showMengThought ? (
                           <p className="text-gray-800 text-left leading-relaxed italic">
-                            "I realised helping someone isn't about "fixing" them. It's about listening, 
+                            "I learnt that helping someone isn't about "fixing" them. It's about listening, 
                             understanding, and supporting them to make their own choices."
                           </p>
                         ) : (
