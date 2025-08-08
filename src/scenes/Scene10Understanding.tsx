@@ -21,77 +21,47 @@ export const Scene10Understanding: React.FC = () => {
             </h1> */}
           </div>
           
-          <div className="narrative-text max-w-3xl mx-auto space-y-6 mb-12">
-            <div className="bg-card p-6 rounded-lg border border-accent-warm/20">
-              <div className="mb-4">
-                <span className="font-semibold text-accent-warm">Meng:</span>
-                <p className="mt-2 italic">
-                  "Hi Aunty, everything hai hao ma?  I saw a lot of things outside your house, maybe I can help you clear the things?"
-                </p>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto mb-12">
+            <img 
+              src="/lovable-uploads/a38316f4-ab44-4d5e-8843-91d29e930965.png" 
+              alt="Dialogue between Meng and Madam Leong about helping with the hoarding situation"
+              className="w-full h-auto"
+            />
+          </div>
 
-            <div className="bg-card p-6 rounded-lg border border-card-border">
-              <div className="mb-4">
-                <span className="font-semibold text-foreground">Madam Leong:</span>
-                <p className="mt-2 italic">
-                  "Dui bu qi ah boy, aunty knows it’s messy lah, but I just can’t throw them away... these are all I have left of my husband ah."
-                </p>
-              </div>
+          <div className="flex items-start gap-6 max-w-2xl mx-auto">
+            {/* Character image */}
+            <div className="flex-shrink-0">
+              <img 
+                src="/lovable-uploads/63b361ca-910e-4e13-9ebb-c7c63ba94393.png" 
+                alt="Madam Leong" 
+                className="w-24 h-24 rounded-full object-cover border-4 border-accent-cool/30"
+              />
             </div>
-
-            <div className="bg-card p-6 rounded-lg border border-card-border">
-              <div className="mb-4">
-                <span className="font-semibold text-accent-warm">Meng:</span>
-                <p className="mt-2 italic">
-                  "Ah I see I see. I'm sorry aunty but leaving so many things here can also be very dangerous la you know?. How about we go through the items together? You can keep what's important for you la."
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-card p-6 rounded-lg border border-card-border">
-              <div className="mb-4">
-                <span className="font-semibold text-foreground">Madam Leong (nodding reluctantly):</span>
-                <p className="mt-2 italic">
-                  "Aiyo, ke yi la, ke yi."
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-6 max-w-2xl mx-auto">
-              {/* Character image */}
-              <div className="flex-shrink-0">
-                <img 
-                  src="/lovable-uploads/63b361ca-910e-4e13-9ebb-c7c63ba94393.png" 
-                  alt="Madam Leong" 
-                  className="w-24 h-24 rounded-full object-cover border-4 border-accent-cool/30"
-                />
-              </div>
-              
-              {/* Speech bubble */}
-              <div className="relative flex-1">
-                <div 
-                  className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
-                  onClick={() => setShowThought(!showThought)}
-                >
-                  {/* Speech bubble tail */}
-                  <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
-                  
-                  {showThought ? (
-                    <p className="text-gray-800 text-left leading-relaxed font-medium">
-                      "Don’t know why this ah boy help me, but not bad la. Maybe someone finally understand me la hor."
-                    </p>
-                  ) : (
-                    <p className="text-gray-600 text-left text-xl font-bold">
-                      ...
-                    </p>
-                  )}
-                </div>
+            
+            {/* Speech bubble */}
+            <div className="relative flex-1">
+              <div 
+                className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                onClick={() => setShowThought(!showThought)}
+              >
+                {/* Speech bubble tail */}
+                <div className="absolute left-0 top-6 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-white -translate-x-[15px]"></div>
                 
-                {!showThought && (
-                  <p className="text-sm text-foreground-muted mt-2">Hear Madam Leong's thoughts</p>
+                {showThought ? (
+                  <p className="text-gray-800 text-left leading-relaxed font-medium">
+                    "Don't know why this ah boy help me, but not bad la. Maybe someone finally understand me la hor."
+                  </p>
+                ) : (
+                  <p className="text-gray-600 text-left text-xl font-bold">
+                    ...
+                  </p>
                 )}
               </div>
+              
+              {!showThought && (
+                <p className="text-sm text-foreground-muted mt-2">Hear Madam Leong's thoughts</p>
+              )}
             </div>
           </div>
 
