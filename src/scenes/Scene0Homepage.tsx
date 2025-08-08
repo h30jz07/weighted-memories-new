@@ -34,9 +34,6 @@ export const Scene0Homepage: React.FC = () => {
                   A story of three people, one house, and the weight we carry 
                   that others do not see.
                 </p>
-                <p className="text-accent-warm">
-                  Let's step inside.
-                </p>
               </div>
             </div>
 
