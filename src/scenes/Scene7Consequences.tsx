@@ -37,7 +37,7 @@ export const Scene7Consequences: React.FC = () => {
               
               <div className="flex justify-center mb-8">
                 <img 
-                  src="/lovable-uploads/ae515f3b-2c79-479a-a067-af515515b4cc.png" 
+                  src="/lovable-uploads/d8eca8ab-39fe-4c59-ab8d-6fb0825c98d0.png" 
                   alt="Madam Leong's hoarding condition worsened and fire prevention information" 
                   className="max-w-full h-auto transform scale-150 mb-20"
                 />
