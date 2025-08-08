@@ -37,12 +37,6 @@ export const Scene20Success: React.FC = () => {
             {!showContent ? (
               /* Initial action */
               <div>
-                <div className="mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-4xl animate-bounce">✨</span>
-                </div>
-                {/* <h1 className="text-3xl font-bold mb-6 text-accent-warm">
-                  Successful Collaboration
-                </h1> */}
                 <div className="bg-card/90 backdrop-blur-sm p-8 rounded-lg border border-accent-warm/20 max-w-2xl mx-auto">
                   <p className="text-lg">
                     At last, my flat is transformed!
