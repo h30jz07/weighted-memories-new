@@ -43,9 +43,6 @@ export const Scene11SocialWorker: React.FC = () => {
         ) : (
           /* Post-video content */
           <div className="max-w-4xl mx-auto text-center p-8">
-            <h1 className="text-3xl font-bold mb-8 text-foreground">
-              The Social Worker's Approach
-            </h1>
             
             <div className="narrative-text space-y-6 mb-12">
               
