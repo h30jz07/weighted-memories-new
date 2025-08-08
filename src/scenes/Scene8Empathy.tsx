@@ -36,9 +36,6 @@ export const Scene8Empathy: React.FC = () => {
 
             {/* Choice buttons */}
             <div className="space-y-6">
-              <h2 className="text-xl font-semibold mb-8 text-foreground">
-                What does Meng do?
-              </h2>
               
               <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                 <StoryButton
