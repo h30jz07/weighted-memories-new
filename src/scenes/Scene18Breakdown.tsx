@@ -69,7 +69,7 @@ export const Scene18Breakdown: React.FC = () => {
               </div>
               
               {/* Character conversation - following exact format from Scene6a */}
-              <div className="flex items-start gap-6 max-w-2xl mx-auto mt-16">
+              <div className="flex items-start gap-6 max-w-2xl mx-auto mt-32">
                 {/* Character image */}
                 <div className="flex-shrink-0">
                   <img 
