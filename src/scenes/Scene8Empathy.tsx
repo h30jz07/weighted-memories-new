@@ -25,7 +25,7 @@ export const Scene8Empathy: React.FC = () => {
             <div className="narrative-text max-w-2xl mx-auto mb-12">
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/c3a3be0d-10b8-40a9-af8b-611201231665.png" 
+                  src="/lovable-uploads/5575a9f2-b1de-4b3e-bc01-09eb61f9873e.png" 
                   alt="Meng stands outside Madam Leong's door" 
                   className="max-w-full h-auto mx-auto transform scale-150"
                 />
