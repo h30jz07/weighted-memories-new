@@ -31,7 +31,7 @@ export const Scene9Argument: React.FC = () => {
 
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 mt-32">
             <StoryButton
               variant="primary"
               onClick={() => navigate('/scene/9a')}
