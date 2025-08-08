@@ -72,7 +72,7 @@ export const Scene11SocialWorker: React.FC = () => {
               onClick={() => navigate('/scene/12')}
               className="text-lg px-8 py-4"
             >
-              Next >
+              Next {'>'}
             </StoryButton>
           </div>
         )}

@@ -39,11 +39,12 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
               {/* <h1 className="text-3xl font-bold mb-6 text-destructive">
                 Acting Without Permission
               </h1> */}
-              <div className="bg-amber-900/30 backdrop-blur-sm p-8 rounded-lg border border-destructive/20 max-w-2xl mx-auto">
-                <p className="text-lg">
-                  Meng picks up what looks like an old, worthless newspaper and tosses it 
-                  into the garbage bag without asking...
-                </p>
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/4742a3a1-21e1-45dc-becf-2242549df90c.png" 
+                  alt="Meng picks up what looks like an old, worthless newspaper and tosses it into the garbage bag without asking..." 
+                  className="max-w-4xl w-full h-auto transform scale-150"
+                />
               </div>
               </div>
             </div>
