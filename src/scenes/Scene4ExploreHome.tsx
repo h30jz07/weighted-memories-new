@@ -165,7 +165,7 @@ export const Scene4ExploreHome: React.FC = () => {
               variant="primary"
               onClick={() => {
                 localStorage.removeItem('scene4ThrownAwayItems');
-                navigate('/scene/21');
+                navigate('/scene/20');  {/* Update navigation target to scene 20 */}
               }}
               className="mt-2 text-sm px-4 py-2"
             >
@@ -175,7 +175,7 @@ export const Scene4ExploreHome: React.FC = () => {
         </div>
 
         {/* Trashcan Drop Zone */}
-        <div className="relative z-10 flex justify-center mt-8 pb-8">
+        <div className="absolute bottom-8 right-8 z-10 flex justify-center mt-8 pb-8">
           <div
             onClick={() => console.log('Trashcan clicked!')}
             onDragOver={(e) => {
