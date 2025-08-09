@@ -214,7 +214,7 @@ export const Scene4ExploreHome: React.FC = () => {
               console.log('Drag leave trashcan');
               setIsDraggingOverTrashcan(false);
             }}
-            className="w-48 h-48 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
+            className="w-80 h-80 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
           >
             <img 
               src={isDraggingOverTrashcan ? "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png" : "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png"}
