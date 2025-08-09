@@ -19,7 +19,7 @@ export const Scene21Conclusion: React.FC = () => {
               <img 
                 src="/lovable-uploads/287f2650-8f37-44d4-96e1-4c80ba7833b8.png" 
                 alt="Empathy conclusion with community photo showing how empathy transforms interactions and communities" 
-                className="max-w-full h-auto"
+                className="w-full h-auto max-w-5xl"
               />
             </div>
           </div>
