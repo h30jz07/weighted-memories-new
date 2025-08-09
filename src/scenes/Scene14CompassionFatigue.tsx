@@ -8,7 +8,7 @@ export const Scene14CompassionFatigue: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-gradient-to-b from-muted/30 to-background flex items-center justify-center p-8 font-roboto">
+      <div className="min-h-screen bg-gradient-to-b from-muted/30 to-background flex items-center justify-center p-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-muted/30 flex items-center justify-center">

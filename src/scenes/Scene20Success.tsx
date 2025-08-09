@@ -22,7 +22,7 @@ export const Scene20Success: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen relative font-roboto">
+      <div className="min-h-screen relative">
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -86,7 +86,7 @@ export const Scene20Success: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-warm/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-warm/20 cursor-pointer hover:bg-gray-50 transition-colors"
                       onClick={() => setShowMadamLeongThought(!showMadamLeongThought)}
                     >
                       {/* Speech bubble tail */}
@@ -94,7 +94,8 @@ export const Scene20Success: React.FC = () => {
                       
                       {showMadamLeongThought ? (
                         <p className="text-gray-800 text-left leading-relaxed italic">
-                          "I thought nobody understand me one… who will care about a old woman like me right? But I was wrong lah ... everyone here listened to me ah … never shame me and uh give me some respect lah hor"
+                          "I thought no one understand me. Who cares about an old aunty like me?
+                          But everyone here listened to me. They never shame me, but respected me."
                         </p>
                       ) : (
                         <p className="text-gray-600 text-left text-xl font-bold">
@@ -123,7 +124,7 @@ export const Scene20Success: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
                       onClick={() => setShowMengThought(!showMengThought)}
                     >
                       {/* Speech bubble tail */}
@@ -161,7 +162,7 @@ export const Scene20Success: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-highlight/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-highlight/20 cursor-pointer hover:bg-gray-50 transition-colors"
                       onClick={() => setShowFionThought(!showFionThought)}
                     >
                       {/* Speech bubble tail */}

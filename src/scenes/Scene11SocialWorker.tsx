@@ -8,7 +8,7 @@ export const Scene11SocialWorker: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-background flex items-center justify-center font-roboto">
+      <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="w-full max-w-4xl mx-auto p-8">
           <div className="text-center mb-8">
             <p className="narrative-text">

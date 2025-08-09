@@ -45,7 +45,7 @@ export const Scene1Characters: React.FC = () => {
   return (
     <SceneTransition>
       <div 
-        className="min-h-screen relative p-8 bg-cover bg-center font-roboto"
+        className="min-h-screen relative p-8 bg-cover bg-center"
         style={{ backgroundImage: `url(${clutteredFlat})` }}
       >
         {/* Dark overlay for readability */}

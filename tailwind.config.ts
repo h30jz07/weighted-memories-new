@@ -18,10 +18,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'roboto': ['Roboto', 'sans-serif'],
-				'shadows': ['Shadows Into Light', 'cursive'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

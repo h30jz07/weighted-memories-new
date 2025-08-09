@@ -131,20 +131,11 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     background-image: 
       radial-gradient(circle at 20% 50%, hsl(40 30% 95% / 0.3) 0%, transparent 20%),
       radial-gradient(circle at 80% 20%, hsl(35 25% 90% / 0.2) 0%, transparent 15%),
       radial-gradient(circle at 40% 80%, hsl(45 20% 88% / 0.2) 0%, transparent 18%);
-  }
-
-  /* Scene 0 uses the handwritten font */
-  .scene-0 {
-    font-family: 'Shadows Into Light', cursive;
-  }
-
-  .scene-0 * {
-    font-family: 'Shadows Into Light', cursive;
   }
 
   /* Handwritten scrapbook typography */

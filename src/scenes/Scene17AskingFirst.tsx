@@ -19,7 +19,7 @@ export const Scene17AskingFirst: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-gradient-to-b from-accent-warm/20 to-background flex items-center justify-center p-8 font-roboto">
+      <div className="min-h-screen bg-gradient-to-b from-accent-warm/20 to-background flex items-center justify-center p-8">
         <div className="max-w-4xl mx-auto text-center">
           {!showContent ? (
             /* Initial action */
@@ -89,7 +89,7 @@ export const Scene17AskingFirst: React.FC = () => {
               {/* Speech bubble */}
               <div className="relative flex-1">
                 <div 
-                  className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
+                  className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
                   onClick={() => setShowThought(!showThought)}
                 >
                   {/* Speech bubble tail */}
