@@ -23,8 +23,8 @@ export const Scene21Conclusion: React.FC = () => {
         {/* Full-width image */}
         <div className="w-screen flex justify-center">
           <img
-            src="/lovable-uploads/287f2650-8f37-44d4-96e1-4c80ba7833b8.png"
-            alt="Empathy conclusion..."
+            src="/lovable-uploads/58cbcfa2-bdde-461f-b345-cd2394600db0.png"
+            alt="Empathy conclusion with community message"
             className="h-auto max-w-7xl w-full"
           />
         </div>
