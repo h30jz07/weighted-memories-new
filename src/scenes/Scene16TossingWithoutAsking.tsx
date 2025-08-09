@@ -101,7 +101,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                       
                       {showThought ? (
                         <p className="text-gray-800 text-left leading-relaxed font-medium">
-                          "TSK, these people ah, never even ask me first one! They think I simply keep rubbish meh? Got reason I keep all these things one, you know! You think i siao ah?"
+                          "TSK, these people ah, never even ask me first one! They think I simply keep rubbish meh? Got reason I keep all these things one, you know! They think I siao ah?"
                         </p>
                       ) : (
                         <p className="text-gray-600 text-left text-xl font-bold">
