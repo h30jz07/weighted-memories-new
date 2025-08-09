@@ -213,11 +213,21 @@ export const Scene4ExploreHome: React.FC = () => {
             console.log('Drag leave trashcan');
             setIsDraggingOverTrashcan(false);
           }}
-          className={`fixed bottom-10 right-10 w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl shadow-lg border-4 border-white transition-all duration-300 z-50 cursor-pointer
-            ${isDraggingOverTrashcan ? 'bg-red-700 scale-110 ring-4 ring-red-300' : 'bg-red-600'}
-          `}
+          className="fixed bottom-10 left-1/2 transform -translate-x-1/2 w-24 h-24 flex items-center justify-center transition-all duration-300 z-50 cursor-pointer hover:scale-110"
         >
-          🗑️
+          <img 
+            src={isDraggingOverTrashcan ? "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png" : "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png"}
+            alt="Trash bag"
+            className="w-full h-full object-contain transition-all duration-300"
+            onMouseEnter={(e) => {
+              e.currentTarget.src = "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png";
+            }}
+            onMouseLeave={(e) => {
+              if (!isDraggingOverTrashcan) {
+                e.currentTarget.src = "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png";
+              }
+            }}
+          />
         </div>
       </div>
     </SceneTransition>
