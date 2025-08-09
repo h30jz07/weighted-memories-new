@@ -94,8 +94,7 @@ export const Scene20Success: React.FC = () => {
                       
                       {showMadamLeongThought ? (
                         <p className="text-gray-800 text-left leading-relaxed italic">
-                          "I thought no one understand me. Who cares about an old aunty like me?
-                          But everyone here listened to me. They never shame me, but respected me."
+                          "I thought nobody understand me one… who will care about a old woman like me right? But I was wrong lah ... everyone here listened to me ah … never shame me and uh give me some respect lah hor"
                         </p>
                       ) : (
                         <p className="text-gray-600 text-left text-xl font-bold">
