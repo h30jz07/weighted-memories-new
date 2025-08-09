@@ -90,11 +90,11 @@ export const Scene18Breakdown: React.FC = () => {
                     
                     {showThought ? (
                       <p className="text-gray-800 text-left leading-relaxed font-medium italic">
-                        "This could be a problem. She's halting the process. It's annoying, but I have to be understanding.
+                        "This could be a problem leh OMG! She's halting the process man... so freaking annoying, but bopian I just have to be understanding lor.
 
                         
-                        She's clearly in pain and overwhelmed. If I step in now and try to fix things, 
-                        I might lose her respect. I should slow down and give her space, and show her that I care."
+                        She's clearly in pain and overwhelmed. If I go step in now and try to fix things ah, 
+                        I might lose her respect sia. I should slow down and give her space sia, and show her that I care."
                       </p>
                     ) : (
                       <p className="text-gray-600 text-left text-xl font-bold">
