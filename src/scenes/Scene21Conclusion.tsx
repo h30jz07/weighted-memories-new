@@ -17,8 +17,8 @@ export const Scene21Conclusion: React.FC = () => {
           <div className="narrative-text space-y-8 mb-12">
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/178e3ffe-1cf9-420e-a903-f0b5956b91eb.png" 
-                alt="Empathy conclusion text with three colored sections" 
+                src="/lovable-uploads/287f2650-8f37-44d4-96e1-4c80ba7833b8.png" 
+                alt="Empathy conclusion with community photo showing how empathy transforms interactions and communities" 
                 className="max-w-full h-auto"
               />
             </div>
