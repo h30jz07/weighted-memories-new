@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';  
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
@@ -26,38 +26,28 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
             <div 
               className="absolute inset-0 flex items-center justify-center"
               style={{
-                backgroundImage: `url('/lovable-uploads/324f4e2b-8989-42b4-90ac-42c89230b0a2.png')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
+                backgroundImage: `url('/lovable-uploads/scene16.png')`,
+                backgroundSize: 'cover', // Ensure the image covers the full area
+                backgroundPosition: 'bottom center', // Align image to the bottom
+                backgroundRepeat: 'no-repeat', // Prevent repetition
               }}
             >
               {/* Background overlay with blur effect */}
               <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
               
               <div className="relative z-10 text-center">
-              {/* <h1 className="text-3xl font-bold mb-6 text-destructive">
-                Acting Without Permission
-              </h1> */}
-              <div className="flex justify-center">
-                <img 
-                  src="/lovable-uploads/4742a3a1-21e1-45dc-becf-2242549df90c.png" 
-                  alt="Meng picks up what looks like an old, worthless newspaper and tosses it into the garbage bag without asking..." 
-                  className="max-w-4xl w-full h-auto transform scale-150"
-                />
-              </div>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lovable-uploads/4742a3a1-21e1-45dc-becf-2242549df90c.png" 
+                    alt="Meng picks up what looks like an old, worthless newspaper and tosses it into the garbage bag without asking..." 
+                    className="max-w-4xl w-full h-auto transform scale-150"
+                  />
+                </div>
               </div>
             </div>
           ) : (
             /* Madam Leong's reaction */
             <div>
-              {/* <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-destructive/30 flex items-center justify-center">
-                <span className="text-4xl">😰</span>
-              </div> */}
-              {/* <h1 className="text-3xl font-bold mb-6 text-destructive">
-                "You Don't Understand!"
-              </h1> */}
-              
               <div className="narrative-text space-y-6 mb-12">
                 {/* YouTube video embed */}
                 <div className="aspect-video bg-black rounded-lg overflow-hidden">
@@ -118,7 +108,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
               </div>
 
               <div className="space-y-4">
-{showThought && (
+                {showThought && (
                   <StoryButton
                     variant="secondary"
                     onClick={() => {
@@ -131,10 +121,6 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                     ← Continue Cleanup Process
                   </StoryButton>
                 )}
-                
-                {/* <p className="caption-text text-foreground-muted">
-                  Every item has a story - empathy means listening before acting
-                </p> */}
               </div>
             </div>
           )}

@@ -13,9 +13,9 @@ export const Scene8Empathy: React.FC = () => {
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${mengImage})` }}
+          style={{ backgroundImage: `url('/lovable-uploads/corridorbg.png')` }}
         >
-          <div className="absolute inset-0 bg-background-overlay" />
+          <div className="absolute inset-0 bg-white/20" />
         </div>
 
         {/* Content */}

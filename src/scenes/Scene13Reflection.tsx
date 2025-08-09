@@ -9,21 +9,29 @@ export const Scene13Reflection: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen flex items-center justify-center p-8">
+      <div className="min-h-screen relative">
+        {/* Background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/lovable-uploads/socialworker.png')` }}
+        >
+          {/* Optional overlay to make text more readable */}
+          <div className="absolute inset-0 bg-white/10" />
+        </div>
 
-        <div className="max-w-4xl mx-auto text-center">
-            
-              <div className="mb-8">
-                <img 
-                  src="/lovable-uploads/ec6f8ee2-9da2-4023-8b24-2d1b8c35bdea.png" 
-                  alt="Fion's reflection on her workload" 
-                  className="max-w-full h-auto mx-auto transform scale-150 mb-20"
-                />
-              </div>
+        {/* Content */}
+        <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/scene13.png" 
+                alt="Fion's reflection on her workload" 
+                className="max-w-full h-auto mx-auto transform scale-150 mb-20"
+              />
+            </div>
 
             {/* Choice buttons */}
             <div className="space-y-6 mt-12">
-              
               <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                 <StoryButton
                   variant="choice"
@@ -46,13 +54,10 @@ export const Scene13Reflection: React.FC = () => {
                   <span className="font-semibold">"Its okay! She needs my help."</span>
                 </StoryButton>
               </div>
-
-              {/* <p className="caption-text text-foreground-muted mt-8">
-                Social workers should also be shown empathy when they need it
-              </p> */}
             </div>
           </div>
         </div>
-      </SceneTransition>
+      </div>
+    </SceneTransition>
   );
 };

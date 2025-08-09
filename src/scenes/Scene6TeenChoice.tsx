@@ -10,12 +10,12 @@ export const Scene6TeenChoice: React.FC = () => {
     <SceneTransition>
       <div className="min-h-screen flex items-center justify-center p-8 relative bg-background">
         {/* Scrapbook paper texture overlay */}
-        <div className="absolute inset-0 opacity-10" 
-             style={{
-               backgroundImage: `radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.1) 1px, transparent 1px),
-                                radial-gradient(circle at 75% 75%, rgba(160, 82, 45, 0.08) 1px, transparent 1px)`,
-               backgroundSize: '20px 20px'
-             }}>
+        {/* Background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/lovable-uploads/corridorbg.png')` }}
+        >
+          <div className="absolute inset-0 bg-white/20" />
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">

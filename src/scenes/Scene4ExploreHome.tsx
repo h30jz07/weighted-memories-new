@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
@@ -100,8 +100,14 @@ export const Scene4ExploreHome: React.FC = () => {
   return (
     <SceneTransition>
       <div className="min-h-screen relative">
-        {/* Background */}
-        <div className="absolute inset-0 bg-background/95" />
+        {/* Background image (dirty house) */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('${hoardedRoomImage}')` }}
+        >
+          {/* Optional overlay */}
+          <div className="absolute inset-0 bg-white/30" />
+        </div>
 
         {/* Header */}
         <div className="relative z-10 p-8">
@@ -122,8 +128,8 @@ export const Scene4ExploreHome: React.FC = () => {
         {/* Interactive Room Image */}
         <div className="relative z-10 flex items-center justify-center p-8">
           <div className="relative max-w-4xl mx-auto">
-            {/* Image container: Ensure it's centered */}
             <div className="relative w-full h-auto">
+              {/* Image container: Ensure it's centered */}
               <img 
                 src={hoardedRoomImage} 
                 alt="Hoarded room with items to clean" 
@@ -163,7 +169,7 @@ export const Scene4ExploreHome: React.FC = () => {
               }}
               className="mt-2 text-sm px-4 py-2"
             >
-              Finish Cleanup →
+              Finish Cleanup → 
             </StoryButton>
           )}
         </div>
