@@ -187,47 +187,49 @@ export const Scene4ExploreHome: React.FC = () => {
           )}
         </div>
 
-        {/* Trashcan Drop Zone */}
-        <div
-          onClick={() => console.log('Trashcan clicked!')}
-          onDragOver={(e) => {
-            e.preventDefault();
-            e.dataTransfer.dropEffect = 'move';
-            console.log('Drag over trashcan');
-          }}
-          onDrop={(e) => {
-            e.preventDefault();
-            console.log('Drop event triggered, draggedItem:', draggedItem);
-            if (draggedItem) {
-              handleItemDrop(draggedItem);
-              setDraggedItem(null);
-            }
-            setIsDraggingOverTrashcan(false);
-          }}
-          onDragEnter={(e) => {
-            e.preventDefault();
-            console.log('Drag enter trashcan');
-            setIsDraggingOverTrashcan(true);
-          }}
-          onDragLeave={(e) => {
-            console.log('Drag leave trashcan');
-            setIsDraggingOverTrashcan(false);
-          }}
-          className="fixed bottom-10 left-1/2 transform -translate-x-1/2 w-24 h-24 flex items-center justify-center transition-all duration-300 z-50 cursor-pointer hover:scale-110"
-        >
-          <img 
-            src={isDraggingOverTrashcan ? "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png" : "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png"}
-            alt="Trash bag"
-            className="w-full h-full object-contain transition-all duration-300"
-            onMouseEnter={(e) => {
-              e.currentTarget.src = "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png";
+        {/* Trashcan Drop Zone - positioned below the room image */}
+        <div className="relative z-10 flex justify-center mt-8 pb-8">
+          <div
+            onClick={() => console.log('Trashcan clicked!')}
+            onDragOver={(e) => {
+              e.preventDefault();
+              e.dataTransfer.dropEffect = 'move';
+              console.log('Drag over trashcan');
             }}
-            onMouseLeave={(e) => {
-              if (!isDraggingOverTrashcan) {
-                e.currentTarget.src = "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png";
+            onDrop={(e) => {
+              e.preventDefault();
+              console.log('Drop event triggered, draggedItem:', draggedItem);
+              if (draggedItem) {
+                handleItemDrop(draggedItem);
+                setDraggedItem(null);
               }
+              setIsDraggingOverTrashcan(false);
             }}
-          />
+            onDragEnter={(e) => {
+              e.preventDefault();
+              console.log('Drag enter trashcan');
+              setIsDraggingOverTrashcan(true);
+            }}
+            onDragLeave={(e) => {
+              console.log('Drag leave trashcan');
+              setIsDraggingOverTrashcan(false);
+            }}
+            className="w-48 h-48 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
+          >
+            <img 
+              src={isDraggingOverTrashcan ? "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png" : "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png"}
+              alt="Trash bag"
+              className="w-full h-full object-contain transition-all duration-300"
+              onMouseEnter={(e) => {
+                e.currentTarget.src = "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png";
+              }}
+              onMouseLeave={(e) => {
+                if (!isDraggingOverTrashcan) {
+                  e.currentTarget.src = "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png";
+                }
+              }}
+            />
+          </div>
         </div>
       </div>
     </SceneTransition>
