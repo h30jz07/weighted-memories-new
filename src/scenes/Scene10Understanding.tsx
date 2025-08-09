@@ -50,7 +50,7 @@ export const Scene10Understanding: React.FC = () => {
                 
                 {showThought ? (
                   <p className="text-gray-800 text-left leading-relaxed font-medium">
-                    "Don't know why this ah boy trying to help me, but not bad la. Maybe someone finally understand me la hor."
+                    "Don't know why this ah boy trying to help me, but okay la maybe someone finally understand me la hor."
                   </p>
                 ) : (
                   <p className="text-gray-600 text-left text-xl font-bold">
