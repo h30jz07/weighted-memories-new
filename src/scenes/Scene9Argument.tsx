@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import { useNavigate } from 'react-router-dom';
 import { SceneTransition } from '@/components/SceneTransition';
 import { StoryButton } from '@/components/StoryButton';
@@ -9,9 +9,8 @@ export const Scene9Argument: React.FC = () => {
   return (
     <SceneTransition>
       <div className="min-h-screen flex items-center justify-center p-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center relative"> {/* Added relative positioning for positioning the button */}
           {/* Scene visualization */}
-          
           <div className="max-w-3xl mx-auto space-y-8 mb-12">
             <div className="flex justify-center mb-8">
               <img 
@@ -20,10 +19,10 @@ export const Scene9Argument: React.FC = () => {
                 className="max-w-full h-auto transform scale-150"
               />
             </div>
-
           </div>
 
-          <div className="space-y-4 mt-32">
+          {/* Button Section */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 pt-32"> {/* Absolute positioning for the button */}
             <StoryButton
               variant="primary"
               onClick={() => navigate('/scene/8')}

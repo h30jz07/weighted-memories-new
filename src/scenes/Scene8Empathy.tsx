@@ -22,12 +22,12 @@ export const Scene8Empathy: React.FC = () => {
         <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
           <div className="max-w-4xl mx-auto text-center">
             
-            <div className="narrative-text max-w-2xl mx-auto mb-12">
+            <div className="narrative-text max-w-2xl mx-auto pb-12">
               <div className="mb-8">
                 <img 
                   src="/lovable-uploads/5575a9f2-b1de-4b3e-bc01-09eb61f9873e.png" 
                   alt="Meng stands outside Madam Leong's door" 
-                  className="max-w-full h-auto mx-auto transform scale-150"
+                  className="max-w-full h-auto mx-auto transform scale-150 "
                 />
               </div>
             </div>

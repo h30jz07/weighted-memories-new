@@ -44,10 +44,8 @@ export const Scene1Characters: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div 
-        className="min-h-screen relative p-8 bg-cover bg-center"
-        style={{ backgroundImage: `url(${clutteredFlat})` }}
-      >
+      <div className="min-h-screen flex items-center justify-center relative p-8 bg-cover bg-center" style={{ backgroundImage: `url(${clutteredFlat})` }}>
+
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-background-overlay"></div>
         <div className="relative z-10 max-w-6xl mx-auto">
