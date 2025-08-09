@@ -19,7 +19,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-gradient-to-b from-destructive/30 to-background flex items-center justify-center p-8">
+      <div className="min-h-screen bg-gradient-to-b from-destructive/30 to-background flex items-center justify-center p-8 font-roboto">
         <div className="max-w-4xl mx-auto text-center">
           {!showReaction ? (
             /* Initial action */
@@ -93,7 +93,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
                       onClick={() => setShowThought(!showThought)}
                     >
                       {/* Speech bubble tail */}

@@ -9,7 +9,7 @@ export const Scene13Reflection: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen flex items-center justify-center p-8">
+      <div className="min-h-screen flex items-center justify-center p-8 font-roboto">
 
         <div className="max-w-4xl mx-auto text-center">
             

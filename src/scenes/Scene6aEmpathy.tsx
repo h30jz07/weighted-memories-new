@@ -9,7 +9,7 @@ export const Scene6aEmpathy: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-gradient-to-b from-background to-background-secondary flex items-center justify-center p-8">
+      <div className="min-h-screen bg-gradient-to-b from-background to-background-secondary flex items-center justify-center p-8 font-roboto">
         <div className="max-w-4xl mx-auto text-center">
           {/* Character conversation */}
           <div className="mb-12">
@@ -23,22 +23,22 @@ export const Scene6aEmpathy: React.FC = () => {
                 />
               </div>
               
-              {/* Scrapbook-style speech bubble */}
-              <div className="relative flex-1">
-                <div 
-                  className="speech-bubble left cursor-pointer hover:bg-gradient-to-br hover:from-amber-50 hover:to-yellow-50 transition-colors"
-                  onClick={() => setShowThought(!showThought)}
-                >
-                  {showThought ? (
-                    <p className="text-left leading-relaxed">
-                      "If no one helps Madam Leong then how ah? I think I should try to help her, if not i'll feel guilty man I dont' know..."
-                    </p>
-                  ) : (
-                    <p className="text-left text-2xl">
-                      ...
-                    </p>
-                  )}
-                </div>
+                {/* Scrapbook-style speech bubble */}
+                <div className="relative flex-1">
+                  <div 
+                    className="speech-bubble left cursor-pointer hover:bg-gradient-to-br hover:from-amber-50 hover:to-yellow-50 transition-colors font-roboto"
+                    onClick={() => setShowThought(!showThought)}
+                  >
+                    {showThought ? (
+                      <p className="text-left leading-relaxed">
+                        "If no one helps Madam Leong then how ah? I think I should try to help her, if not i'll feel guilty man I dont' know..."
+                      </p>
+                    ) : (
+                      <p className="text-left text-2xl">
+                        ...
+                      </p>
+                    )}
+                  </div>
                 
                 {!showThought && (
                   <p className="nav-label mt-3">Click to hear Meng's thoughts</p>

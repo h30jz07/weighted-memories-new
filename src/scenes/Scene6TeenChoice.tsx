@@ -8,7 +8,7 @@ export const Scene6TeenChoice: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen flex items-center justify-center p-8 relative bg-background">
+      <div className="min-h-screen flex items-center justify-center p-8 relative bg-background font-roboto">
         {/* Scrapbook paper texture overlay */}
         <div className="absolute inset-0 opacity-10" 
              style={{

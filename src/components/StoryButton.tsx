@@ -12,7 +12,7 @@ export const StoryButton: React.FC<StoryButtonProps> = ({
   className,
   ...props
 }) => {
-  const baseClasses = "story-button inline-flex items-center justify-center text-lg font-normal transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
+  const baseClasses = "story-button inline-flex items-center justify-center text-lg font-normal transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 font-roboto";
   
   const variantClasses = {
     primary: "bg-primary text-primary-foreground hover:bg-primary-hover",

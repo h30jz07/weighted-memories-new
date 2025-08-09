@@ -49,7 +49,7 @@ export const Scene2Video: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="min-h-screen bg-background flex items-center justify-center font-roboto">
         <div className="max-w-4xl w-full mx-auto p-8">
           <header className="text-center mb-8">
             <p className="narrative-text max-w-2xl mx-auto">

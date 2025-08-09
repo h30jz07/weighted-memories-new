@@ -22,7 +22,7 @@ export const Scene20Success: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative font-roboto">
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -86,7 +86,7 @@ export const Scene20Success: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-warm/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-warm/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
                       onClick={() => setShowMadamLeongThought(!showMadamLeongThought)}
                     >
                       {/* Speech bubble tail */}
@@ -123,7 +123,7 @@ export const Scene20Success: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-accent-cool/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
                       onClick={() => setShowMengThought(!showMengThought)}
                     >
                       {/* Speech bubble tail */}
@@ -161,7 +161,7 @@ export const Scene20Success: React.FC = () => {
                   {/* Speech bubble */}
                   <div className="relative flex-1">
                     <div 
-                      className="bg-white rounded-2xl p-6 shadow-lg border border-highlight/20 cursor-pointer hover:bg-gray-50 transition-colors"
+                      className="bg-white rounded-2xl p-6 shadow-lg border border-highlight/20 cursor-pointer hover:bg-gray-50 transition-colors font-roboto"
                       onClick={() => setShowFionThought(!showFionThought)}
                     >
                       {/* Speech bubble tail */}

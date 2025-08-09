@@ -119,7 +119,7 @@ export const Scene4ExploreHome: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative font-roboto">
         {/* Background */}
         <div className="absolute inset-0 bg-background/95" />
 

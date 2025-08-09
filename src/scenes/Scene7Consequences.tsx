@@ -18,7 +18,7 @@ export const Scene7Consequences: React.FC = () => {
 
   return (
     <SceneTransition>
-      <div className="min-h-screen relative flex items-center justify-center" style={{ backgroundColor: '#1a1410' }}>
+      <div className="min-h-screen relative flex items-center justify-center font-roboto" style={{ backgroundColor: '#1a1410' }}>
         {/* Fire video background (placeholder) */}
         <div className="absolute inset-0 bg-gradient-to-t from-red-900/30 to-orange-900/20">
           <div className="w-full h-full flex items-center justify-center">
