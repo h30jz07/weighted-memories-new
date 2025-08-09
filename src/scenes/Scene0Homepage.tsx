@@ -11,7 +11,7 @@ export const Scene0Homepage: React.FC = () => {
   return (
     <SceneTransition>
         <div 
-          className="min-h-screen relative flex items-center justify-center bg-cover bg-center"
+          className="min-h-screen relative flex items-center justify-center bg-cover bg-center scene-0"
           style={{ backgroundImage: `url(${clutteredFlat})` }}
         >
           {/* Dark overlay for readability */}
