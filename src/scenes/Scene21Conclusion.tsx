@@ -47,6 +47,45 @@ export const Scene21Conclusion: React.FC = () => {
             Thank you for exploring the power of empathy with us
           </p>
         </div>
+
+        {/* Credits section */}
+        <div className="fixed bottom-4 right-4 bg-background/80 backdrop-blur-sm rounded-lg p-3 max-w-xs">
+          <h3 className="text-xs font-semibold text-foreground-muted mb-2">Credits</h3>
+          <div className="space-y-1">
+            <a 
+              href="https://www.youtube.com/watch?v=9W0UIbQC3qU" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-xs text-primary hover:text-primary/80 transition-colors"
+            >
+              YouTube Video 1
+            </a>
+            <a 
+              href="https://www.youtube.com/watch?v=uqKBKewYJNU" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-xs text-primary hover:text-primary/80 transition-colors"
+            >
+              YouTube Video 2
+            </a>
+            <a 
+              href="https://www.youtube.com/watch?v=oMWNwE7C_iI" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-xs text-primary hover:text-primary/80 transition-colors"
+            >
+              YouTube Video 3
+            </a>
+            <a 
+              href="https://www.youtube.com/watch?v=Pjs0vzEy4q0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-xs text-primary hover:text-primary/80 transition-colors"
+            >
+              YouTube Video 4
+            </a>
+          </div>
+        </div>
       </div>
     </SceneTransition>
   );
