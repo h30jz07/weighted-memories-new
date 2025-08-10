@@ -44,9 +44,6 @@ export const Scene14CompassionFatigue: React.FC = () => {
                 ← Back to Previous
               </StoryButton>
               
-              <p className="caption-text text-foreground-muted">
-                Those who care for others also need care, understanding, and time for themselves.
-              </p>
             </div>
           </div>
         </div>
