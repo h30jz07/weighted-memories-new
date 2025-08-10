@@ -51,9 +51,6 @@ export const Scene6aEmpathy: React.FC = () => {
                     )}
                   </div>
                   
-                  {!showThought && (
-                    <p className="nav-label mt-3">Click to hear Meng's thoughts</p>
-                  )}
                 </div>
               </div>
             </div>
