@@ -103,9 +103,6 @@ export const Scene18Breakdown: React.FC = () => {
                     )}
                   </div>
                   
-                  {!showThought && (
-                    <p className="text-sm text-foreground-muted mt-2">Click to hear Meng's thoughts</p>
-                  )}
                 </div>
               </div>
 
