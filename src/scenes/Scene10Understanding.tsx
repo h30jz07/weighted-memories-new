@@ -69,10 +69,7 @@ export const Scene10Understanding: React.FC = () => {
                     </p>
                   )}
                 </div>
-                
-                {!showThought && (
-                  <p className="text-sm text-foreground-muted mt-2">Hear Madam Leong's thoughts</p>
-                )}
+              
               </div>
             </div>
 
