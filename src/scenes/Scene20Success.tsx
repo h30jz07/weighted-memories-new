@@ -98,10 +98,7 @@ export const Scene20Success: React.FC = () => {
                             </p>
                           )}
                         </div>
-                        
-                        {!showMadamLeongThought && (
-                          <p className="text-sm text-foreground-muted mt-2">Click to hear Madam Leong's thoughts</p>
-                        )}
+                      
                       </div>
                     </div>
 
@@ -137,9 +134,6 @@ export const Scene20Success: React.FC = () => {
                           )}
                         </div>
                         
-                        {!showMengThought && (
-                          <p className="text-sm text-foreground-muted mt-2">Click to hear Meng's thoughts</p>
-                        )}
                       </div>
                     </div>
 
@@ -174,10 +168,7 @@ export const Scene20Success: React.FC = () => {
                             </p>
                           )}
                         </div>
-                        
-                        {!showFionThought && (
-                          <p className="text-sm text-foreground-muted mt-2">Click to hear Fion's thoughts</p>
-                        )}
+                      
                       </div>
                     </div>
                   </div>
