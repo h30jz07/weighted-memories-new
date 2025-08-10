@@ -49,7 +49,7 @@ export const Scene21Conclusion: React.FC = () => {
         </div>
 
         {/* Credits section */}
-        <div className="fixed bottom-4 right-4 bg-background/80 backdrop-blur-sm rounded-lg p-3 max-w-xs">
+        <div className="fixed bottom-4 right-4 bg-background/80 backdrop-blur-sm rounded-lg p-3 max-w-sm">
           <h3 className="text-xs font-semibold text-foreground-muted mb-2">Credits</h3>
           <div className="space-y-1">
             <a 
@@ -58,7 +58,7 @@ export const Scene21Conclusion: React.FC = () => {
               rel="noopener noreferrer"
               className="block text-xs text-primary hover:text-primary/80 transition-colors"
             >
-              YouTube Video 1
+              Inside a hoarder's home | The Straits Times
             </a>
             <a 
               href="https://www.youtube.com/watch?v=uqKBKewYJNU" 
@@ -66,7 +66,7 @@ export const Scene21Conclusion: React.FC = () => {
               rel="noopener noreferrer"
               className="block text-xs text-primary hover:text-primary/80 transition-colors"
             >
-              YouTube Video 2
+              Hoarders: Tempers RAGE When Hoarder is Confronted With Reality | A&E
             </a>
             <a 
               href="https://www.youtube.com/watch?v=oMWNwE7C_iI" 
@@ -74,7 +74,7 @@ export const Scene21Conclusion: React.FC = () => {
               rel="noopener noreferrer"
               className="block text-xs text-primary hover:text-primary/80 transition-colors"
             >
-              YouTube Video 3
+              Get Rea!: Spaced Out
             </a>
             <a 
               href="https://www.youtube.com/watch?v=Pjs0vzEy4q0" 
@@ -82,7 +82,7 @@ export const Scene21Conclusion: React.FC = () => {
               rel="noopener noreferrer"
               className="block text-xs text-primary hover:text-primary/80 transition-colors"
             >
-              YouTube Video 4
+              The Complex Bond Between Hoarders and Their Stuff
             </a>
           </div>
         </div>
