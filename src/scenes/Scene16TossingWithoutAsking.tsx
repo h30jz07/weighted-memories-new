@@ -100,9 +100,6 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
                       )}
                     </div>
                     
-                    {!showThought && (
-                      <p className="text-sm text-foreground-muted mt-2">Click to hear Madam Leong&apos;s thoughts</p>
-                    )}
                   </div>
                 </div>
               </div>
