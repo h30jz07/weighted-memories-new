@@ -195,14 +195,17 @@ export const Scene4ExploreHome: React.FC = () => {
               <img 
                 src={hoardedRoomImage} 
                 alt="Hoarded room with items to clean" 
-                className="w-full h-auto rounded-lg shadow-lg object-contain"
+                className="w-full h-auto rounded-lg shadow-lg object-contain select-none pointer-events-none"
+                draggable={false}
+                onContextMenu={(e) => e.preventDefault()}
+                onTouchStart={(e) => e.preventDefault()}
               />
 
               {/* Interactive dots positioned over items in the room */}
               {availableItems.map((item) => (
                 <div
                   key={item.id}
-                  className="absolute w-4 h-4 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg touch-none"
+                  className="absolute w-6 h-6 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg z-30 pointer-events-auto"
                   style={{ left: item.position.x, top: item.position.y }}
                   draggable
                   onDragStart={(e) => {
@@ -210,9 +213,21 @@ export const Scene4ExploreHome: React.FC = () => {
                     e.dataTransfer.effectAllowed = 'move';
                     e.dataTransfer.setData('text/plain', item.id);
                   }}
-                  onTouchStart={(e) => handleTouchStart(e, item)}
-                  onTouchMove={handleTouchMove}
-                  onTouchEnd={handleTouchEnd}
+                  onTouchStart={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleTouchStart(e, item);
+                  }}
+                  onTouchMove={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleTouchMove(e);
+                  }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleTouchEnd(e);
+                  }}
                   title={item.name}
                 />
               ))}
