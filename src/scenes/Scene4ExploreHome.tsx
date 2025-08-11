@@ -86,11 +86,18 @@ const movePointerDrag = (e: React.PointerEvent) => {
 // End drag: drop or snap back
 const endPointerDrag = (e: React.PointerEvent) => {
   if (!isPointerDragging || activePointerId === null || e.pointerId !== activePointerId) return;
+
+  // Try to release pointer capture if we have it (avoid stuck capture on some browsers)
+  try { (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId); } catch {}
+
+  e.preventDefault();
   const { clientX, clientY } = e;
   const over = isOverTrashcan(clientX, clientY);
+
   if (over && draggedItem) {
     handleItemDrop(draggedItem);
   }
+
   // reset state regardless (snap back if not over trash)
   setIsPointerDragging(false);
   setDragPos(null);
@@ -271,13 +278,10 @@ style={
     ? { left: dragPos.x, top: dragPos.y, position: 'fixed' as const }
     : { left: item.position.x, top: item.position.y, position: 'absolute' as const }
 }
-draggable // keep for desktop HTML5 DnD fallback if you like
-onDragStart={(e) => {
-  setDraggedItem(item);
-  e.dataTransfer.effectAllowed = 'move';
-  e.dataTransfer.setData('text/plain', item.id);
-  setIsDraggingOverTrashcan(false);
-}}
+// Disable native HTML5 DnD completely so Pointer Events work on desktop
+draggable={false}
+onDragStart={(e) => e.preventDefault()}
+
 // Pointer Events (covers mouse + touch):
 onPointerDown={(e) => startPointerDrag(e, item)}
 onPointerMove={movePointerDrag}
@@ -296,22 +300,10 @@ onPointerCancel={endPointerDrag}
           <div
             data-trashcan="true"
             onClick={() => console.log('Trashcan clicked!')}
-            onDragOver={(e) => {
-  e.preventDefault();
-  e.dataTransfer.dropEffect = 'move';
-  setIsDraggingOverTrashcan(true);
-}}
+            // Keep if you like hover scale via CSS; not required for the drop anymore
+onPointerEnter={() => setIsDraggingOverTrashcan(true)}
+onPointerLeave={() => setIsDraggingOverTrashcan(false)}
 
-            onDrop={(e) => {
-              e.preventDefault();
-              if (draggedItem) {
-                handleItemDrop(draggedItem);
-                setDraggedItem(null);
-              }
-              setIsDraggingOverTrashcan(false);
-            }}
-            onDragEnter={() => setIsDraggingOverTrashcan(true)}
-            onDragLeave={() => setIsDraggingOverTrashcan(false)}
             className="w-28 h-28 md:w-80 md:h-80 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
           >
             <img 
