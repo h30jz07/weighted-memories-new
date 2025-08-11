@@ -57,6 +57,49 @@ export const Scene4ExploreHome: React.FC = () => {
   const [isDraggingOverTrashcan, setIsDraggingOverTrashcan] = useState(false);
   const [touchStart, setTouchStart] = useState<{ x: number; y: number } | null>(null);
   const [isTouchDragging, setIsTouchDragging] = useState(false);
+  // Free-drag state (pointer or touch)
+const [isPointerDragging, setIsPointerDragging] = useState(false);
+const [dragPos, setDragPos] = useState<{ x: number; y: number } | null>(null);
+const [dragOrigin, setDragOrigin] = useState<{ xPct: string; yPct: string } | null>(null);
+const [activePointerId, setActivePointerId] = useState<number | null>(null);
+
+// Begin pointer-based drag (mouse or touch)
+const startPointerDrag = (e: React.PointerEvent, item: InteractiveItem) => {
+  // capture pointer so we keep getting move events even if it leaves the element
+  (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+  setActivePointerId(e.pointerId);
+  setDraggedItem(item);
+  setIsPointerDragging(true);
+  setDragPos({ x: e.clientX, y: e.clientY });
+  // remember original percentage position to snap back visually
+  setDragOrigin({ xPct: item.position.x, yPct: item.position.y });
+};
+
+// Track pointer movement
+const movePointerDrag = (e: React.PointerEvent) => {
+  if (!isPointerDragging || activePointerId === null || e.pointerId !== activePointerId) return;
+  setDragPos({ x: e.clientX, y: e.clientY });
+  // live highlight when over the trashcan
+  setIsDraggingOverTrashcan(isOverTrashcan(e.clientX, e.clientY));
+};
+
+// End drag: drop or snap back
+const endPointerDrag = (e: React.PointerEvent) => {
+  if (!isPointerDragging || activePointerId === null || e.pointerId !== activePointerId) return;
+  const { clientX, clientY } = e;
+  const over = isOverTrashcan(clientX, clientY);
+  if (over && draggedItem) {
+    handleItemDrop(draggedItem);
+  }
+  // reset state regardless (snap back if not over trash)
+  setIsPointerDragging(false);
+  setDragPos(null);
+  setIsDraggingOverTrashcan(false);
+  setDraggedItem(null);
+  setActivePointerId(null);
+  setDragOrigin(null);
+};
+
 
   // Load thrown away items from localStorage on mount
   useEffect(() => {
@@ -220,23 +263,27 @@ export const Scene4ExploreHome: React.FC = () => {
               {availableItems.map((item) => (
                 <div
                   key={item.id}
-                  className="absolute w-6 h-6 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg z-30 pointer-events-auto touch-none"
-                  style={{ left: item.position.x, top: item.position.y }}
-                  draggable
-                  onDragStart={(e) => {
-                    setDraggedItem(item);
-                    e.dataTransfer.effectAllowed = 'move';
-                    e.dataTransfer.setData('text/plain', item.id);
-                  }}
-                  onTouchStart={(e) => {
-                    handleTouchStart(e, item);
-                  }}
-                  onTouchMove={(e) => {
-                    handleTouchMove(e);
-                  }}
-                  onTouchEnd={(e) => {
-                    handleTouchEnd(e);
-                  }}
+                  className="p2 absolute w-6 h-6 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg z-30 pointer-events-auto touch-none"
+                  // Position: if this is the active item and we're pointer-dragging,
+// render it under the finger as a fixed element. Otherwise, keep original absolute position.
+style={
+  draggedItem?.id === item.id && isPointerDragging && dragPos
+    ? { left: dragPos.x, top: dragPos.y, position: 'fixed' as const }
+    : { left: item.position.x, top: item.position.y, position: 'absolute' as const }
+}
+draggable // keep for desktop HTML5 DnD fallback if you like
+onDragStart={(e) => {
+  setDraggedItem(item);
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', item.id);
+  setIsDraggingOverTrashcan(false);
+}}
+// Pointer Events (covers mouse + touch):
+onPointerDown={(e) => startPointerDrag(e, item)}
+onPointerMove={movePointerDrag}
+onPointerUp={endPointerDrag}
+onPointerCancel={endPointerDrag}
+
                   title={item.name}
                 />
               ))}
@@ -250,9 +297,11 @@ export const Scene4ExploreHome: React.FC = () => {
             data-trashcan="true"
             onClick={() => console.log('Trashcan clicked!')}
             onDragOver={(e) => {
-              e.preventDefault();
-              e.dataTransfer.dropEffect = 'move';
-            }}
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  setIsDraggingOverTrashcan(true);
+}}
+
             onDrop={(e) => {
               e.preventDefault();
               if (draggedItem) {
@@ -268,7 +317,7 @@ export const Scene4ExploreHome: React.FC = () => {
             <img 
               src={isDraggingOverTrashcan ? "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png" : "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png"}
               alt="Trash bag"
-              className="w-full h-full object-contain transition-all duration-300"
+className="w-full h-full object-contain transition-all duration-300 pointer-events-none"
             />
           </div>
         </div>
