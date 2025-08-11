@@ -192,7 +192,7 @@ export const Scene4ExploreHome: React.FC = () => {
             }}
             onDragEnter={() => setIsDraggingOverTrashcan(true)}
             onDragLeave={() => setIsDraggingOverTrashcan(false)}
-            className="w-20 h-20 md:w-80 md:h-80 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
+            className="w-28 h-28 md:w-80 md:h-80 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110"
           >
             <img 
               src={isDraggingOverTrashcan ? "/lovable-uploads/94e7ff42-bc2c-4ee4-808d-2a8500ba8035.png" : "/lovable-uploads/18489058-e09b-470b-a209-5cd7f641eb1e.png"}
