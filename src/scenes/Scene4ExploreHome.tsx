@@ -55,6 +55,8 @@ export const Scene4ExploreHome: React.FC = () => {
   const [thrownAwayItems, setThrownAwayItems] = useState<Set<string>>(new Set());
   const [draggedItem, setDraggedItem] = useState<InteractiveItem | null>(null);
   const [isDraggingOverTrashcan, setIsDraggingOverTrashcan] = useState(false);
+  const [touchStart, setTouchStart] = useState<{ x: number; y: number } | null>(null);
+  const [isTouchDragging, setIsTouchDragging] = useState(false);
 
   // Load thrown away items from localStorage on mount
   useEffect(() => {
@@ -73,6 +75,47 @@ export const Scene4ExploreHome: React.FC = () => {
 
   // Determine items still available (not thrown away)
   const availableItems = interactiveItems.filter(item => !thrownAwayItems.has(item.id));
+
+  // Check if coordinates are over trashcan
+  const isOverTrashcan = (x: number, y: number) => {
+    const trashcanElement = document.querySelector('[data-trashcan="true"]');
+    if (!trashcanElement) return false;
+    
+    const rect = trashcanElement.getBoundingClientRect();
+    return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+  };
+
+  // Handle touch events for mobile drag and drop
+  const handleTouchStart = (e: React.TouchEvent, item: InteractiveItem) => {
+    const touch = e.touches[0];
+    setTouchStart({ x: touch.clientX, y: touch.clientY });
+    setDraggedItem(item);
+    setIsTouchDragging(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isTouchDragging || !touchStart) return;
+    
+    const touch = e.touches[0];
+    const isOverTrash = isOverTrashcan(touch.clientX, touch.clientY);
+    setIsDraggingOverTrashcan(isOverTrash);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (!isTouchDragging || !draggedItem) return;
+    
+    const touch = e.changedTouches[0];
+    const isOverTrash = isOverTrashcan(touch.clientX, touch.clientY);
+    
+    if (isOverTrash) {
+      handleItemDrop(draggedItem);
+    }
+    
+    setIsTouchDragging(false);
+    setTouchStart(null);
+    setDraggedItem(null);
+    setIsDraggingOverTrashcan(false);
+  };
 
   // Handle drop onto trashcan
   const handleItemDrop = (item: InteractiveItem) => {
@@ -159,7 +202,7 @@ export const Scene4ExploreHome: React.FC = () => {
               {availableItems.map((item) => (
                 <div
                   key={item.id}
-                  className="absolute w-4 h-4 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg"
+                  className="absolute w-4 h-4 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg touch-none"
                   style={{ left: item.position.x, top: item.position.y }}
                   draggable
                   onDragStart={(e) => {
@@ -167,6 +210,9 @@ export const Scene4ExploreHome: React.FC = () => {
                     e.dataTransfer.effectAllowed = 'move';
                     e.dataTransfer.setData('text/plain', item.id);
                   }}
+                  onTouchStart={(e) => handleTouchStart(e, item)}
+                  onTouchMove={handleTouchMove}
+                  onTouchEnd={handleTouchEnd}
                   title={item.name}
                 />
               ))}
@@ -177,6 +223,7 @@ export const Scene4ExploreHome: React.FC = () => {
         {/* Trashcan Drop Zone - Mobile responsive */}
         <div className="fixed bottom-4 right-4 md:absolute md:bottom-8 md:right-8 z-10">
           <div
+            data-trashcan="true"
             onClick={() => console.log('Trashcan clicked!')}
             onDragOver={(e) => {
               e.preventDefault();
