@@ -36,7 +36,7 @@ export const Scene16TossingWithoutAsking: React.FC = () => {
               <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
               
               <div className="relative z-10 text-center">
-                <div className="flex justify-center">
+                <div className="flex justify-center items-center max-h-[80vh]">
                   <img 
                     src="/lovable-uploads/4742a3a1-21e1-45dc-becf-2242549df90c.png" 
                     alt="Meng picks up what looks like an old, worthless newspaper and tosses it into the garbage bag without asking..." 
