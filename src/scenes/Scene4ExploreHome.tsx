@@ -57,6 +57,49 @@ export const Scene4ExploreHome: React.FC = () => {
   const [isDraggingOverTrashcan, setIsDraggingOverTrashcan] = useState(false);
   const [touchStart, setTouchStart] = useState<{ x: number; y: number } | null>(null);
   const [isTouchDragging, setIsTouchDragging] = useState(false);
+  // Free-drag state (pointer or touch)
+  const [isPointerDragging, setIsPointerDragging] = useState(false);
+  const [dragPos, setDragPos] = useState<{ x: number; y: number } | null>(null);
+  const [dragOrigin, setDragOrigin] = useState<{ xPct: string; yPct: string } | null>(null);
+  const [activePointerId, setActivePointerId] = useState<number | null>(null);
+  
+  // Begin pointer-based drag (mouse or touch)
+  const startPointerDrag = (e: React.PointerEvent, item: InteractiveItem) => {
+    // capture pointer so we keep getting move events even if it leaves the element
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    setActivePointerId(e.pointerId);
+    setDraggedItem(item);
+    setIsPointerDragging(true);
+    setDragPos({ x: e.clientX, y: e.clientY });
+    // remember original percentage position to snap back visually
+    setDragOrigin({ xPct: item.position.x, yPct: item.position.y });
+  };
+  
+  // Track pointer movement
+  const movePointerDrag = (e: React.PointerEvent) => {
+    if (!isPointerDragging || activePointerId === null || e.pointerId !== activePointerId) return;
+    setDragPos({ x: e.clientX, y: e.clientY });
+    // live highlight when over the trashcan
+    setIsDraggingOverTrashcan(isOverTrashcan(e.clientX, e.clientY));
+  };
+  
+  // End drag: drop or snap back
+  const endPointerDrag = (e: React.PointerEvent) => {
+    if (!isPointerDragging || activePointerId === null || e.pointerId !== activePointerId) return;
+    const { clientX, clientY } = e;
+    const over = isOverTrashcan(clientX, clientY);
+    if (over && draggedItem) {
+      handleItemDrop(draggedItem);
+    }
+    // reset state regardless (snap back if not over trash)
+    setIsPointerDragging(false);
+    setDragPos(null);
+    setIsDraggingOverTrashcan(false);
+    setDraggedItem(null);
+    setActivePointerId(null);
+    setDragOrigin(null);
+  };
+
 
   // Load thrown away items from localStorage on mount
   useEffect(() => {
