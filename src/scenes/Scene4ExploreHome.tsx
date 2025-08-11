@@ -87,13 +87,22 @@ export const Scene4ExploreHome: React.FC = () => {
 
   // Handle touch events for mobile drag and drop
   const handleTouchStart = (e: React.TouchEvent, item: InteractiveItem) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
     const touch = e.touches[0];
     setTouchStart({ x: touch.clientX, y: touch.clientY });
     setDraggedItem(item);
     setIsTouchDragging(true);
+    
+    // Prevent scrolling on the document during drag
+    document.body.style.overflow = 'hidden';
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
     if (!isTouchDragging || !touchStart) return;
     
     const touch = e.touches[0];
@@ -102,6 +111,9 @@ export const Scene4ExploreHome: React.FC = () => {
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
     if (!isTouchDragging || !draggedItem) return;
     
     const touch = e.changedTouches[0];
@@ -115,6 +127,9 @@ export const Scene4ExploreHome: React.FC = () => {
     setTouchStart(null);
     setDraggedItem(null);
     setIsDraggingOverTrashcan(false);
+    
+    // Re-enable scrolling
+    document.body.style.overflow = '';
   };
 
   // Handle drop onto trashcan
@@ -205,7 +220,7 @@ export const Scene4ExploreHome: React.FC = () => {
               {availableItems.map((item) => (
                 <div
                   key={item.id}
-                  className="absolute w-6 h-6 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg z-30 pointer-events-auto"
+                  className="absolute w-6 h-6 md:w-6 md:h-6 bg-red-500 rounded-full border-2 border-red-700 cursor-grab transform -translate-x-1/2 -translate-y-1/2 hover:scale-125 transition-transform animate-pulse hover:animate-none shadow-lg z-30 pointer-events-auto touch-none"
                   style={{ left: item.position.x, top: item.position.y }}
                   draggable
                   onDragStart={(e) => {
@@ -214,18 +229,12 @@ export const Scene4ExploreHome: React.FC = () => {
                     e.dataTransfer.setData('text/plain', item.id);
                   }}
                   onTouchStart={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
                     handleTouchStart(e, item);
                   }}
                   onTouchMove={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
                     handleTouchMove(e);
                   }}
                   onTouchEnd={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
                     handleTouchEnd(e);
                   }}
                   title={item.name}
